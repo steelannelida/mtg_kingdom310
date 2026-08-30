@@ -1,0 +1,142 @@
+- name: Koschei Bessmertny
+  cost: "{3}{B}{B}"
+  type_line: Legendary Creature — Human Warlock
+  power: 5
+  toughness: 4
+  text: |-
+    Undying
+    When <this> enters the battlefield, exile target creature until <this> leaves the battlefield.
+    Whenever <this> would be destroyed while it has a +1/+1 counter on it, instead remove all +1/+1 counters from it.
+  flavor_text: My death is far away. You will never find it.
+  notes: "The thing that won't die. Undying + counter-removal means he potentially never dies from destroy effects."
+  rarity: rare
+  color: black
+  art_style: 10
+  art_file: koschei_bessmertny_koschei_the_deathless.png
+  art_prompt: "A tall skinny warrior with a skelatal face, wearing full-body plated gothic armor with spikes and a helmet, riding a black skeletal horse with wild eyes. Dark, menacing atmosphere. Deadlands.\
+    \ Ravens circling in the sky."
+  name_ru: Кощей Бессмертный
+  name_en: Koschei the Deathless
+- name: Marya Morevna
+  cost: "{2}{B}{B}"
+  type_line: Legendary Creature — Human Warlock Noble
+  power: 3
+  toughness: 4
+  text: |-
+    Menace
+    Whenever another creature dies, put a +1/+1 counter on <this>.
+    {B}, remove two +1/+1 counters from <this>: Return target creature card from your graveyard to the battlefield.
+  flavor_text: She rode at the head of an army that was not entirely alive.
+  notes: "The warrior princess who captured Koschei. Grows from death, converts growth into reanimation."
+  rarity: rare
+  color: black
+  art_style: 9
+  art_file: marya_morevna.png
+  art_prompt: "A dark-haired woman in battered lamellar armor sits tall on a black horse at the crest of a grey hill, surveying the churned battlefield below. Her expression is unreadable — neither triumph\
+    \ nor grief. Behind her, dim shapes of soldiers move in overcast northern light, some clearly not alive in any ordinary sense. The muddy field, leaden sky, and heavy shadows are rendered with unflinching\
+    \ realism."
+  name_ru: Марья Моревна
+  name_en: Marya Morevna
+- name: Pannochka
+  cost: "{1}{B}"
+  type_line: Legendary Creature — Human Noble
+  power: 2
+  toughness: 2
+  text: |-
+    Lifelink
+    When <this> dies, return it to the battlefield transformed.
+  flavor_text: ''
+  notes: "Gogol's Pannochka from Viy. Dies and comes back as a terrifying witch. DFC."
+  rarity: rare
+  color: black
+  dfc: true
+  art_style: 12
+  art_file: pannochka.png
+  art_prompt: "A young noblewomans lies in an open coffin in a candlelit church, hands folded, features serene and achingly beautiful. The candle flames bend toward her despite no draft. Deep shadow pools\
+    \ in the arched ceiling above; only her pale face and white burial dress catch the warm, uneasy light. Nothing is overtly wrong — and that is exactly the horror."
+  back_face:
+    name: Vedma iz Groba
+    type_line: Legendary Creature — Zombie Warlock
+    power: 4
+    toughness: 3
+    text: |-
+      Flying, menace
+      At the beginning of your upkeep, each opponent loses 2 life.
+      When <this> deals combat damage to a player, that player sacrifices two creatures.
+    flavor_text: She was beautiful in life. Death made her powerful.
+    art_style: 12
+    art_file: vedma_iz_groba_witch_from_the_grave.png
+    art_prompt: "The same woman, now airborne in the ruined church, arms outstretched, her burial dress shredded and trailing. Her face is ecstatic and terrible. The candles have all been extinguished except\
+      \ one, held by a single trembling hand in the corner. One savage beam of light catches her mid-flight against absolute darkness, her shadow enormous on the crumbling wall behind her."
+    name_ru: Ведьма из Гроба
+    name_en: Witch from the Grave
+  name_ru: Панночка
+  name_en: Pannochka
+- name: Chernaya Kniga
+  cost: "{1}{B}"
+  type_line: Artifact
+  text: |-
+    At the beginning of your upkeep, you may exile a creature card from your graveyard. If you do, draw a card and lose 1 life.
+    {3}{B}, {T}, sacrifice <this>: Return all creature cards exiled with <this> to the battlefield. They gain haste. At end of turn, exile them.
+  flavor_text: Every name written in it was a soul owed.
+  notes: "The necromancer's tome. Slowly exiles graveyard for cards, then erupts all creatures back for one devastating turn."
+  rarity: rare
+  color: black
+  art_style: 12
+  art_file: chernaya_kniga_black_book.png
+  art_prompt: "A thick, iron-clasped tome lies open on a stone surface, its yellowed pages covered in dense script that seems to writhe in the torchlight. A single hand with ink-stained fingers presses\
+    \ flat against the left page. The light source is unseen, carving deep shadow into every crease of the binding and the surrounding darkness. Curling smoke rises from the page as if the words cost something\
+    \ to read."
+  name_ru: Чёрная Книга
+  name_en: Black Book
+- name: Proklyatiye Roda
+  cost: "{1}{B}{B}"
+  type_line: Enchantment — Curse
+  text: |-
+    Enchant player
+    Whenever enchanted player casts a creature spell, they lose 2 life.
+    Whenever a creature enchanted player controls dies, you draw a card.
+  flavor_text: "Seven generations, the witch swore. Seven generations will carry this weight."
+  notes: Premium Curse. Punishes both playing creatures and losing them.
+  rarity: rare
+  color: black
+  art_style: 5
+  art_file: proklyatiye_roda_ancestral_curse.png
+  art_prompt: "A line of silhouetted figures stands in a foggy birch forest, each one slightly smaller and further away than the last, dissolving into atmospheric haze — seven generations stretching into\
+    \ mist. In the near foreground, a crouched old woman in dark cloth faces them, one arm outstretched. The palette is soot black and dim amber; the stillness is suffocating."
+  name_ru: Проклятие Рода
+  name_en: Ancestral Curse
+- name: Ne Ver Mertvym
+  cost: "{1}{B}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    <this> comes into play, return target creature card from your graveyard to the battlefield.
+    Whenever a creature enters the battlefield from your graveyard, sacrifice another creature. Sacrifice <this>.
+  flavor_text: The dead come back wrong. They always come back wrong.
+  notes: "One-mana reanimation with devastating Nakaz. Insanely powerful, real price."
+  rarity: rare
+  color: black
+  art_style: 5
+  art_file: nakaz_ne_veri_mertvym_don_t_trust_the_dead.png
+  art_prompt: "A figure emerges from a shallow grave at the edge of a fog-drenched field, silhouetted against a grey dawn sky. A second figure reaches toward it from a few feet away, hopeful. The returned\
+    \ figure's posture is subtly, deeply wrong — the angle of the neck, the way the arms hang. Soft dissolving edges and film-grain atmosphere make the wrongness feel like a half-remembered dream."
+  name_ru: Не Верь Мёртвым
+  name_en: "Don't Trust the Dead"
+- name: Smert Koscheyeva
+  cost: "{3}{B}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you don't control (it is on a quest)
+    Enchanted creature has: ""At the beginning of your upkeep, sacrifice an artifact or a creature, then put a lock counter on <this>."
+    Whenever there are three lock counters on <this>, sacrifice it. Enchanted creature's owner can choose a creature. If they do, destroy that creature.
+  flavor_text: "Break the needle. That is all you must do. But first — the egg, the duck, the hare, the chest, the oak."
+  notes: "Black rare Quest. The Koschei death-chain. Three upkeep sacrifices (chest, hare, duck...), then exile-destroy any creature. Devastating payoff, real cost."
+  rarity: rare
+  color: black
+  art_style: 12
+  art_file: smert_koscheyeva_koschei_s_death.png
+  art_prompt: "A sequence of nested objects rendered in a single dramatic still life: a gnarled oak chest in deep shadow, a duck's egg cracked open to reveal a smaller egg inside, and at the center, a long\
+    \ iron needle lit by a single fierce beam of light from the upper left. The background is near-black. The needle glints. Everything converges on it. The composition reads as both treasure and doom."
+  name_ru: Смерть Кощеева
+  name_en: "Koschei's Death"

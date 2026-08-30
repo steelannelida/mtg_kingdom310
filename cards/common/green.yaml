@@ -1,0 +1,303 @@
+- name: Medved-Shatun
+  cost: "{2}{G}"
+  type_line: Creature — Bear
+  power: 3
+  toughness: 3
+  text: ''
+  flavor_text: "Where the bear walks, the forest bows."
+  notes: "Green's vanilla common 3-drop. Bears are important in Slavic folklore."
+  rarity: common
+  color: green
+  art_style: 9
+  art_file: medved_shatun_roaming_bear.png
+  art_prompt: "a massive brown bear walking through a dense birch forest in autumn, the trees seeming to lean away from it, fallen golden leaves on the ground, the bear's fur thick and dark, its expression\
+    \ calm and sovereign, dappled light"
+  name_ru: Медведь-Шатун
+  name_en: Roaming Bear
+- name: Lisitsa-Khitryuga
+  cost: "{1}{G}"
+  type_line: Creature — Fox
+  power: 2
+  toughness: 1
+  text: "<this> can't be blocked by more than one creature."
+  flavor_text: "The fox's sweet talk always finds the way to the victim's heart"
+  rarity: common
+  color: green
+  art_style: 9
+  art_file: lisitsa_khitryuga_sly_fox.png
+  art_prompt: "a red fox with an unusually clever expression trotting along a forest path, autumn forest colors"
+  name_ru: Лисица-Хитрюга
+  name_en: Sly Fox
+- name: Zayats-Beglets
+  cost: "{G}"
+  type_line: Creature — Rabbit
+  power: 1
+  toughness: 1
+  text: |-
+    Haste
+    When <this> enters the battlefield, you may attach target Quest you control to it.
+  flavor_text: "He darted past the wolf, past the bear, and past the old woman — and took the quest with him."
+  notes: "The hare — nimble, fast, and a quest-carrier. Might be uncommon. Evaluate."
+  rarity: common
+  color: green
+  art_style: 2
+  art_file: zayats_beglets_runaway_hare.png
+  art_prompt: "a small brown hare in mid-leap, ears flat back, legs fully extended, a tiny glowing scroll tied to its back with a ribbon, blurred forest background suggesting incredible speed, leaves spinning\
+    \ in its wake"
+  name_ru: Заяц-Беглец
+  name_en: Runaway Hare
+- name: Dub Vekovoy
+  cost: "{3}{G}"
+  type_line: Creature — Treefolk
+  power: 1
+  toughness: 5
+  text: |-
+    Defender
+    {T}: Add {G}.
+  flavor_text: "Koschei's chest was buried among its roots. It had held the secret for a thousand years."
+  notes: "The fairy-tale oak — a defender that ramps. References Koschei's hidden death."
+  rarity: common
+  color: green
+  art_style: 13
+  art_file: dub_vekovoy_ancient_oak.png
+  art_prompt: "a colossal ancient oak tree standing alone in a field, its trunk impossibly thick and gnarled, roots spreading outward like buttresses, the canopy vast and dark, a sense of centuries of patient\
+    \ endurance"
+  name_ru: Дуб Вековой
+  name_en: Ancient Oak
+- name: Sery Volk
+  cost: "{2}{G}"
+  type_line: Creature — Wolf Mount
+  power: 3
+  toughness: 2
+  text: |-
+    Saddle 1
+    Whenever <this> attacks while saddled, it gains trample until end of turn.
+  flavor_text: "Sit on my back, Tsarevich. I run faster than the wind and gentler than a thought."
+  notes: "The Grey Wolf as a Green Mount! Saddle 1 means almost anything can ride it."
+  rarity: common
+  color: green
+  art_style: 10
+  art_file: sery_volk_grey_wolf.png
+  art_prompt: "a huge intelligent grey wolf running at full speed through a moonlit forest, a young prince clinging to its back, the wolf's eyes wise and determined, trees blurring past, silver moonlight\
+    \ catching the wolf's fur, supernatural speed and grace"
+  name_ru: Серый Волк
+  name_en: Grey Wolf
+- name: Yablonka Dobraya
+  cost: "{2}{G}"
+  type_line: Creature — Treefolk
+  power: 0
+  toughness: 4
+  text: |-
+    Defender
+    {T}, {G}: Create a Food token.
+  flavor_text: "Eat my apples, traveler, and I will shelter you from the wind."
+  notes: The apple tree helper from fairy tales. Repeatable Food generation.
+  rarity: common
+  color: green
+  art_style: 2
+  art_file: yablonka_dobraya_kind_apple_tree.png
+  art_prompt: "a friendly apple tree with a vaguely face-like pattern in its bark, branches bowing down to offer bright red apples to a small traveler below, the tree seeming to lean protectively, lush\
+    \ green leaves, warm golden sunlight, fairy-tale generosity"
+  name_ru: Яблонька Добрая
+  name_en: Kind Apple Tree
+- name: Babushkina Koshka
+  cost: "{1}{G}"
+  type_line: Creature — Cat
+  power: 1
+  toughness: 1
+  text: |-
+    Bestow {3}{G}
+    Enchanted creature gets +1/+1 and has "Whenever this creature becomes the target of a Quest, create a Food token."
+  flavor_text: "It purred in the corner, and the house was never cold."
+  notes: Household helper cat with Bestow. Domovoi-adjacent flavor.
+  rarity: common
+  color: green
+  art_style: 9
+  art_file: babushkina_koshka_grandmother_s_cat.png
+  art_prompt: "a small fluffy grey cat curled up on a warm spot atop a traditional Russian brick oven, the interior of a cozy log house, embroidered curtains, dried herbs hanging from the ceiling, the cat's\
+    \ eyes half-open and content, warm amber firelight"
+  name_ru: Бабушкина Кошка
+  name_en: "Grandmother's Cat"
+- name: Lesnoy Starichok
+  cost: "{3}{G}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 3
+  text: "When <this> enters the battlefield, search your library for a basic land card, reveal it, put it into your hand, then shuffle."
+  flavor_text: "He was no taller than a mushroom, but the trees moved aside for him."
+  notes: "Green's common land tutor on a body. Spirit type for Soulshift and BG synergies."
+  rarity: common
+  color: green
+  art_style: 5
+  art_file: lesnoy_starichok_forest_elder.png
+  art_prompt: "a tiny old man no bigger than a mushroom standing among enormous tree roots, a long white beard trailing on the moss, wearing a cap made of birch bark, the massive trees around him visibly\
+    \ parting to make way, miniature scale against the vast forest"
+  name_ru: Лесной Старичок
+  name_en: Forest Elder
+- name: Voron-Vestnik
+  cost: "{1}{G}"
+  type_line: Creature — Bird
+  power: 1
+  toughness: 1
+  text: |-
+    Flying
+    When <this> enters the battlefield, you may put a +1/+1 counter on target creature on a quest.
+  flavor_text: "The raven brought three drops of living water, and the hero opened his eyes."
+  notes: Small flyer that buffs questing creatures. The raven with the water of life.
+  rarity: common
+  color: green
+  art_style: 9
+  art_file: voron_vestnik_messenger_raven.png
+  art_prompt: "a large black raven in flight carrying a tiny glass vial of glowing water in its beak, wings spread wide against a grey sky, heading toward a fallen warrior lying on a battlefield below,\
+    \ purpose and urgency in its flight"
+  name_ru: Ворон-Вестник
+  name_en: Messenger Raven
+- name: Turoviy Byk
+  cost: "{4}{G}"
+  type_line: Creature — Ox
+  power: 4
+  toughness: 5
+  text: "{G}: <this> gets Trample until the end of turn"
+  flavor_text: "In the old tales, the aurochs' bellow shook the earth from the Dnieper to the sea."
+  notes: "Green's common big body. 4/5 for 5 is solid. Slovo o Polku flavor."
+  rarity: common
+  color: green
+  art_style: 10
+  art_file: turoviy_byk_aurochs_bull.png
+  art_prompt: "a massive aurochs bull standing in tall steppe grass, enormous curving horns, dark shaggy coat, muscles visible under the hide, the ground trembling around its hooves, other animals keeping\
+    \ their distance, primordial strength, epic scale"
+  name_ru: Туровый Бык
+  name_en: Aurochs Bull
+- name: Zhivaya Voda
+  cost: "{G}"
+  type_line: Instant
+  text: |-
+    Regenerate target creature.
+    Create a Food token.
+  flavor_text: Dead water joins what was severed. Living water restores the breath.
+  notes: "Green's common protection spell. Regenerate + Food."
+  rarity: common
+  color: green
+  art_style: 9
+  art_file: zhivaya_voda_water_of_life.png
+  art_prompt: "A hand holding a crystal flask, containing water with a slight blue tint, being gently poured into the lips of a dead man lying on the ground with deathly-pale skin, the man gasping to life,\
+    \ arching his back, eyes wide open. Medieval slavic setting."
+  name_ru: Живая Вода
+  name_en: Water of Life
+- name: Lesnaya Tropa
+  cost: "{1}{G}"
+  type_line: Sorcery
+  text: "Search your library for a basic land card, put it onto the battlefield tapped, then shuffle."
+  flavor_text: The path appeared only for those the forest chose to guide.
+  notes: "Green's common ramp. Bread and butter."
+  rarity: common
+  color: green
+  art_style: 13
+  art_file: lesnaya_tropa_forest_path.png
+  art_prompt: "a narrow winding path through a deep green forest, the path dappled with sunlight, ferns and wildflowers lining its edges, the trees forming a natural tunnel that opens toward distant bright\
+    \ clearing, inviting and mysterious, the path itself seeming to glow faintly"
+  name_ru: Лесная Тропа
+  name_en: Forest Path
+- name: Priyut Leshego
+  cost: "{2}{G}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +1/+1.
+    When enchanted deals combat damage to an attacking creature and that creature dies, create two Food tokens and a 1/1 green Wolf creature token. Sacrifice <this>.
+  flavor_text: "Rest here, said the old man of the forest. Nothing will harm you tonight."
+  notes: "Green's common Quest. Defensive — rewards successful blocking."
+  rarity: common
+  color: green
+  art_style: 5
+  art_file: priyut_leshego_leshy_s_shelter.png
+  art_prompt: "a mossy small cave-like grove formed by bent old trees, arranged as a natural shelter, soft dried leaves for bedding, mushrooms growing on the walls glowing faintly, a wolf curled up at the\
+    \ entrance keeping watch, deep forest safety, warm green tones in cold surroundings"
+  name_ru: Приют Лешего
+  name_en: "Leshy's Shelter"
+- name: Medovy Sbiten
+  cost: "{1}{G}"
+  type_line: Sorcery
+  text: Create two Food tokens.
+  flavor_text: "I was there; I drank the mead. It ran down my whiskers but didn't wet my mouth."
+  notes: "The classic fairy-tale ending line! Pure Food generation."
+  rarity: common
+  color: green
+  art_style: 1
+  art_file: medovy_sbit_honey_mead.png
+  art_prompt: "two clay cups of golden honey mead on a rough wooden table, foam spilling over the rims, a plate of honeycomb beside them, warm tavern interior, the mead catching candlelight and glowing\
+    \ amber, simple abundance and fellowship"
+  name_ru: Медовый Сбитень
+  name_en: Honey Mead
+- name: Sokhatyy
+  cost: "{4}{G}"
+  type_line: Creature - Moose
+  power: 4
+  toughness: 4
+  text: Trample
+  rarity: common
+  color: green
+  flavor_text: "If you're scared of wolves, don't go into the woods! Well, not just wolves..."
+  notes: ''
+  art_style: 9
+  art_file: sokhatyy_horned_moose.png
+  art_prompt: A large angry black moose with large antlers dashing through the thick of the woods.
+  name_ru: Сохатый
+  name_en: Horned Moose
+- name: Rys
+  cost: "{2}{G}{G}"
+  type_line: Creature - Cat
+  power: 3
+  toughness: 3
+  text: Reach
+  rarity: common
+  color: green
+  flavor_text: ''
+  notes: ''
+  art_file: rys_lynx.png
+  art_prompt: "Forest canopy. A grey european lynx with small bleak dark spots and dark pointy hair on the ear tips, sneaking up on a bird  that's sitting obliviously on a branch of a tree."
+  art_style: 9
+  name_ru: Рысь
+  name_en: Lynx
+- name: Bogatyrskaya Sila
+  cost: "{2}{G}"
+  type_line: Sorcery
+  text: "Put two +1/+1 counters on target creature. If that creature is on a quest, put three +1/+1 counters on it instead."
+  rarity: common
+  color: green
+  flavor_text: ''
+  notes: ''
+  art_style: 1
+  art_file: bogatyrskaya_sila_bogatyr_s_might.png
+  art_prompt: "A young peasant standing in a forest opening, holding a thick large log with both arms above his head, the log is three times his size. Medival slavic setting."
+  name_ru: Богатырская Сила
+  name_en: "Bogatyr's Might"
+- name: Muravyinaya Blagodarnost
+  cost: "{X}{G}{G}"
+  type_line: Sorcery
+  text: "Create X 1/1 Insect creature tokens. If you control a creature on a quest, in addition create X food tokens"
+  rarity: common
+  color: green
+  flavor_text: "You spared our nest, now it's our turn to help."
+  notes: ''
+  art_file: muravyinaya_blagodarnost_ant_s_gratitude.png
+  art_prompt: "A close up of an ant trail on the forest floor, with ants running back and forth; the ones running left to right carry pieces of tasty."
+  art_style: 14
+  name_ru: Муравьиная Благодарность
+  name_en: "Ant's Gratitude"
+- name: Sekretnyy Posvist
+  cost: "{1}{G}"
+  type_line: Instant
+  text: |-
+    As an additional cost to cast this spell, tap an untapped creature you control.
+
+    Search your library for a creature card, reveal it and put it into your hand, then shuffle.
+  rarity: common
+  color: green
+  flavor_text: ''
+  notes: ''
+  art_style: 13
+  art_file: sekretnyy_posvist_magic_whistling.png
+  art_prompt: "Thick woods. A young peasant whistling into two fingers. A wolf is running towards him, answering his call. Medieval Slavic setting."
+  name_ru: Секретный Посвист
+  name_en: Magic Whistling

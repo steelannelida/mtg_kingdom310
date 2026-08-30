@@ -1,0 +1,204 @@
+- name: Viy
+  cost: "{3}{B}{B}"
+  type_line: Creature — Demon Horror
+  power: 6
+  toughness: 6
+  text: |-
+    Fear.
+
+    <this> can't attack or block.
+
+    Tap three untapped creatures you control: <this> can attack and block until end of turn.
+  flavor_text: Lift my eyelids. I cannot see.
+  notes: "Viy at uncommon. Enormous body, needs mass death to activate. Might be too strong — possibly rare."
+  rarity: uncommon
+  color: black
+  art_style: 9
+  art_file: viy.png
+  art_prompt: "A large plump demonic creature. Its long protracted eyelids reaching the ground and his eyes can't open. A retinue of lesser demons around him in the cave. "
+  name_ru: Вий
+  name_en: Viy
+- name: Mara-Nochnitsa
+  cost: "{1}{B}{B}"
+  type_line: Creature — Spirit
+  power: 3
+  toughness: 2
+  text: "When <this> enters the battlefield, target creature an opponent controls gets -X/-0 until your next turn, where X is the number of creature cards in your graveyard."
+  flavor_text: "She sat on your chest, and in the morning, you couldn't remember your own strength."
+  notes: Nakaz synergy creature. Rewards stacking Nakaz cards in your graveyard.
+  rarity: uncommon
+  color: black
+  art_style: 5
+  art_file: mara_nochnitsa_night_hag.png
+  art_prompt: "A gray-white spirit woman crouches on the chest of a sleeping figure in a dark peasant hut. Her form dissolves at the edges into cold fog, barely distinguishable from shadow. The sleeper's\
+    \ face is strained, mouth slightly open. A dim amber ember in the stove is the only light. Layered cutout atmosphere, heavy stillness, soot and umber palette."
+  name_ru: Мара-Ночница
+  name_en: Night Hag
+- name: Koscheyev Prisluzhnik
+  cost: "{2}{B}{B}"
+  type_line: Creature — Zombie
+  power: 2
+  toughness: 2
+  text: "When Koscheyev Sluga enters the battlefield, target player exiles the top three cards of their library. You may put a creature card from among them into play under your control."
+  flavor_text: "Koschei's servants remember nothing — not their names, not their deaths, not their masters."
+  notes: Mill/self-mill utility creature. Fuels BG graveyard and UB recursion.
+  rarity: uncommon
+  color: black
+  art_style: 9
+  art_file: koscheyev_sluga_koschei_s_servant.png
+  art_prompt: "A hollow-eyed zombie servant in tattered court livery mechanically carries a stack of books and scrolls through a bleak stone corridor. His posture is perfect but his face is vacant, eyes\
+    \ glassy. Gray-green overcast light seeps through a narrow slit window. The corridor stretches into darkness behind him. Wanderers realism — muted umber and stone-grey, heavy anatomical weight, unidealized."
+  name_ru: Кощеев Прислужник
+  name_en: "Koschei's Minion"
+- name: Nochnoy Vsadnik
+  cost: "{3}{B}{B}"
+  type_line: Creature — Spirit Knight Mount
+  power: 4
+  toughness: 4
+  text: |-
+    Menace
+    Saddle 3
+    When <this> attacks while saddled, each opponent sacrifices a creature.
+  flavor_text: "Night rode behind Baba Yaga's hut, and the dark swallowed every path."
+  notes: "The Black rider (night) from Vasilisa. Counterpart to White's dawn rider. Forces sacrifice when ridden."
+  rarity: uncommon
+  color: black
+  art_style: 12
+  art_file: nochnoy_vsadnik_rider_on_the_black_horse.png
+  art_prompt: "A black horse and rider emerge from absolute night, the rider clad entirely in dark armor with no face visible within the visor. The horse's hooves do not touch the ground. A single raking\
+    \ light catches the edge of the horse's flank and the rider's raised hand. The forest on either side is consumed in shadow. Tenebrist oil — warm glint against enveloping black."
+  name_ru: Ночной Всадник
+  name_en: Rider on the Black Horse
+- name: Proklyanaya Knyaginya
+  cost: "{2}{B}"
+  type_line: Creature — Human Noble
+  power: 2
+  toughness: 3
+  text: |-
+    Lifelink
+    When <this> is dealt lethal damage, instead transform it.
+  flavor_text: ''
+  notes: "Black's transform uncommon. Dies -> becomes a ghost. DFC."
+  rarity: uncommon
+  color: black
+  dfc: true
+  back_face:
+    name: Prizrak Knyagini
+    type_line: Creature — Spirit
+    power: 3
+    toughness: 2
+    text: |-
+      Flying
+      When this creature transforms, each opponent loses 2 life.
+    flavor_text: She died in the tower. She did not leave the tower.
+    art_file: prizrak_knyagini.png
+    art_style: 5
+    art_prompt: "a translucent female ghost floating in a stone tower room, mouth open in silent grief, hands raised, her gown and hair drifting as if underwater, pale blue light through the window, cold\
+      \ and mournful"
+    name_ru: Призрак Княгини
+    name_en: Ghost of the Noblewoman
+  art_style: 5
+  art_file: proklyanaya_knyaginya_cursed_noblewoman.png
+  art_prompt: "A pale noblewoman in ornate black brocade stands at a tower window, pressing one hand to her chest where a wound bleeds dark. Her expression is calm, resigned. Behind her, her translucent\
+    \ double — the ghost — already rises, hands raised, mouth open in silent grief. Fog fills the tower room. Norstein cutout layers, dim amber candlelight dissolving into cold blue darkness."
+  name_ru: Проклятая Княгиня
+  name_en: Cursed Noblewoman
+- name: Mogilinschik
+  cost: "{1}{B}"
+  type_line: Creature — Human Peasant
+  power: 1
+  toughness: 2
+  text: |-
+    When <this> enters the battlefield, return target creature card with mana value 2 or less from your graveyard to your hand.
+    {B}, sacrifice <this>: Each opponent loses 1 life.
+  flavor_text: "I dig them up, I put them down. Some days the order changes."
+  notes: Recursion + sacrifice outlet. Quest-conditional sacrifice ability.
+  rarity: uncommon
+  color: black
+  art_style: 9
+  art_file: mogilinschik_gravedigger.png
+  art_prompt: "A wiry old gravedigger stands waist-deep in a freshly opened grave, leaning on his shovel and looking up at the viewer with tired, knowing eyes. Overcast sky above. A wooden cross tilts in\
+    \ the soil nearby, and a second shovel-load of dark earth sits beside the mound. The graveyard stretches behind him in cold diffuse light. Wanderers realism — coarse unidealized face, heavy impasto\
+    \ highlights on the knuckles."
+  name_ru: Могильщик
+  name_en: Gravedigger
+- name: Proklyatiye Koscheyevo
+  cost: "{1}{B}{B}"
+  type_line: Sorcery
+  text: "Destroy target creature. If that creature was legendary, exile it instead."
+  flavor_text: "You will never find my death. It is inside the needle, inside the egg, inside the duck, inside the hare, inside the chest, under the oak."
+  notes: "Black's premium removal. Upgrades to exile vs. legendaries."
+  rarity: uncommon
+  color: black
+  art_style: 12
+  art_file: proklyatiye_koscheyevo_koschei_s_curse.png
+  art_prompt: "A withered skeletal hand extends from darkness, fingers splayed in a curse gesture, dark energy coiling from each fingertip like black smoke. Below it a warrior crumples, his legendary armor\
+    \ cracking and dissolving into ash rather than blood. The only light source is the curse itself — cold and faint. Tenebrist composition, dramatic single-source illumination, deep baroque shadow."
+  name_ru: Проклятие Кощеево
+  name_en: "Koschei's Curse"
+- name: Pogrebalniy Obriad
+  cost: "{1}{B}"
+  type_line: Sorcery
+  text: |-
+    Return target creature card from your graveyard to your hand.
+    Create a Food token.
+  flavor_text: "The dead were washed, dressed, and given bread for the journey."
+  notes: Recursion + Food. The funeral ritual includes feeding the dead.
+  rarity: uncommon
+  color: black
+  art_style: 8
+  art_file: pogrebalniy_obriad_burial_rite.png
+  art_prompt: "Two women wash a still figure on a wooden table, their movements ritualistic and slow. One lays a small round loaf of bread on the figure's chest. Gold-leaf candlelight, hieratic and flat.\
+    \ The faces are stylized, frontal, without grief — only ceremony. A white linen shroud is folded nearby. "
+  name_ru: Погребальный Обряд
+  name_en: Burial Rite
+- name: Ne Otkryvay Sunduk
+  cost: "{2}{B}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    When Ne Otkryvay Sundok enters battlefield, search your library for any card, put it into your hand, then shuffle.
+    Whenever you cast a spell with mana value 4 or greater, you lose 4 life. Exile <this>.
+  flavor_text: The chest rattled. Something inside wanted out.
+  notes: A TUTOR with Nakaz. Incredibly powerful (unconditional tutor for 3 mana) but Nakaz punishes expensive spells.
+  rarity: uncommon
+  color: black
+  art_style: 5
+  art_file: nakaz_ne_otkryvay_sunduk_don_t_open_the_chest.png
+  art_prompt: "A large iron-banded chest sits alone in a dark cellar, its lid cracked open by an inch. A faint sickly light seeps from within — not warm, wrong. A hand is frozen in the act of lifting the\
+    \ lid, caught mid-motion. The room around is murky fog and bare stone. Norstein cutout stillness — umber and soot, shallow focus, the chest sharp against dissolving background."
+  name_ru: Не Открывай Сундук
+  name_en: "Don't Open the Chest"
+- name: Ispytaniye Lesa
+  cost: "{1}{B}"
+  type_line: Enchantment
+  text: "Whenever a creature an opponent controls attacks, that creature gets -1/-1 until end of turn."
+  flavor_text: "The branches reached lower with every step, and the path grew narrower."
+  notes: Persistent punisher for opponents who attack. The forest itself weakens intruders.
+  rarity: uncommon
+  color: black
+  art_style: 13
+  art_file: ispytaniye_lesa_trial_of_the_forest.png
+  art_prompt: "A dense birch-and-pine forest at dusk, the canopy pressing downward in the middle distance as if alive. A lone figure on horseback is barely visible at the tree line, the path ahead visibly\
+    \ narrowing to nothing. Twisted roots reach across the trail. Cold silver-grey light, wet earth tones, the forest enormous and indifferent. Northern romantic — figure tiny against overwhelming landscape,\
+    \ atmospheric depth."
+  name_ru: Испытание Леса
+  name_en: Trial of the Forest
+- name: Podzemnoye Tsarstvo
+  cost: "{2}{B}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you don't control (it is on a quest)
+    Enchanted creature has "At the beginning of your upkeep pay 1 life or sacrifice this creature"
+    Whenever a creature other than enchanted creature deals combat damage to you, sacrifice <this>. Enchanted creature's controller creates a treasure token.
+  flavor_text: "He waited in the dark kingdom, and prayed someone would come for him."
+  notes: "Black uncommon Quest. The hero is trapped underground — you pay life or sacrifice each turn. Another creature must 'rescue' them by attacking you (dealing combat damage to you). Unusual self-damage\
+    \ quest condition."
+  rarity: uncommon
+  color: black
+  art_style: 8
+  art_file: podzemnoye_tsarstvo_underground_kingdom.png
+  art_prompt: "A lone figure sits bound in the center of a vast underground throne room, the vaulted ceiling lost in darkness above. Gold-leaf walls press close, ornate and suffocating. The prisoner's head\
+    \ is bowed. No windows, no exits visible. A single oil lamp hangs overhead in the void. Cold monastic palette — deep lapis and ochre on dark ground, frontal hieratic composition, flat gold."
+  name_ru: Подземное Царство
+  name_en: Underground Kingdom

@@ -1,0 +1,108 @@
+- name: Zmei Gorynych
+  cost: "{4}{R}{R}"
+  type_line: Legendary Creature — Dragon
+  power: 3
+  toughness: 3
+  text: "Flying, Indestructible\n<this> comes into battlefield with 3 head counters.\nWhenever <this> would die, if it has more then 1 head counter, remove 1 head counter instead. \n{R}: <this> gets +1/+0\
+    \ until the end of turn for each head counter on it"
+  flavor_text: "Three heads, three fires, three reasons to run."
+  notes: The three-headed dragon. Three damage to three targets on entry. The Red rare finisher.
+  rarity: rare
+  color: red
+  art_style: 9
+  art_file: zmei_gorynych.png
+  art_prompt: A great flying serpent with three  fire-breathing heads.
+  name_ru: Змей Горыныч
+  name_en: Zmei Gorynych
+- name: Alyosha Popovich
+  cost: "{1}{R}{R}"
+  type_line: Legendary Creature — Human Soldier
+  power: 3
+  toughness: 2
+  text: |-
+    First strike, haste
+    Whenever <this> attacks, you may sacrifice an artifact. If you do, <this> gets +3/+0 until end of turn.
+    Whenever <this> completes a Quest, gain control of target artifact an opponent controls.
+  flavor_text: "The youngest and cleverest of the three. What he lacked in strength, he made up in cunning."
+  notes: "Third bogatyr. Sacrifices artifacts for power, steals artifacts on quest completion."
+  rarity: rare
+  color: red
+  art_style: 10
+  art_file: alyosha_popovich.png
+  art_prompt: "A young bogatyr in archaic mail and a red traveling cloak stands at a crossroads, grinning, one hand resting on a strung bow across his shoulders. He is smaller than Ilya or Dobrynya would\
+    \ be here — leaner, quicker. The low viewpoint and dramatic cloudscape behind him give him an outsized, heroic silhouette. His eyes are sharp with mischief. Everything about him says he already knows\
+    \ how this ends."
+  name_ru: Алёша Попович
+  name_en: Alyosha Popovich
+- name: Zhar-Ptitsa
+  cost: "{3}{R}{R}"
+  type_line: Legendary Creature — Bird Spirit
+  power: 2
+  toughness: 2
+  text: |-
+    Flying, haste
+    At the beginning of your upkeep <this> deals 2 damage to you. Create a treasure token.
+    Whenever a creature an opponent controls deals combat damage to you, that opponent may gain control of <this>.
+  flavor_text: "She flew by night and was gone by dawn, leaving only a golden feather."
+  notes: "The Firebird — appears, blazes, vanishes, returns. Recurring burn engine."
+  rarity: rare
+  color: red
+  art_style: 9
+  art_file: tsarevna_zhar_ptitsa_firebird_princess.png
+  art_prompt: A glowing red-and-orange peacock-like bird siting on a branch of a tree. The light coming from it is brighter then the Sun.
+  name_ru: Жар-Птица
+  name_en: Firebird
+- name: Tugarin Zmeyevich
+  cost: "{3}{R}"
+  type_line: Legendary Creature — Giant Rouge
+  power: 6
+  toughness: 4
+  text: |-
+    <this> can't block.
+    When <this> attacks, defending player may sacrifice a creature or an artifact. If they do, prevent all combat damage <this> would deal this turn.
+  flavor_text: "Paper wings, they said. But the rain that would ruin them never came."
+  notes: The mythical antagonist Tugarin. Punisher variant — either they lose a creature or take 6.
+  rarity: rare
+  color: red
+  art_style: 10
+  art_file: tugarin_zmeyevich.png
+  art_prompt: "A massive giant heavy fleshy shirtless man, of steppe nomad type, hairless except for a long dark black forlock and mustache."
+  name_ru: Тугарин Змеевич
+  name_en: Tugarin Zmeyevich
+- name: Ne Tushy Kostyor
+  cost: "{R}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    When <this> comes into battlefield, it deals 5 damage to target creature.
+    At the end of your turn, if you haven't played a red spell this turn, Ne Tushyi Kostyor deals 3 damage to you. Sacrifice <this>.
+  flavor_text: "Feed the flame, or the flame feeds on you."
+  notes: 5 damage for R — absurdly efficient. Nakaz means your next big creature death burns you too.
+  rarity: rare
+  color: red
+  art_style: 10
+  art_file: nakaz_ne_tushyi_kostyor_don_t_extinguish_the_fire.png
+  art_prompt: "A warrior stands before a towering campfire on an open steppe at night, arms spread wide as if embracing or commanding the blaze. The fire fills the upper half of the frame, dwarfing the\
+    \ figure. Sparks rise into a vast star-filled sky. His shadow stretches long behind him across the dark earth. The heroic low viewpoint and rich warm palette of deep red and ochre make the moment feel\
+    \ like a vow — or a warning."
+  name_ru: Не Туши Костёр
+  name_en: "Don't Extinguish the Fire"
+- name: Razbey Razboynikov
+  cost: "{2}{R}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +1/+0 and gains first strike
+    Whenever enchanted creature deals combat damage to a creature and that creature dies that turn, put a notch counter on <this>.
+    When there are three notch counters on <this>, sacrifice it. Create three 2/2 white Human Soldier creature tokens.
+  flavor_text: "You saved our village from the bandits, now become our chief."
+  notes: "Red rare Quest. Kill three creatures in combat, liberate three soldiers. Bogatyr clearing the road flavor."
+  rarity: rare
+  color: red
+  art_style: 10
+  art_file: razbey_razboynikov_beat_the_bandits.png
+  art_prompt: "A bogatyr stands at the center of a forest road, axe lowered, three bandits defeated around him in the snow. In the background, the gates of a village are swinging open, and three silhouettes\
+    \ emerge cautiously into the cold light. The low winter sun cuts long golden shadows across the scene. The mood is triumphant but not cruel — a hero who did what needed doing, and the people now free\
+    \ to step forward."
+  name_ru: Разбей Разбойников
+  name_en: Beat the Bandits

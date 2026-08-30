@@ -1,0 +1,91 @@
+- name: Ilya Muromets
+  cost: "{3}{W}{W}"
+  type_line: Legendary Creature — Human Soldier
+  power: 4
+  toughness: 6
+  text: |-
+    Vigilance; Indestructible as long as <this> is on a quest.
+    Whenever <this> completes a Quest, exile target creature an opponent controls.
+    When <this> enters the battlefield, you may search your library for a Quest card, reveal it, put it into your hand, then shuffle.
+  flavor_text: "Thirty-three years on the stove. Then the kaliki came, and Russia had a champion."
+  notes: "The greatest bogatyr. Arrives looking for a quest, indestructible while questing, exiles on completion."
+  rarity: rare
+  color: white
+  art_style: 10
+  art_file: ilya_muromets.png
+  art_prompt: "A giant of a man, 30-something years old, bearded, in chain mail and slavic pointed helmet stands at a crossroads stone under a storm-heavy sky, one hand holding a giant mace, Low viewpoint\
+    \ makes him monumental against churning amber clouds. His face is utterly calm — a man who has waited thirty-three years and fears nothing. Ravens circle in the distance. Medieval slavic setting."
+  name_ru: Илья Муромец
+  name_en: Ilya Muromets
+- name: Knyaz Vladimir Krasno Solnyshko
+  cost: "{2}{W}{W}"
+  type_line: Legendary Creature — Human Noble
+  power: 3
+  toughness: 4
+  text: |-
+    Other Soldier and Peasant creatures you control get +1/+1.
+    At the beginning of your end step, if three or more creatures you control attacked this turn, create a 1/1 white Human Soldier creature token.
+  flavor_text: "He sat at the feast in Kyiv, and his warriors filled the hall from door to hearth."
+  notes: The Prince of the byliny. Go-wide lord who generates soldiers when you attack aggressively.
+  rarity: rare
+  color: white
+  art_style: 10
+  art_file: knyaz_vladimir_krasno_solnyshko.png
+  art_prompt: "Prince Vladimir enthroned in a high-raftered feast hall, golden crown catching candlelight, a goblet raised in one broad hand. Behind him, a vast company of warriors stretches to shadowed\
+    \ doorways — spears and shields catching the glow of a dozen hearths. His face is generous, ruddy, commanding. Rich embroidered robes pool across gilded steps. The mood is triumphant and warm, a kingdom\
+    \ at its height."
+  name_ru: Князь Владимир Красно Солнышко
+  name_en: Knyaz Vladimir Krasno Solnyshko
+- name: Vasilisa Prekrasnaya
+  cost: "{1}{W}{W}"
+  type_line: Legendary Creature — Human Noble
+  power: 2
+  toughness: 3
+  text: |-
+    When <this> enters the battlefield, create a Doll artifact token with "{T}, sacrifice this: Prevent the next 3 damage that would be dealt to target creature this turn."
+    Whenever a creature you control completes a Quest, you may return target enchantment card from your graveyard to your hand.
+  flavor_text: "Her mother's blessing went with her, hidden in the pocket of her apron."
+  notes: Vasilisa with her magic doll. The doll token is a reusable shield. Quest completion recurs enchantments.
+  rarity: rare
+  color: white
+  art_style: 9
+  art_file: vasilisa_prekrasnaya_vasilisa_the_beautiful.png
+  art_prompt: "Vasilisa, a young maiden, stands in a dark forest clearing at dusk, a small luminous doll cradled in her palm casting warm gold light upward onto her calm, determined face. Her embroidered\
+    \ sarafan and braided hair are rendered with ceremonial precision. Tall black pines press close on all sides, but the light from the doll holds the darkness at bay. "
+  name_ru: Василиса Прекрасная
+  name_en: Vasilisa the Beautiful
+- name: Zastava Bogatyrskaya
+  cost: "{3}{W}"
+  type_line: Enchantment
+  text: |-
+    Creatures you control have "Whenever this creature becomes the target of a Quest, it gains vigilance and +0/+2 until end of turn."
+    Sacrifice <this>: Creatures you control gain indestructible until end of turn.
+  flavor_text: "Three bogatyri stood at the crossroads: Ilya, Dobrynya, Alyosha. No enemy passed while they drew breath."
+  notes: Quest enabler + emergency board protection. The outpost where quests begin.
+  rarity: rare
+  color: white
+  art_style: 10
+  art_file: zastava_bogatyrskaya_bogatyr_outpost.png
+  art_prompt: "Three armored giants stand side by side at a worn crossroads stone on the open steppe, facing the viewer from a low angle that makes them fill the sky. Left to right: grey-bearded Ilya, dark\
+    \ Dobrynya, fair Alyosha — each bearing lance and shield. Behind them storm clouds mass in deep ochre and red. The composition mirrors the famous painting exactly — monumental, still, inevitable. Nothing\
+    \ will pass this line."
+  name_ru: Застава Богатырская
+  name_en: Bogatyr Outpost
+- name: Iskupatsa v Kipyatke
+  cost: "{1}{W}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    When <this> comes into play, it deals 3 damage to enchanted creature.
+    At the beginning of the next end step, sacrifice <this>. Put three +1/+1 counters on enchanted creature. It gains first strike for as long as you control it.
+  flavor_text: The Tsar leapt in and was boiled alive. Ivan leapt in and came out a hero.
+  notes: "White rare Quest. Konek-Gorbunok's boiling cauldron. Survive 3 damage on upkeep, then permanent +3/+3 and first strike. Huge payoff, needs a tough creature or protection."
+  rarity: rare
+  color: white
+  art_style: 12
+  art_file: iskupatsa_v_kipyatke_bathe_in_boiling_water.png
+  art_prompt: "A young man plunges into an enormous iron cauldron of violently boiling water, steam billowing into near-black air, a single raking torch from above cutting a blade of warm light across his\
+    \ arched back and the churning surface. The surrounding court watches from deep shadow — faces barely visible, expressions unreadable. The composition is all contrast: blazing white foam against darkness,\
+    \ agony indistinguishable from ecstasy."
+  name_ru: Искупаться в Кипятке
+  name_en: Bathe in Boiling Water

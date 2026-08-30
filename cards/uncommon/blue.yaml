@@ -1,0 +1,139 @@
+- name: Sadko-Kupets
+  cost: "{2}{U}"
+  type_line: Legendary Creature — Human Merchant
+  power: 2
+  toughness: 2
+  text: |-
+    Whenever <this> becomes tapped, scry 1.
+    When <this> deals combat damage to a player, you may sacrifice an artifact. If you do, draw two cards.
+  flavor_text: "He played his gusli by the lake, and the Sea King listened."
+  notes: Sadko at uncommon. Tapping scry means Saddling a mount with him triggers it.
+  rarity: uncommon
+  color: blue
+  art_style: 1
+  art_file: sadko_kupets_sadko_the_merchant.png
+  art_prompt: "Lake shore. A merchant in rich trade-road furs  sits cross-legged at the edge of a still lake, cradling a gusli - a neckless trapezoid-shaped instrument with parallel strings (not a guitar,\
+    \ more like a lyre) -  across his knees.Medieval slavic setting. "
+  name_ru: Садко-Купец
+  name_en: Sadko the Merchant
+- name: Vodyanoy
+  cost: "{3}{U}"
+  type_line: Creature — Spirit
+  power: 3
+  toughness: 4
+  text: |-
+    Whenever a creature an opponent controls becomes tapped, you may scry 1.
+    {U}, {T}: Tap target creature.
+  flavor_text: The water was still. That was the first warning.
+  notes: The water spirit. Controls the board through tapping and rewards it with scry.
+  rarity: uncommon
+  color: blue
+  art_style: 5
+  art_file: vodyanoy.png
+  art_prompt: "A bloated, moss-draped figure crouches just beneath a black river surface, only its eyes and the crown of its head breaking the waterline. Fog hangs in dense layers above the reeds. The scene\
+    \ is almost entirely dark — dim amber light catches a single wet hand pressed flat against the bank. Everything beyond a few feet dissolves into deep atmospheric haze."
+  name_ru: Водяной
+  name_en: Vodyanoy
+- name: Mechtatelniy Kupets
+  cost: "{3}{U}"
+  type_line: Creature — Human Merchant
+  power: 2
+  toughness: 4
+  text: "At the beginning of your upkeep, if you control three or more artifacts, draw a card."
+  flavor_text: "His warehouse held wonders from thirty kingdoms, and still he wanted more."
+  notes: "Rewards artifact density. Works with Treasure, Food, equipment, and artifact Mounts."
+  rarity: uncommon
+  color: blue
+  art_style: 9
+  art_file: mechtatelniy_kupets_dreaming_merchant.png
+  art_prompt: "A stout, broad-shouldered merchant in a red coat stands inside a dim warehouse crowded floor to ceiling with crates, bolts of foreign cloth, and gleaming curiosities. He holds a single brass\
+    \ astrolabe up toward a high window, face upturned, eyes distant and dreaming. Overcast diffuse light falls from above, catching dust motes. His expression is not satisfied — it never will be. Medieval\
+    \ slavic setting."
+  name_ru: Мечтательный Купец
+  name_en: Dreaming Merchant
+- name: Ledyanoy Dukh
+  cost: "{1}{U}"
+  type_line: Creature — Spirit
+  power: 1
+  toughness: 3
+  text: |-
+    When <this> enters the battlefield, target creature doesn't untap during its controller's next untap step.
+    When <this> dies, create a Food token.
+  flavor_text: "It touched the river, and the river went still."
+  notes: "Frost in Blue. Freeze effect on entry, Food on death. Spirit type for Soulshift chains."
+  rarity: uncommon
+  color: blue
+  art_style: 5
+  art_file: ledyanoy_dukh_ice_spirit.png
+  art_prompt: "A translucent child-shaped figure kneels at the edge of a frozen river, one hand pressed to the ice. Frost spreads outward from its palm in branching crystal patterns. The scene is shrouded\
+    \ in pale winter fog, the far bank invisible. A single dim amber light catches the ice's surface. The spirit's form dissolves at its edges into freezing mist, barely distinct from the air."
+  name_ru: Ледяной Дух
+  name_en: Ice Spirit
+- name: Morskaya Puchina
+  cost: "{2}{U}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control  (it is on a quest)
+    When <this> enters battlefield, tap enchanted creature.
+    Enchanted creature does not untap during its controller's untap phase.
+    At the beginning of your upkeep scry 1. If the card you look at when scrying is an artifact, you may reveal it and put it into your hand instead. If you do, Sacrifice <this>.
+  flavor_text: "The Sea King's palace is beautiful. The price of admission is forgetting the way home."
+  notes: A hostile Quest in Blue. Weakens the creature and steals it when opponent casts a noncreature spell.
+  rarity: uncommon
+  color: blue
+  art_style: 9
+  art_file: morskaya_puchina_depths_of_the_sea.png
+  art_prompt: "Underwater view of deep sea bottom. Sea plants, parts of sunken medieval ships covered in barnacles, a black chest. A man in simple medieval clothes is slowly sinking. Fish swimming around. "
+  name_ru: Морская Пучина
+  name_en: Depths of the Sea
+- name: Ledyanoy Vihr
+  cost: "{3}{U}"
+  type_line: Sorcery
+  text: |-
+    Return up to two target creatures to their owners' hands.
+    Scry 2.
+  flavor_text: "The wind came from the north, and everything not rooted to the earth flew."
+  notes: Blue mass bounce + scry. Frost-flavored.
+  rarity: uncommon
+  color: blue
+  art_style: 5
+  art_file: ledyanoy_vihr_ice_whirlwind.png
+  art_prompt: "A violent whirlwind of ice and snow spirals across a dark winter field, two figures caught within it, limbs splayed, helpless against the force. A single cold light source from upper left\
+    \ carves sharp edges on the spinning ice shards before plunging everything else into deep shadow. Pine trees at the edge of the frame bend nearly horizontal. "
+  name_ru: Ледяной Вихрь
+  name_en: Ice Whirlwind
+- name: Ne Beri Chuzhogo
+  cost: "{U}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+
+    When <this> enters battlefield, draw two cards.
+
+    Whenever you draw a card other than the first card you draw in your draw step, an opponent also draws a card. Exile <this>.
+  flavor_text: Take only what is offered. Everything else has teeth.
+  notes: "Blue's Nakaz. 2 cards for 1 mana! Nakaz punishes additional card draw."
+  rarity: uncommon
+  color: blue
+  art_style: 12
+  art_file: nakaz_ne_zabiray_chuzhogo_don_t_take_what_isn_t_yours.png
+  art_prompt: "A hand reaches out of deep shadow to close around a glowing object on a stone shelf — the moment of transgression. A single raking light from upper left illuminates only the hand, the object,\
+    \ and the edge of a carved warning inscription on the shelf's face. The rest of the image is consumed by darkness. The object pulses with cold blue light. Something watches from the black."
+  name_ru: Не Бери Чужого
+  name_en: "Don't Take What Isn't Yours"
+- name: Morozko
+  cost: "{2}{U}"
+  type_line: Creature — Spirit Noble
+  power: 2
+  toughness: 4
+  text: "When <this> enters the battlefield, tap target creature an opponent controls. It doesn't untap during its controller's next untap step."
+  flavor_text: "Are you warm, maiden? Are you warm, pretty one?"
+  notes: Morozko as a frost-testing spirit.
+  rarity: uncommon
+  color: blue
+  art_style: 5
+  art_file: morozko.png
+  art_prompt: "A towering spirit of white frost stands amid a snow-choked forest, exhaling a slow breath that crystallizes the air. His robes are indistinguishable from the birch bark and drifting snow\
+    \ around him. A young woman kneels before him, hands folded, perfectly still. The cold is absolute. Pale moonlight filters through the canopy, casting long blue shadows across the frozen ground."
+  name_ru: Морозко
+  name_en: Morozko

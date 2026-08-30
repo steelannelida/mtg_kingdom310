@@ -1,0 +1,190 @@
+- name: Rasputye
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {W} or {B}.
+  flavor_text: "Three roads met, and at each a different fate."
+  notes: WB dual tapland. Crossroads — the liminal space where worlds meet.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - white
+  - black
+  art_style: 9
+  art_file: rasputye_crossroads.png
+  art_prompt: "a weathered stone crossroads marker where three dirt roads diverge across a flat steppe, a bleached horse skull mounted on the post, one road leads to a white-walled village with church domes,\
+    \ another into dark birch forest, the third into featureless haze, late afternoon golden light, long shadows"
+  name_ru: Распутье
+  name_en: Crossroads
+- name: Pristan
+  cost: ''
+  type_line: Land
+  text: |-
+    <this>ishche enters the battlefield tapped.
+    {T}: Add {U} or {W}.
+  flavor_text: The ships brought news from every shore.
+  notes: UW dual tapland. Harbor — threshold between land and sea.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - black
+  art_style: 13
+  art_prompt: "a medieval Russian river harbor at dawn, wooden merchant ships with carved prows moored at a timber dock, white limestone walls and onion domes on the hill behind, calm blue water reflecting\
+    \ pale sky, barrels and bales stacked on the wharf, mist lifting off the river"
+  art_file: pristan_harbor.png
+  name_ru: Пристань
+  name_en: Harbor
+- name: Kapishche
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {B} or {G}.
+  flavor_text: The old gods were not gone. They merely waited.
+  notes: BG dual tapland. Pagan shrine — where the old faith persists.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - black
+  - green
+  art_style: 5
+  art_prompt: "a moss-covered clearing in a dark ancient forest, a rough-hewn wooden idol with a stern carved face stands among gnarled roots, offerings of bread and dried flowers at its feet, faint firefly\
+    \ light, a sense of watchful presence in the shadows between trees"
+  art_file: kapishche_pagan_shrine.png
+  name_ru: Капище
+  name_en: Pagan Shrine
+- name: Zastava
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> Bogatyrskaya enters the battlefield tapped.
+    {T}: Add {R} or {W}.
+  flavor_text: The heroes kept watch where the steppe began.
+  notes: RW dual tapland. Bogatyr outpost — the border garrison.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - red
+  - white
+  art_style: 10
+  art_prompt: "a wooden palisade outpost on a low hill overlooking an endless golden steppe, a red banner with a white horse emblem snapping in the wind, a watchtower with a conical roof, lances and shields\
+    \ leaning against the wall, sunset sky of amber and crimson"
+  art_file: zastava_outpost.png
+  name_ru: Застава
+  name_en: Outpost
+- name: Opushka
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {W} or {G}.
+  flavor_text: "Beyond this line, the trees had their own laws."
+  notes: WG dual tapland. Forest edge — boundary between civilization and wilderness.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - white
+  - green
+  art_style: 13
+  art_prompt: "the edge where a sunlit wheat field meets a dense birch and oak forest, a low wooden fence with a gate half-open, wildflowers growing along the boundary, a narrow footpath disappearing into\
+    \ dappled green shade, warm summer light on the field side, cool shadow on the forest side"
+  art_file: opushka_forest_edge.png
+  name_ru: Опушка
+  name_en: Forest Edge
+- name: Gornaya Reka
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {U} or {R}.
+  flavor_text: "The current ran fast and cold from the peaks, carrying stones and secrets."
+  notes: UR dual tapland. Mountain river — where fire meets water.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - red
+  art_style: 9
+  art_prompt: "a fast mountain river cutting through a red-rock gorge, white rapids crashing over boulders, steep cliffs of ochre and rust stone on both sides, a narrow stone bridge arching high above,\
+    \ mist rising from the water, cool blue water against warm red stone"
+  art_file: gornaya_reka_mountain_river.png
+  name_ru: Горная Река
+  name_en: Mountain River
+- name: Lesnoy Rodnik
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {G} or {U}.
+  flavor_text: "The spring whispered secrets, but there was no-one around to hear."
+  notes: GU dual tapland. Forest spring — hidden knowledge in the wild.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - green
+  - blue
+  art_style: 13
+  art_prompt: "a crystal-clear spring bubbling up from mossy rocks in a deep green forest, ferns and water plants surrounding the pool, the water impossibly transparent showing pebbles and sand at the bottom,\
+    \ ancient trees leaning over it protectively, shafts of soft light filtering through the canopy"
+  art_file: lesnoy_rodnik_forest_spring.png
+  name_ru: Лесной Родник
+  name_en: Forest Spring
+- name: Grot
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {U} or {B}.
+  flavor_text: "The cave opened beneath the waterfall, and the light did not follow."
+  notes: UB dual tapland. Grotto — where water meets darkness.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - black
+  art_style: 9
+  art_prompt: "a dark cave mouth behind a thin waterfall curtain, the water catching pale blue light while the interior is deep black, wet stone glistening, roots hanging from the cave ceiling like fingers,\
+    \ a still dark pool inside reflecting nothing, liminal threshold between light and dark"
+  art_file: grot_grotto.png
+  name_ru: Грот
+  name_en: Grotto
+- name: Pozharishche
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {R} or {G}.
+  flavor_text: "The fire had passed, but already the first green shoots pushed through the ash."
+  notes: RG dual tapland. Burn site — destruction and renewal.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - red
+  - green
+  art_style: 9
+  art_prompt: "a forest clearing after a wildfire, charred black tree trunks standing like pillars, grey ash on the ground, but bright green ferns and saplings already pushing through, a few embers still\
+    \ glowing orange at the base of stumps, dramatic contrast between black destruction and vivid green renewal"
+  art_file: pozharishche_burn_site.png
+  name_ru: Пожарище
+  name_en: Burn Site
+- name: Torfyannik
+  cost: ''
+  type_line: Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {B} or {R}.
+  flavor_text: "The bog burned slow and quiet, and what it swallowed it kept."
+  notes: BR dual tapland. Peat bog — smoldering death.
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - black
+  - red
+  art_style: 5
+  art_prompt: "a dark peat bog at twilight, pools of black water between hummocks of sphagnum moss, wisps of smoke or methane rising from cracks in the peat, a dull red glow beneath the surface where the\
+    \ peat smolders underground, dead silver birch trunks leaning at angles, oppressive low sky"
+  art_file: torfyannik_peat_bog.png
+  name_ru: Торфяник
+  name_en: Peat Bog

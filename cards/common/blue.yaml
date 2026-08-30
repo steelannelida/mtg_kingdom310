@@ -1,0 +1,294 @@
+- name: Kupets na Pristani
+  cost: "{1}{U}"
+  type_line: Creature — Human Merchant
+  power: 1
+  toughness: 3
+  text: "When <this> enters the battlefield, scry 1."
+  flavor_text: "News travels with the ships, and the wise man meets every one."
+  notes: "Blue's bread-and-butter 2-drop. Merchant creature type. ETB scry."
+  rarity: common
+  color: blue
+  art_style: 1
+  art_file: kupets_na_pristani_merchant_at_the_dock.png
+  art_prompt: "a portly merchant in a fur-trimmed kaftan standing on a wooden dock, one hand shading his eyes as he watches an approaching ship, crates and rolled carpets beside him, a busy river port behind,\
+    \ overcast northern light"
+  name_ru: Купец на Пристани
+  name_en: Merchant at the Dock
+- name: Rusalka-Iskusitelnitsa
+  cost: "{2}{U}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 2
+  text: "When <this> enters the battlefield, tap target creature an opponent controls. It doesn't untap during its controller's next untap step."
+  flavor_text: Her song was beautiful. So was the river. Neither let him go.
+  notes: "Blue common tempo creature. The rusalka's signature move — luring and trapping."
+  rarity: common
+  color: blue
+  art_style: 5
+  art_file: rusalka_iskusitelnitsa_temptress_rusalka.png
+  art_prompt: "a translucent pale woman half-submerged in dark river water, long green hair floating around her like waterweed, one arm extended beckoning, moonlight catching the water droplets on her skin,\
+    \ dark willows leaning over the riverbank, eerie beauty"
+  name_ru: Русалка-Искусительница
+  name_en: Temptress Rusalka
+- name: Chudo-Rybka
+  cost: "{U}"
+  type_line: Creature — Fish
+  power: 0
+  toughness: 2
+  text: "{T}, sacrifice <this>: Scry 1 and draw a card."
+  flavor_text: "Release me, and I will repay you threefold."
+  notes: The golden fish as a humble common. Sacrifice it (release it) and it rewards you.
+  rarity: common
+  color: blue
+  art_style: 13
+  art_file: chudo_rybka_wonder_fish.png
+  art_prompt: "a small golden fish with shimmering iridescent scales being pulled with a fishnet out of a lake. The fish glowing with faint inner light, ripples spreading below."
+  name_ru: Чудо-Рыбка
+  name_en: Wonder Fish
+- name: Lebed Belaya
+  cost: "{2}{U}"
+  type_line: Creature — Bird
+  power: 1
+  toughness: 3
+  text: |-
+    Flying
+    Whenever you scry, <this> gets +1/+0 until end of turn.
+  flavor_text: "She descended from the sky as white as snow, and rose from the water as something else entirely."
+  notes: "Blue's common flyer. Rewards the scry theme."
+  rarity: common
+  color: blue
+  art_style: 13
+  art_file: lebed_belaya_white_swan.png
+  art_prompt: "a pure white swan descending onto a calm lake at twilight, wings spread wide catching the last silver light, perfect reflection in the still water below, reeds at the shore, distant blue\
+    \ forest, a sense of transformation about to happen"
+  name_ru: Лебедь Белая
+  name_en: White Swan
+- name: Gusi-Lebedi
+  cost: "{4}{U}"
+  type_line: Creature — Bird
+  power: 3
+  toughness: 4
+  text: |-
+    Flying
+    When <this> enters battlefield, you may return target creature to its owner's hand.
+  flavor_text: They flew over and they took the little brother away.
+  notes: "Blue's common flyer. Rewards the scry theme."
+  rarity: common
+  color: blue
+  art_style: 1
+  art_prompt: 'A flock of white geese and swans flying through clear sky. '
+  art_file: gusi_lebedi_geese_and_swans.png
+  name_ru: Гуси-Лебеди
+  name_en: Geese and Swans
+- name: Utoplennik
+  cost: "{3}{U}"
+  type_line: Creature — Spirit
+  power: 3
+  toughness: 2
+  text: "When <this> enters the battlefield, put target creature to the bottom of its owner's library."
+  flavor_text: "He reached up from the black water and pulled them in, one by one."
+  notes: "Blue's common bounce creature. Spirit type for UB/BG recursion themes."
+  rarity: common
+  color: blue
+  art_style: 5
+  art_file: utoplennik_the_drowned_one.png
+  art_prompt: "a bloated grey hand reaching up from murky black water, grasping at the air, the suggestion of a face beneath the surface, bubbles rising, dark reeds and lily pads surrounding, sickly green-grey\
+    \ light, horror and pity"
+  name_ru: Утопленник
+  name_en: The Drowned One
+- name: Korabl Kupecheskiy
+  cost: "{3}{U}"
+  type_line: Artifact Creature — Ship
+  power: 2
+  toughness: 5
+  text: |-
+    Defender
+    {2}, {T}: Draw a card. Activate only as a sorcery.
+  flavor_text: "Laden with silks from beyond the sea, the ship waited in harbor."
+  notes: Big defensive artifact creature that draws cards. Feeds Kitezh Grad (UW) and Blue Sea strategies.
+  rarity: common
+  color: blue
+  art_style: 9
+  art_file: korabl_kupecheskiy_merchant_vessel.png
+  art_prompt: "a heavy-laden medieval Russian merchant ship with a single square sail, high carved prow shaped like a dragon, moored at a wooden quay, bales and barrels visible on deck, the ship sitting\
+    \ low in the water from its cargo, calm grey sea, seagulls circling"
+  name_ru: Корабль Купеческий
+  name_en: Merchant Vessel
+- name: Vodyanitsa
+  cost: "{1}{U}"
+  type_line: Creature — Spirit
+  power: 1
+  toughness: 1
+  text: "When <this> enters the battlefield, look at the top three cards of your library. Put one into your hand and the rest on the bottom in any order."
+  flavor_text: "She surfaced only at dusk, and only for those who knew to look."
+  notes: "Blue's card selection creature. Strong for common — essentially draws you the best of three."
+  rarity: common
+  color: blue
+  art_style: 5
+  art_file: vodyanitsa_water_maiden.png
+  art_prompt: "a young woman's face barely breaking the surface of dark still water at dusk, only her eyes and forehead visible, water streaming from her hair, three small glowing orbs floating around her\
+    \ just above the surface, mysterious and secretive"
+  name_ru: Водяница
+  name_en: Water Maiden
+- name: Starik-Rybak
+  cost: "{2}{U}"
+  type_line: Creature — Human Peasant
+  power: 1
+  toughness: 4
+  text: "{T}: Scry 1."
+  flavor_text: He had fished these waters forty years. He knew what lay beneath.
+  notes: Repeatable scry on a durable body. The old man from the Pushkin tale. Peasant type connects him to White.
+  rarity: common
+  color: blue
+  art_style: 9
+  art_file: starik_rybolov_old_fisherman.png
+  art_prompt: "an old fisherman sitting in a weathered wooden boat on a grey sea, mending a net with gnarled hands, a battered fishing rod beside him, his face deeply lined and patient, a broken-down hut\
+    \ visible on the distant shore, overcast sky, quiet solitude"
+  name_ru: Старик-Рыбак
+  name_en: Old Fisherman
+- name: Morskoy Kon
+  cost: "{3}{U}"
+  type_line: Creature — Fish Mount
+  power: 3
+  toughness: 3
+  text: |-
+    Saddle 2
+    Whenever <this> attacks while saddled, scry 1.
+  flavor_text: It ran across the waves as if they were a meadow.
+  notes: "Blue's Mount! A seahorse that grants foresight when ridden."
+  rarity: common
+  color: blue
+  art_style: 1
+  art_file: morskoy_kon_seahorse.png
+  art_prompt: "A human-sized seahorse fish, swimming under the sea, ridden by a young medieval slavic merchant. Merchant is fully dressed and the clothes aren't soaked."
+  name_ru: Морской Конь
+  name_en: Seahorse
+- name: Rechnoy Tuman
+  cost: "{U}"
+  type_line: Instant
+  text: |-
+    Target creature gets -4/-0 until end of turn.
+    Scry 1.
+  flavor_text: "The mist rolled in from the river, and the warriors' blows fell on empty air."
+  notes: "Blue's common pseudo-removal. Fog a single attacker + scry."
+  rarity: common
+  color: blue
+  art_style: 5
+  art_file: bludny_tuman_deceiving_mist.png
+  art_prompt: "thick white river mist rolling across a battlefield, a warrior swinging his sword at nothing, his confused expression half-visible through the fog, ghostly shapes dissolving around him, the\
+    \ ground invisible beneath the mist, disorienting atmosphere"
+  name_ru: Речной Туман
+  name_en: River Mist
+- name: Bluddyechko s Yablochkom
+  cost: "{1}{U}"
+  type_line: Enchantment
+  text: "{1}, {T}: Scry 2."
+  flavor_text: "Roll the apple round the saucer, and the world reveals itself."
+  notes: "The iconic Slavic scrying device. Repeatable scry 2. Enchantment (not artifact) because it's magic."
+  rarity: common
+  color: blue
+  art_style: 1
+  art_file: bluddyechko_s_yablochkom_saucer_and_apple.png
+  art_prompt: "a silver saucer on a dark wooden table with a small red apple rolling around its rim, the saucer's surface showing a vision of distant lands — tiny castles and forests reflected in the metal"
+  name_ru: Блюдечко с Яблочком
+  name_en: Saucer and Apple
+- name: Zov Morya
+  cost: "{1}{U}"
+  type_line: Instant
+  text: |-
+    Return target creature to its owner's hand.
+    If that creature was on a quest, its controller draws a card.
+  flavor_text: The wave rose and swept the traveler back to shore — with a pearl in his hand.
+  notes: "Blue's common bounce. Bouncing your OWN questing creature draws a card."
+  rarity: common
+  color: blue
+  art_style: 13
+  art_file: morskoy_prikaz_command_of_the_sea.png
+  art_prompt: "an enormous wave curling over a rocky shore, a small human figure tumbling in the surf being pushed back to land, a single pearl gleaming in the foam, the sea dark and powerful, the shore\
+    \ pale and safe, dramatic contrast between water and land"
+  name_ru: Зов Моря
+  name_en: Command of the Sea
+- name: Veschiy Son
+  cost: "{U}"
+  type_line: Sorcery
+  text: Look at the top 3 cards of your library and put them back in any order.
+  flavor_text: "In the dream, he saw three roads, and at the end of each, a different fate."
+  notes: Deep scry at common. Three roads reference baked into scry 3.
+  rarity: common
+  color: blue
+  art_style: 2
+  art_file: predveshchiy_son_prophetic_dream.png
+  art_prompt: "a sleeping figure on a simple bed under covers in a medieval hut, above them a dreamlike vision of three glowing roads branching into darkness, each road ending in a different scene — a crown,\
+    \ a grave, a forest, the vision translucent and shimmering, deep blue night light"
+  name_ru: Вещий Сон
+  name_en: Prophetic Dream
+- name: Obman Zreniya
+  cost: "{1}{U}"
+  type_line: Instant
+  text: Target creature becomes a copy of another target creature you control until end of turn.
+  flavor_text: "The fox wore the crane's feathers, and no one was the wiser."
+  notes: Tricky combat spell. Candidate for moving to uncommon.
+  rarity: common
+  color: blue
+  art_style: 2
+  art_file: obman_zreniya_eye_trick.png
+  art_prompt: "a fox standing upright wearing a badly-fitting crane costume made of white feathers, one eye visible through the disguise looking sly, other birds nearby not noticing, a riverside setting,\
+    \ humorous but with a hint of menace"
+  name_ru: Обман Зрения
+  name_en: Eye Trick
+- name: Otplyitye
+  cost: "{2}{U}"
+  type_line: Sorcery
+  text: "Draw two cards, then discard a card."
+  flavor_text: "The merchant kissed his daughters, stepped aboard and watched the shore disappear."
+  notes: "Blue's common card draw/filtering. Fuels graveyard themes for UB."
+  rarity: common
+  color: blue
+  art_style: 13
+  art_file: otplyitye_setting_sail.png
+  art_prompt: "a merchant ship pulling away from a wooden dock, its single sail catching the wind, a bearded merchant on the stern looking back at the shrinking shore where two young women wave, the open\
+    \ sea ahead grey and vast, a moment of departure"
+  name_ru: Отплытие
+  name_en: Setting Sail
+- name: V Bochke po Moryu
+  cost: "{1}{U}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature (it is on a quest)
+    When <this> enters battlefield, tap Enchanted creature. It doesn't untap during its controller's next untap step.
+    When enchanted creature untaps, search your library for upt to twp Instant or Sorcery cards and put them into your hand, then shuffle. Sacrifice <this>.
+  flavor_text: "The barrel drifted across the sea, and inside it, a prince grew to manhood."
+  notes: "Blue common Quest. The Tsar Saltan barrel — creature is locked away, but when freed by an untap effect, you get ramp."
+  rarity: common
+  color: blue
+  art_style: 5
+  art_file: v_bochke_po_moryu_locked_in_a_barrel.png
+  art_prompt: "a large wooden barrel floating alone on an open storming sea, waves rocking it, a distant island on the horizon, isolation and hope"
+  name_ru: В Бочке по Морю
+  name_en: Locked in a Barrel
+- name: Treskuchiy Moroz
+  cost: "{1}{U}{U}"
+  type_line: Sorcery
+  text: Tap all creatures target player controls.
+  flavor_text: ''
+  rarity: common
+  color: blue
+  art_style: 9
+  art_prompt: "Daylight. A forest in deep white sparkling snow and shackled by frost. Land completely covered by snow and no-one around. Clear blue sky, long sharp shadows."
+  art_file: treskuchiy_moroz_crackling_frost.png
+  notes: ''
+  name_ru: Трескучий Мороз
+  name_en: Crackling Frost
+- name: Starinnaya Letopis
+  cost: "{1}{U}"
+  type_line: Instant
+  text: Return target instant or sorcery hard from your graveyard to your hand.
+  flavor_text: The ways and deeds of days gone by...
+  rarity: common
+  color: blue
+  art_style: 2
+  art_prompt: "An old birch scroll with script in glagolitsa, on a wooden table, held unrolled by 2 old wrinkled hands"
+  art_file: starinnaya_letopis_old_chronicle.png
+  notes: ''
+  name_ru: Старинная Летопись
+  name_en: Old Chronicle

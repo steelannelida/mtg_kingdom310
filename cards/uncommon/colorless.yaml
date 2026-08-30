@@ -1,0 +1,66 @@
+- name: Mech-Kladenets
+  cost: "{2}"
+  type_line: Artifact — Equipment
+  text: |-
+    Equipped creature gets +2/+1.
+    As long as equipped creature is on a quest, it has first strike.
+    Equip {2}
+  flavor_text: "It was buried in the mound of a hero dead a hundred years, and it woke when drawn."
+  notes: The mythical self-swinging sword. Premium equipment with quest synergy.
+  rarity: uncommon
+  color: colorless
+  art_style: 1
+  art_file: mech_kladenets_treasure_sword.png
+  art_prompt: "A broad iron sword rises upright from a burial mound, its hilt bound in worn leather, blade etched with archaic knotwork. No hand holds it. Flat ochre grassland stretches in every direction\
+    \ under a pale sky. Thick black outlines frame the sword against a single band of madder red at the horizon. The image is stark, heraldic, and immediate — a weapon that needs no wielder."
+  name_ru: Меч-Кладенец
+  name_en: Treasure-Sword
+- name: Shapka-Nevidimka
+  cost: "{2}"
+  type_line: Artifact — Equipment
+  text: |-
+    Equipped creature has hexproof and can't be blocked.
+    Equipped creature can't attack unless it's on a quest.
+    Equip {1}
+  flavor_text: "Under the cap, the world forgot you — and you nearly forgot yourself."
+  notes: Unblockable + hexproof but only attacks when on a quest. Incredible quest enabler.
+  rarity: uncommon
+  color: colorless
+  art_style: 2
+  art_file: shapka_nevidimka_cap_of_invisibility.png
+  art_prompt: "A small red gold-embroiled hood hovers a meter above an empty wooden stool in the middle of a market square. Crowds of merchants and guards pass on all sides, eyes sliding past it without\
+    \ registering. Medieval slavic setting."
+  name_ru: Шапка-Невидимка
+  name_en: Cap of Invisibility
+- name: Gusli-Samogudy
+  cost: "{3}"
+  type_line: Artifact
+  text: "{T}: Tap up to two target creatures. "
+  flavor_text: "The strings rang without fingers, and the dancers could not stop."
+  notes: "Sadko's instrument. Passive drain or creature control when questing."
+  rarity: uncommon
+  color: colorless
+  art_style: 2
+  art_file: gusli_samogudy_self_playing_gusli.png
+  art_prompt: "A carved wooden gusli - a neckless trapezoid harp-like instrument with strings strung parallel from one side to the other -  floats in mid-air above a feast-hall floor, its strings vibrating\
+    \ without any hand upon them. Beneath it, silhouettes of dancing soldiers are frozen mid-step, unable to stop. Firelight casts flat pools of ochre across the scene.  Medieval slavic setting. "
+  name_ru: Гусли-Самогуды
+  name_en: Self-Playing Gusli
+- name: Letuchiy Korabl
+  cost: "{4}"
+  type_line: Artifact — Vehicle
+  power: 3
+  toughness: 3
+  text: |-
+    Flying
+    Crew 2
+    Whenever <this> attacks, scry 2.
+  flavor_text: "Ivan the Fool built it from scrap wood and baling twine, and it flew."
+  notes: "The flying ship! A Vehicle. Crew 2, flying + scry on attack."
+  rarity: uncommon
+  color: colorless
+  art_style: 9
+  art_file: letuchiy_korabl_flying_ship.png
+  art_prompt: 'A wooden medieval sailing ship floats in the sky. The hull is plain timber. '
+  name_ru: Летучий Корабль
+  name_en: Flying Ship

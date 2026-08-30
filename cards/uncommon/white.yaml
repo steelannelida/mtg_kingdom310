@@ -1,0 +1,169 @@
+- name: Boyan-Pevets
+  cost: "{1}{W}"
+  type_line: Creature — Human Cleric
+  power: 1
+  toughness: 2
+  text: |-
+    Whenever a creature you control completes a Quest, put a +1/+1 counter on target creature you control.
+    {T}: Target creature you control gains vigilance until end of turn.
+  flavor_text: "His fingers walked the strings, and the old stories walked the earth again."
+  notes: Quest payoff. The legendary singer from Slovo o Polku.
+  rarity: uncommon
+  color: white
+  art_style: 1
+  art_file: boyan_pevets_boyan_the_bard.png
+  art_prompt: "An aging commoner, wearing an embroidered linen shirt  and  a headband sits on a low earthen hill above a river plain, a trapezoid-shaped neckless wooden stringed instrument  resting across\
+    \ his knees. His eyes are half-closed, turned inward, fingers poised mid-pluck. Around him, warriors in chain mails pause to listen. The afternoon light is grey and diffuse, softening the faces of the\
+    \ men who gather. The plain stretches endlessly behind them, low and flat under a heavy sky. Medieval slavic setting."
+  name_ru: Боян-Певец
+  name_en: Boyan the Bard
+- name: Zasadny Polk
+  cost: "{3}{W}"
+  type_line: Creature — Human Soldier
+  power: 2
+  toughness: 3
+  text: |-
+    Flash
+    When <this> enters the battlefield, target creature you control on a quest gains indestructible until end of turn.
+  flavor_text: "They waited in the birch grove. When the horns sounded, they rose like ghosts."
+  notes: Flash creature that protects questing heroes. The ambush regiment from the Battle of Kulikovo.
+  rarity: uncommon
+  color: white
+  art_style: 10
+  art_file: zasadny_polk_ambush_regiment.png
+  art_prompt: "Armored soldiers burst from a dense birch grove at a full charge, their banners unfurling in the sudden motion. The viewpoint sits low, beneath their advancing line, making the warriors loom\
+    \ enormous against a stormy sky split by late sun. Their faces are grim and set, spears leveled, having waited in silence for this single moment. Churned snow and mud fly beneath their boots."
+  name_ru: Засадный Полк
+  name_en: Ambush Regiment
+- name: Snegurochka
+  cost: "{2}{W}"
+  type_line: Creature — Human Noble
+  power: 2
+  toughness: 2
+  text: |-
+    Creatures you control get +0/+1 as long as it's your turn.
+    When <this> is dealt damage by a red source, or whenever you sacrifice a Food, transform <this>.
+  flavor_text: ''
+  notes: Snegurochka — the Snow Maiden who melts. DFC. Buffs defensively but transforms near fire or warmth.
+  rarity: uncommon
+  color: white
+  dfc: true
+  back_face:
+    name: Talaya Voda
+    type_line: Enchantment
+    text: |-
+      When this transforms, you gain 3 life and draw a card.
+      At the beginning of your upkeep, sacrifice <this>.
+    flavor_text: "She smiled once in the firelight, and was gone."
+    art_file: talaya_voda.png
+    art_style: 2
+    art_prompt: "a patch of snow rapidly melting in warm firelight, a small silver kokoshnik headdress lying in a puddle of meltwater, spring flowers just beginning to push through, bittersweet and fleeting"
+    name_ru: Талая Вода
+    name_en: Thawed Snow
+  art_style: 2
+  art_file: snegurochka_snow_maiden.png
+  art_prompt: "A pale girl in a white sarafan and silver kokoshnik stands at the edge of a winter village, surrounded by swirling snowflakes that seem to emanate from her outstretched hands. Her expression\
+    \ is serene but remote, eyes bright as ice. Behind her, frost-covered rooftops glow with warm firelight from within. The colors are sharp and saturated — cobalt sky, vermilion trim on the distant shutters,\
+    \ the girl herself pure white."
+  name_ru: Снегурочка
+  name_en: Snow Maiden
+- name: Dyak
+  cost: "{1}{W}{W}"
+  type_line: Creature — Human Cleric
+  power: 2
+  toughness: 2
+  text: "Whenever an enchantment leaves battlefield, you gain 2 life."
+  flavor_text: "Don't ask forgiveness for what is forgiven."
+  notes: WB Nakaz-exile payoff in mono-White. Gains life whenever you cleanse Nakaz cards.
+  rarity: uncommon
+  color: white
+  art_style: 8
+  art_file: tserkovny_starosta_church_warden.png
+  art_prompt: "A broad-shouldered elder in dark church robes stands before a whitewashed iconostasis, arms crossed, eyes watchful. He holds a large iron key in one hand. The gold-leaf background glows behind\
+    \ him. Candle flames flicker in a row below, their light the only warmth in the austere composition. His face is unsmiling, deeply lined — a man who has stood guard over the same threshold for decades."
+  name_ru: Дьяк
+  name_en: Deacon
+- name: Vsadnik na Belom Kone
+  cost: "{3}{W}{W}"
+  type_line: Creature — Human Soldier Mount
+  power: 4
+  toughness: 4
+  text: |-
+    Vigilance
+    Saddle 2
+    When <this> attacks while saddled, other creatures you control get +1/+1 until end of turn.
+  flavor_text: "Dawn rode ahead of Baba Yaga's hut — or so the old women whispered."
+  notes: One of the three riders from the Vasilisa tale (white=dawn). Large White Mount with team buff.
+  rarity: uncommon
+  color: white
+  art_style: 10
+  art_file: vsadnik_na_belom_kone_rider_on_the_white_horse.png
+  art_prompt: "A solitary rider in gleaming white armor gallops across an open steppe, his white horse stretched fully at speed. The horizon is low, the sky vast and shot through with the first gold of\
+    \ dawn, clouds massed dramatically above. His cloak streams behind him like a banner. The low viewpoint makes horse and rider monumental, surging forward against the enormous sky, earth barely visible\
+    \ beneath them."
+  name_ru: Всадник на Белом Коне
+  name_en: Rider on the White Horse
+- name: Ispytanye Morozko
+  cost: "{1}{W}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +0/+2.
+    At the end of the turn, if enchanted creature has been dealt damage this turn, you gain 4 life and draw a card. Sacrifice <this>.
+  flavor_text: "Are you warm, maiden? — Warm, Father. Warm."
+  notes: "The Morozko fairy tale as a Quest. Endure the cold (survive damage), earn the reward."
+  rarity: uncommon
+  color: white
+  art_style: 5
+  art_file: ispytanye_morozko_morozko_s_trial.png
+  art_prompt: "A maiden in a long white linen night-dress stands in a snow-filled clearing, barefoot in her thin dress, while a tall old man with a long white beard in a long white furcoat looms before\
+    \ her with his great staff raised, ice crystals cracking from every gesture.  Her hands are folded. She is warm. Slavic folklore setting."
+  name_ru: Испытание Морозко
+  name_en: "Morozko's Trial"
+- name: Kupala Noch
+  cost: "{2}{W}"
+  type_line: Enchantment
+  text: "Whenever a creature you control transforms, you gain 2 life and create a Food token."
+  flavor_text: "On the shortest night, the fern flowers bloom and the world changes shape."
+  notes: "Transform payoff enchantment. White because it's a communal celebration."
+  rarity: uncommon
+  color: white
+  art_style: 1
+  art_file: kupala_noch_kupala_night.png
+  art_prompt: "Young women in embroidered blouses dance in a circle around a great bonfire on a summer hillside, their flower crowns lit orange and gold. In the dark beyond the firelight, the forest stands\
+    \ dense and alive. One figure leaps through the flames, caught at the peak of her arc. The palette blazes — chrome yellow fire, cobalt sky, vermilion and white embroidery, the whole scene patterned\
+    \ with celebratory energy."
+  name_ru: Купала Ночь
+  name_en: Kupala Night
+- name: Izgnanie Nechisti
+  cost: "{1}{W}"
+  type_line: Instant
+  text: Exile target creature with power 3 or less. Its controller creates a Food token.
+  flavor_text: "The priest spoke the words, and the shadow departed — leaving behind only the bread it had been eating."
+  notes: "White's premium uncommon removal. Exile-based but gives the opponent a Food."
+  rarity: uncommon
+  color: white
+  art_style: 12
+  art_file: izgnanie_nechisti_banishment_of_unclean_spirits.png
+  art_prompt: "A village priest stands in a dark doorway, arm outstretched, clutching a censer that throws a single cone of light into the room. Before him a hunched shadow tears itself away from the corner,\
+    \ dissolving at its edges as it flees through the far wall. On the floor beneath where it crouched, a half-eaten loaf of bread. The scene is almost entirely dark, the light catching only the priest's\
+    \ determined face and the retreating form."
+  name_ru: Изгнание Нечисти
+  name_en: Exorcism
+- name: Kolokol Blagovest
+  cost: "{3}{W}"
+  type_line: Artifact
+  text: |-
+    When <this> enters the battlefield, tap all creatures target opponent controls.
+    {3}, {T}: Tap target creature.
+  flavor_text: "When the bell rang, the devils fled — but only until the echo faded."
+  notes: "Frost/control artifact. The church bell that drives away evil. Mass tap on entry, repeatable single tap."
+  rarity: uncommon
+  color: white
+  art_style: 13
+  art_file: kolokol_blagovest_blessing_bell.png
+  art_prompt: "A great bronze bell hangs in an open wooden belfry above a river valley blanketed in autumn mist. The bell is freshly struck, still visibly trembling, the clapper caught mid-swing. Far below\
+    \ in the grey-silver valley, tiny dark figures scatter across a wide plain toward the tree line. The landscape dwarfs everything — pale birch hills, the winding river, the enormous cold sky. The bell\
+    \ tower alone stands clear and sharp."
+  name_ru: Колокол Благовест
+  name_en: Blessing Bell

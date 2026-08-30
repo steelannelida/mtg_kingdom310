@@ -1,0 +1,49 @@
+- name: Yayco Koscheya
+  cost: "{2}"
+  type_line: Legendary Artifact
+  text: "{T}, sacrifice <this>: Destroy target legendary creature. It can't be regenerated. Exile it."
+  flavor_text: "In the egg, the needle. In the needle, the death of the deathless one."
+  notes: The ultimate answer to Koschei and any legendary creature.
+  rarity: rare
+  color: colorless
+  art_style: 12
+  art_file: yayco_koscheya.png
+  art_prompt: "A large, deep, gold-trimmed and emerald-inlaid crystal chest with open lid. Inside, at the center, on a green velvet pad - a single white egg."
+  name_ru: Яйцо Кощея
+  name_en: "Koschei's Egg"
+- name: Sapogi-Skorokhody
+  cost: "{2}"
+  type_line: Legendary Artifact — Equipment
+  text: |
+    Equip {3}
+    Equipped creature has haste
+    Equipped creature must attack each turn if able.
+    {2}: Equipped creature is unblockable this turn
+  flavor_text: "One step: the village vanished. Two steps: the kingdom was behind him. Three steps: he stood before the thrice-nine kingdom."
+  notes: "Unblockable haste boots — but forced to attack. Incredible quest enabler, dangerous if creature is too small."
+  rarity: rare
+  color: colorless
+  art_style: 10
+  art_file: sapogi_skorokhody.png
+  art_prompt: "Close shot of the feet of a man running fast in knee-high red leather boots with gold trimmings. The speed is so high that he's basically hovering above ground in a front leg split and the\
+    \ background is blurred left to right beyond recognition. "
+  name_ru: Сапоги-Скороходы
+  name_en: Seven-League Boots
+- name: Yagina Stupa
+  cost: "{3}"
+  type_line: Legendary Artifact — Vehicle
+  power: 4
+  toughness: 3
+  text: |-
+    Flying
+    Crew 1
+    Whenever Stupa Yaginya attacks, you may choose a creature defending player controls. That creature can't block this turn.
+  flavor_text: "She flew in a mortar, steered with a pestle, and swept her trail with a broom of birch."
+  notes: "Baba Yaga's flying mortar. A Vehicle, cheap crew, flying, removes a blocker."
+  rarity: rare
+  color: colorless
+  art_style: 12
+  art_file: stupa_yaginya.png
+  art_prompt: A tall great human-sized stone mortar and an old broom in a wooden peasant house
+  name_ru: Ягина Ступа
+  name_en: "Yaga's Mortar"

@@ -1,0 +1,94 @@
+- name: Kitezh-Grad
+  cost: ''
+  type_line: Legendary Land
+  text: |-
+    <this> enters the battlefield tapped.
+    {T}: Add {W} or {U}.
+    {3}{W}{U}, {T}, exile <this>: Exile all creatures you control, then return them to the battlefield at the beginning of your next upkeep.
+  flavor_text: The bells still ring beneath the lake. Only the faithful can hear them.
+  notes: "The invisible city as a land. Taps for WU, can mass-blink your board."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - white
+  - blue
+  art_style: 9
+  art_prompt: "a white-walled medieval Russian city with golden onion domes and bell towers sinking beneath the surface of a still lake, the reflection perfect but the city half-submerged, concentric ripples\
+    \ spreading outward, pale silver-blue sky, the tops of the highest crosses still visible above the waterline"
+  art_file: kitezh_grad_invisible_city_2.png
+  name_ru: Китеж-Град
+  name_en: Invisible City
+- name: Ostrov Buyan
+  cost: ''
+  type_line: Legendary Land
+  text: |-
+    {T}: Add {U}.
+    {U}, {T}: Scry 1.
+    {3}{U}{U}, {T}: Draw three cards. Activate only once.
+  flavor_text: "On the island of Buyan, in the open ocean, lies the Alatyr stone, the father of all stones."
+  notes: "Legendary Blue utility land. Repeatable scry, one-shot burst draw."
+  rarity: rare
+  color: blue
+  art_style: 9
+  art_prompt: "a small magical island rising from a deep blue ocean, a single enormous white stone on its summit glowing faintly, a vast ancient oak tree growing beside the stone, the island lush and green\
+    \ while the sea around it is wild and dark, distant storm clouds, a sense of primordial power"
+  art_file: buyan_ostrov_island_of_buyan_2.png
+  name_ru: Остров Буян
+  name_en: Island of Buyan
+- name: Kalinov Most
+  cost: ''
+  type_line: Legendary Land
+  text: |-
+    {T}: Add {B} or {G}.
+    When <this> enters the battlefield, each player mills three cards.
+    {B}{G}, {T}, sacrifice <this>: Return target creature card from a graveyard to the battlefield. It becomes a Spirit in addition to its other types.
+  flavor_text: The bridge between the living and the dead. It burned with every crossing.
+  notes: The bridge over the Smorodina River. BG dual with mill on entry and one-shot reanimation.
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - black
+  - green
+  art_style: 12
+  art_prompt: "a narrow arching bridge made of red viburnum wood spanning a river of fire, the Smorodina River burning with low sulphurous flames, thick dark forest on one bank and a pale ghostly meadow\
+    \ on the other, the bridge glowing where the heat reaches it, smoke and sparks rising"
+  art_file: kalinov_most_viburnum_bridge.png
+  name_ru: Калинов Мост
+  name_en: Viburnum Bridge
+- name: Pole Brani
+  cost: ''
+  type_line: Legendary Land
+  text: |-
+    {T}: Add {R} or {W}.
+    Whenever a creature you control attacks alone, it gets +1/+1 until end of turn.
+    {R}{W}, {T}: Target creature you control gains first strike until end of turn.
+  flavor_text: Kulikovo. Kalka. The field remembers every blade that was drawn.
+  notes: "The bogatyr's battlefield. RW dual that rewards solo attacks and grants first strike."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - red
+  - white
+  art_style: 10
+  art_prompt: "a vast empty battlefield on a flat Russian steppe after the fighting has ended, broken lances and shields scattered in the trampled grass, a single banner still standing against a dramatic\
+    \ sky of red and gold clouds, ravens circling above, the grass already growing back through the churned earth"
+  art_file: pole_brani_battlefield.png
+  name_ru: Поле Брани
+  name_en: Battlefield
+- name: Dremuchy Les
+  cost: ''
+  type_line: Legendary Land
+  text: |-
+    {T}: Add {G}.
+    {T}: Create a Food token. Activate only if you control three or more creatures.
+    {2}{G}, {T}: Put a +1/+1 counter on target creature with a Quest attached to it.
+  flavor_text: The trees grow so thick that the sky is only a rumor.
+  notes: The deep forest. Green utility land. Conditional Food generation and quest-creature buffing.
+  rarity: rare
+  color: green
+  art_style: 5
+  art_prompt: "an impossibly dense primeval forest, massive ancient oaks and pines so thick their canopy blocks all sky, the forest floor in deep green twilight, enormous gnarled roots creating archways,\
+    \ mushrooms and moss covering everything, a barely visible narrow path winding deeper in, no sunlight reaching the ground"
+  art_file: dremuchy_les_deep_forest.png
+  name_ru: Дремучий Лес
+  name_en: Deep Forest

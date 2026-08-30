@@ -1,0 +1,304 @@
+- name: Udaloy Molodets
+  cost: "{R}"
+  type_line: Creature — Human Peasant
+  power: 2
+  toughness: 1
+  text: Haste
+  flavor_text: "Ech, Dubinushka, Uhnem!"
+  notes: "Red's aggressive 1-drop. The youngest son who runs off without a plan."
+  rarity: common
+  color: red
+  art_style: 9
+  art_file: udaloy_molodets_brash_youth.png
+  art_prompt: "a tall 20-year-old athletically-built blond-haired peasant, dressed in a loose linen shirt and grey pants, marching down a dirt road away from a village, barefoot, holding an uprooted birch\
+    \ on his shoulder, a reckless grin on his face. Medieval slavic setting"
+  name_ru: Удалой Молодец
+  name_en: Brash Youth
+- name: Kuznets
+  cost: "{1}{R}"
+  type_line: Creature — Human Artificer
+  power: 2
+  toughness: 2
+  text: "When <this> enters the battlefield, create a Treasure token."
+  flavor_text: "Bring me iron from the mountain, and I'll forge you a blade that sings."
+  notes: The fairy-tale smith. ETB Treasure for UR tempo and mana fixing.
+  rarity: common
+  color: red
+  art_style: 9
+  art_file: kuznets_smith.png
+  art_prompt: "a muscular blacksmith hammering a glowing blade on an anvil, sparks flying in an arc, a dark smoky forge behind him, tongs and finished swords hanging on the wall, his face lit red by the\
+    \ forge fire, sweat glistening, powerful focused concentration"
+  name_ru: Кузнец
+  name_en: Smith
+- name: Gorynychenok
+  cost: "{2}{R}"
+  type_line: Creature — Dragon
+  power: 3
+  toughness: 1
+  text: Flying
+  flavor_text: "Where there's smoke in the hills, a Gorynych has nested."
+  notes: "Red's common flyer. Small dragon, offspring of the great zmei."
+  rarity: common
+  color: red
+  art_style: 1
+  art_file: gorynychevo_otrodye_dragonspawn.png
+  art_prompt: "a small  dragon with 3 heads the size of a large dog perched on a rocky outcrop, smoke curling from its nostrils, stubby wings half-spread, red and green scales, a mischievous rather than\
+    \ terrifying expression, smoldering hillside behind"
+  name_ru: Горыныченок
+  name_en: Dragonspawn
+- name: Okhrabrevshiy Mujik
+  cost: "{1}{R}"
+  type_line: Creature — Human Peasant
+  power: 2
+  toughness: 2
+  text: "<this> gets +1/+0 as long as it's on a quest."
+  flavor_text: "He'd never held a sword before, but the quest was not going to complete itself."
+  notes: Simple quest payoff. A 2/2 that becomes 3/2 when on a quest.
+  rarity: common
+  color: red
+  art_style: 9
+  art_file: okhrabrevshiy_mujik_emboldened_peasant.png
+  art_prompt: "a stocky peasant man in light-grey linen clothes, gripping an old rusty sword awkwardly but with determination, his jaw set, wearing simple clothes, standing at a fork in the road, the dangerous\
+    \ path ahead, his knuckles white on the hilt. Medieval slavic setting."
+  name_ru: Осмелевший Мужик
+  name_en: Emboldened Peasant
+- name: Sivka-Burka
+  cost: "{2}{R}"
+  type_line: Creature — Horse Mount
+  power: 3
+  toughness: 2
+  text: |-
+    Haste
+    Saddle 1
+    Whenever <this> attacks while saddled, it gets +2/+0 until end of turn.
+  flavor_text: "<this>, veshchaya kaurka! Stand before me as leaf before grass!"
+  notes: The iconic fairy-tale horse at common. Maybe uncommon — evaluate power level.
+  rarity: uncommon
+  color: red
+  art_style: 10
+  art_file: sivka_burka.png
+  art_prompt: "a magnificent dappled grey horse with a wild mane rearing up on a hilltop, muscles rippling, hooves striking sparks from stone, an otherworldly gleam in its eyes, wind whipping its tail,\
+    \ steppe grass bending around it, heroic and magical"
+  name_ru: Сивка-Бурка
+  name_en: Sivka-Burka
+- name: Samokhodnaya Pech
+  cost: "{3}{R}"
+  type_line: Artifact Creature — Construct Mount
+  power: 2
+  toughness: 4
+  text: |-
+    Saddle 1
+    Whenever <this> attacks while saddled, create a Food token.
+  flavor_text: "Emelya said 'By the pike's command, by my own desire — go, oven, go!'"
+  notes: "Emelya's oven! Artifact creature Mount that generates Food when ridden."
+  rarity: common
+  color: red
+  art_style: 14
+  art_file: samokhodnaya_pech_self_propelled_oven.png
+  art_prompt: "a large Russian brick oven painted white sliding down a snowy village road, smoke puffing from its chimney, a lazy young peasant man sitting on top with his legs dangling, villagers gaping\
+    \ in astonishment. Medieval slavic village."
+  name_ru: Самоходная Печь
+  name_en: Self-Propelled Oven
+- name: Razboynik s Bolshoy Dorogi
+  cost: "{2}{R}"
+  type_line: Creature — Human Rogue
+  power: 3
+  toughness: 2
+  text: "Whenever <this> deals combat damage to a player, create a Treasure token."
+  flavor_text: "Your money or your head — and I'm not picky about the order."
+  notes: Saboteur creature for Red. Treasure generation for UR.
+  rarity: common
+  color: red
+  art_style: 12
+  art_file: razboynik_s_bolshoy_dorogi_highwayman.png
+  art_prompt: "a bearded bandit in a sheepskin coat stepping out from behind an oak tree onto a forest road, a cudgel in one hand and a stolen purse in the other, a crooked grin on his scarred face, dappled\
+    \ forest light, menace with a dash of charm"
+  name_ru: Разбойник с Большой Дороги
+  name_en: Highwayman
+- name: Kyyryy Oyuun
+  cost: "{1}{R}"
+  type_line: Creature — Human Shaman
+  power: 1
+  toughness: 2
+  text: "{T}, sacrifice a Food: <this> deals 2 damage to any target."
+  flavor_text: The flames spoke in a language older than words.
+  notes: "Food repurposed as fuel for damage. Connects Green's Food generation with Red's aggression."
+  rarity: common
+  color: red
+  art_style: 12
+  art_file: kyyryy_oyuun_bonfire_dancer.png
+  art_prompt: "a nothern shaman with long black hair dressed in deer leather dancing extatically around a roaring bonfire at night in the snow, arms raised,"
+  name_ru: Кыыр Ойуун
+  name_en: Bonfire Dancer
+- name: Pugach
+  cost: "{R}"
+  type_line: Creature — Demon
+  power: 1
+  toughness: 1
+  text: "When <this> enters the battlefield, it deals 1 damage to any target."
+  flavor_text: "The little devil popped out of the smoke, coughed, and bit the nearest ankle."
+  notes: "Red's 1-drop ping creature. A petty chert in Red."
+  rarity: common
+  color: red
+  art_style: 14
+  art_file: pugach_firecracker.png
+  art_prompt: "a tiny red imp bursting out of a puff of sulphurous smoke, coughing and sputtering, tiny horns and a tail, sharp little teeth bared in a snarl, sparks popping around it, comical and irritating\
+    \ rather than frightening"
+  name_ru: Пугач
+  name_en: Firecracker
+- name: Udal Molodetskaya
+  cost: "{R}"
+  type_line: Instant
+  text: |-
+    Target creature gets +3/+1 until end of turn.
+    If it's on a quest, it gains first strike until end of turn.
+  flavor_text: "The boy charged the dragon. The dragon, for a moment, was surprised."
+  notes: "Red's combat trick. Quest bonus = first strike."
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: udal_molodetskaya_youthful_bravado.png
+  art_prompt: "a young warrior charging headlong at a much larger opponent with reckless abandon, his mace raised high with BOTH hands, an dashing, excited smile on his face, his opponent recoiling in surprise\
+    \ at the audacity, dynamic motion, the moment of fearless commitment. Both opponents in chain mails. Medieval slavic setting."
+  name_ru: Удаль Молодецкая
+  name_en: Youthful Bravado
+- name: Grom i Molniya
+  cost: "{1}{R}"
+  type_line: Instant
+  text: "<this> deals 3 damage to target creature."
+  flavor_text: "Perun's hammer fell, and the old oak split in two."
+  notes: "Red's common burn removal. Simple, effective."
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: grom_i_molniya_thunder_and_lightning.png
+  art_prompt: "a massive bolt of lightning splitting a huge ancient oak tree in half, the trunk exploding into splinters and flame, the sky above dark and churning with storm clouds, the ground scorched\
+    \ in a radiating pattern, raw divine power"
+  name_ru: Гром и Молния
+  name_en: Thunder and Lightning
+- name: Po shuchyemu veleniyu
+  cost: "{1}{R}"
+  type_line: Sorcery
+  text: Target creature gains haste until end of turn. Draw a card.
+  flavor_text: "By the pike's command, by my own desire..."
+  notes: The Emelya card. Haste enabler with Mount synergy.
+  rarity: common
+  color: red
+  art_style: 14
+  art_file: pechnoye_zhelaniye_oven_s_wish.png
+  art_prompt: "a golden pike fish leaping from a frozen river hole, its scales shimmering with magic, a lazy young peasant pondering, whimsical fairy-tale energy"
+  name_ru: По щучьему велению
+  name_en: "Pike's Command"
+- name: Klich Bogatyrskiy
+  cost: "{2}{R}"
+  type_line: Sorcery
+  text: Creatures you control get +1/+0 and gain haste until end of turn.
+  flavor_text: "The warhorn sounded, and every sword was drawn before the echo died."
+  notes: "Red's common team pump. Enables alpha strikes."
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: klich_bogatyrskiy_bogatyr_s_call.png
+  art_prompt: "a rider blowing a great curved warhorn on a hilltop, riders below drawing swords and wheeling their horses toward battle, dramatic sky, the moment before the charge. Medieval slavic setting."
+  name_ru: Клич Богатырский
+  name_en: "Bogatyr's Call"
+- name: Tantsy vokrug Kostra
+  cost: "{R}"
+  type_line: Sorcery
+  text: "<this> deals 2 damage to target player or planeswalker. Create a Food token."
+  flavor_text: "They leapt over the bonfire and came down laughing, smelling of smoke and honey."
+  notes: Direct damage + Food. Kupala Night flavor.
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: pozharniy_tanets_fire_dance.png
+  art_prompt: "A ring of young peasants, male and female, gathered around a large bonfire in the night, one young woman jumping over the fire, plates of food and cups nearby"
+  name_ru: Танцы вокруг Костра
+  name_en: Fire Dance
+- name: Ne Slezay s Konya
+  cost: "{1}{R}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    Untap target creature. It gains haste and gets +2/+0 until end of turn.
+    Whenever a creature you control becomes tapped other than by attacking, sacrifice it and <this>.
+  flavor_text: "Ride, and do not stop. If your feet touch the ground, you are lost."
+  notes: "Red's Nakaz card. Powerful combat trick. The Nakaz punishes using creatures for non-combat purposes."
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: nakaz_ne_skhodi_s_konya_don_t_dismount.png
+  art_prompt: "a rider galloping at full speed across a steppe, leaning forward urgently, the horse's hooves barely touching the ground, behind them shadowy hands reaching up from the earth trying to grab\
+    \ the horse's legs, the rider's face determined and terrified, motion blur. Medieval slavic setting."
+  name_ru: Не Слезай с Коня
+  name_en: "Don't Dismount"
+- name: Ukrast Tsarevnu
+  cost: "{1}{R}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Whenever enchanted creature attacks and isn't blocked, prevent all combat damage it would deal this turn. Gain control of target creature defending player controls until the end of your next turn. Sacrifice <this>.
+  flavor_text: "He rode through the gate, scooped her onto the saddle, and was gone before the guards drew breath."
+  notes: Red common Quest. Unblocked attack trades damage for a temporary steal. Ivan Tsarevich abduction flavor.
+  rarity: common
+  color: red
+  art_style: 10
+  art_file: ukrast_tsarevnu_abduct_the_princess.png
+  art_prompt: "a rider holding a royal maiden on the same horse, sweeping through a fortress gate out into the field, guards behind them too slow to react, the horse at full gallop, hair streaming in the\
+    \ wind, dramatic escape moment. Medieval slavic setting."
+  name_ru: Украсть Царевну
+  name_en: Abduct the Princess
+- name: Pechenegi
+  cost: "{3}{R}"
+  type_line: Creature - Human Warrior
+  power: 4
+  toughness: 2
+  text: Haste
+  rarity: common
+  color: red
+  art_file: pechenegi.png
+  art_style: 9
+  art_prompt: "a Pecheneg warrior on horseback charging across the steppe, recurve bow in hand, leather armor and felt cap, dust rising behind the raiding party, aggressive and fast"
+  name_ru: Печенеги
+  name_en: Pechenegi
+- name: Polovtsy
+  cost: "{3}{R}"
+  type_line: Creature - Human Warrior
+  power: 3
+  toughness: 3
+  text: "Whenever <this> attacks, it gets +1/+0 for every other attacking creature."
+  rarity: common
+  color: red
+  art_file: polovtsy.png
+  art_style: 9
+  art_prompt: "A large army of steppe nomadic riders in formation, with spears, under a flag depicting a wolf. Medieval slavic setting."
+  flavor_text: ''
+  notes: ''
+  name_ru: Половцы
+  name_en: Polovtsy
+- name: Stepnoy Pozhar
+  cost: "{1}{R}"
+  type_line: Instant
+  text: "<this> deals 1 damage to each creature target player controls."
+  flavor_text: The fire goes where the wind blows
+  rarity: common
+  color: red
+  notes: ''
+  art_style: 10
+  art_file: stepnoy_pozhar_steppe_fire.png
+  art_prompt: Fire sweeping through steppe. Medieval Slavic setting.
+  name_ru: Степной Пожар
+  name_en: Steppe Fire
+- name: Nochnoy Nabeg
+  cost: "{3}{R}"
+  type_line: Sorcery
+  text: "Creatures without vigilance can't block this turn."
+  rarity: common
+  color: red
+  art_prompt: "In the middle of the night, riders in chain mails and with spears sweeping through a military camp, wreaking havoc in their way. Panic and fire. Medieval Slavic setting."
+  flavor_text: ''
+  notes: ''
+  art_style: 12
+  art_file: nochnoy_nabeg_night_assault.png
+  name_ru: Ночной Набег
+  name_en: Night Assault

@@ -1,0 +1,233 @@
+- name: Letopisets iz Kitezha
+  cost: "{1}{W}{U}"
+  type_line: Creature — Human Cleric
+  power: 1
+  toughness: 4
+  text: |-
+    Whenever you scry, you gain 1 life.
+    {T}: Scry 1.
+    When you have gained 5 or more life this turn, draw two cards.
+  flavor_text: He recorded everything — even the moment the water closed above the city.
+  notes: "WU: Kitezh Grad / Enchantment Control. Rewards the scry-lifegain loop."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - white
+  - blue
+  art_style: 8
+  art_file: letopisets_iz_kitezha_chronicler_of_kitezh.png
+  art_prompt: "A robed bearded scribe kneels on the floor of a submerged cathedral, writing by the cold blue light filtering down through deep water above. His ink does not disperse; his quill moves with\
+    \ perfect calm. Church bells hang silently overhead. Fish drift past illuminated manuscript pages. The gold-leaf ground glows dim through the water. Hieratic stillness; the recording continues past\
+    \ all reason. Medieval slavic setting."
+  name_ru: Летописец из Китежа
+  name_en: Chronicler of Kitezh
+- name: Razkayavshiysya Greshnik
+  cost: "{W}{B}"
+  type_line: Creature — Human Cleric
+  power: 2
+  toughness: 3
+  text: |-
+    Lifelink
+    When <this> enters the battlefield, you may destroy target Nakaz Enchantment. If you do, put a +1/+1 counter on <this>.
+  flavor_text: He had broken every oath. The new faith offered one more chance.
+  notes: "WB: Dvoeveriye / Nakaz Management. Cast Nakaz spells for above-rate effects, then exile them."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - white
+  - black
+  art_style: 8
+  art_file: razkayavshiysya_greshnik_repentant_sinner.png
+  art_prompt: "A gaunt man prostrates himself before a wooden cross at the edge of a graveyard, his pilgrim's cloak worn to rags. His hands, pressed flat to cold earth, grip a torn parchment bearing old\
+    \ binding-marks. A faint white light traces his silhouette against the dark. No cast shadows; inverse perspective; the ground glows like a gessoed panel. Austerity and grief, barely redeemed."
+  name_ru: Раскаявшийся Грешник
+  name_en: Repentant Sinner
+- name: Knyaz Druzhiny
+  cost: "{R}{W}"
+  type_line: Creature — Human Soldier Noble
+  power: 3
+  toughness: 2
+  text: |-
+    Haste
+    Whenever another creature you control completes a Quest, put a +1/+1 counter on <this> and it gains vigilance until end of turn.
+  flavor_text: "Ride with me, and your names will be sung for a thousand years."
+  notes: "WR: Druzhina / Quest Aggro. Grows every time a quest is completed."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - red
+  - white
+  art_style: 10
+  art_file: knyaz_druzhiny_prince_of_the_warband.png
+  art_prompt: "A young prince in a chainmail on horseback addresses a warband arrayed behind him on a wide steppe, his arm raised against a dramatic sky of rolling ochre cloud. The low viewpoint makes rider\
+    \ and horse monumental. Faces in the warband are upturned and resolute."
+  name_ru: Князь Дружины
+  name_en: Prince of the Warband
+- name: Babka-Travnitsa
+  cost: "{G}{W}"
+  type_line: Creature — Human Shaman
+  power: 1
+  toughness: 3
+  text: |-
+    {T}: Create a Food token.
+    Sacrifice three Foods: Return target creature card from your graveyard to the battlefield with a +1/+1 counter on it.
+  flavor_text: "She knew every root, every leaf. Death asked permission before visiting her village."
+  notes: "WG: Village Hearth / Food Tokens. Generates Food and converts three Foods into resurrection."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - green
+  - white
+  art_style: 9
+  art_file: babka_travnitsa_herb_woman.png
+  art_prompt: "An old woman sits by a low fire in a forest clearing, her lap full of bundled herbs, a clay pot steaming at her feet. Three bowls are arranged before her with quiet ceremony. Her face is\
+    \ deeply lined, entirely calm. The overcast light filters through pine boughs, touching grey hair and rough-woven shawl. She is utterly unhurried. The scene smells of roots and woodsmoke."
+  name_ru: Бабка-Травница
+  name_en: Herb Woman
+- name: Utoplennaya Nevesta
+  cost: "{U}{B}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 3
+  text: |-
+    When <this> enters the battlefield, each player mills three cards.
+    Whenever a creature card is put into a graveyard from anywhere, you may scry 1.
+    Soulshift 2
+  flavor_text: She waited at the bottom for the groom who never came.
+  notes: "UB: The Drowned and the Dead. Mills for graveyard fuel, scrys off creature death, Soulshifts."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - black
+  art_style: 5
+  art_file: utoplennaya_nevesta_drowned_bride.png
+  art_prompt: "A blueish-pale woman in a white dress and veil drifts upright beneath dark river water, her hair spreading like ink, her eyes open and patient. Waterlogged flowers drift around her — the\
+    \ remnants of a bridal wreath. Shafts of dim surface light descend from far above, barely reaching her. The image is still as a held breath, suffused with cold and grief and long waiting. Medieval slavic\
+    \ setting"
+  name_ru: Утопленная Невеста
+  name_en: Drowned Bride
+- name: Emelya-Lezheboka
+  cost: "{U}{R}"
+  type_line: Legendary Creature — Human Peasant
+  power: 1
+  toughness: 3
+  text: |-
+    Whenever you complete a Quest, draw a card and create a Treasure token.
+    {T}: Target artifact you control becomes a creature with power and toughness equal to its mana cost. It's still an artifact.
+  flavor_text: "By the pike's command, by my own desire — I shall not leave this oven."
+  notes: "UR: Clever Fool / Quest Tempo. Every quest draws cards and makes Treasure."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - red
+  art_style: 9
+  art_file: emelya_lezheboka_emelya_the_layabout.png
+  art_prompt: "A young peasant in a sheepskin coat and a riding hood reclines on a great brick oven, boots crossed, expression utterly serene. Nearby a wooden bucket full of water with a pike fish peering\
+    \ out. Medieval rural slavic setting."
+  name_ru: Емеля-Лежебока
+  name_en: Emelya the Layabout
+- name: Yaga-Ispytatelnista
+  cost: "{B}{R}"
+  type_line: Creature — Human Warlock
+  power: 3
+  toughness: 3
+  text: |-
+    Menace
+    When <this> enters the battlefield, each player sacrifices a creature.
+    Whenever an opponent sacrifices a creature, you create a Food token.
+  flavor_text: "Turn your back to the forest, your face to me. Have you come of your own will, or were you sent?"
+  notes: "BR: Baba Yaga's Feast / Sacrifice Aggro. Edict on entry, Food from opponent sacrifice."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - black
+  - red
+  art_style: 12
+  art_file: yaga_ispytatelnista_yaga_the_tester.png
+  art_prompt: "An old witch with a huge nose and a long chin leans out of a hut doorway in deep forest shadow. A single lantern illuminates her face from below: deep-set eyes, iron teeth glinting, one hand\
+    \ raised in a question or a threat. The surrounding dark is absolute. "
+  name_ru: Яга-Испытательница
+  name_en: Yaga the Tester
+- name: Dedushka Lesnoy
+  cost: "{B}{G}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 4
+  text: |-
+    Whenever another creature you control dies, you may return target Spirit creature card with lesser mana value from your graveyard to your hand.
+    When <this> enters the battlefield, create a 1/1 black Spirit creature token.
+  flavor_text: The forest remembers every creature that ever died beneath its canopy.
+  notes: "BG: Cycle of Nav / Graveyard Midrange. Persistent recursion engine that chains Spirits."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - black
+  - green
+  art_style: 5
+  art_file: dedushka_lesnoy_grandfather_of_the_forest.png
+  art_prompt: "A hunched elderly spirit moves through fog between ancient moss-covered trunks, his form half-transparent, small pale spirit-lights drifting from his fingers and settling like seeds into\
+    \ the dark earth. A tiny luminous figure — newly summoned — stirs at his feet. The scene is umber and soot-black with dim amber glowing only from the spirits. Still and sorrowful and cyclical."
+  name_ru: Дедушка Лесной
+  name_en: Grandfather of the Forest
+- name: Kochevoy Ataman
+  cost: "{R}{G}"
+  type_line: Creature — Human Warrior
+  power: 4
+  toughness: 3
+  text: |-
+    Trample
+    Whenever a Mount you control attacks while saddled, it gets +1/+1 until end of turn.
+    <this> has power equal to the number of Mounts you control plus 2.
+  flavor_text: He was born in the saddle and expected to die there.
+  notes: "RG: Wild Steppe / Mount Aggro. Rewards having multiple Mounts, grows with your stable."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - red
+  - green
+  art_style: 10
+  art_file: kochevoy_ataman_nomad_chieftain.png
+  art_prompt: "A weathered chieftain leads a charge across open steppe at full gallop, his mount a powerful dun horse, three more riders thundering behind. His posture is absolute authority. The sky is\
+    \ vast and storm-lit, cloud banks catching deep red light at the horizon. The low viewpoint drives the composition forward. Earth and mane and banner all in motion. Ferocious and magnificent."
+  name_ru: Кочевой Атаман
+  name_en: Nomad Chieftain
+- name: Tsarevna-Lyagushka
+  cost: "{U}{G}"
+  type_line: Creature — Frog
+  power: 0
+  toughness: 2
+  text: |-
+    Defender
+    {T}: Scry 1.
+    Whenever a Quest attached to a creature you control is completed, transform <this>
+  flavor_text: ''
+  notes: "UG: Enchanted Threshold / Transform. The iconic DFC signpost. Complete a quest to transform."
+  rarity: uncommon
+  color: multicolor
+  color_identity:
+  - blue
+  - green
+  dfc: true
+  art_style: 2
+  art_file: tsarevna_lyagushka_frog_princess.png
+  art_prompt: "A large green frog sits at the center of a lily pond at midnight, perfectly still, one webbed foot resting on a floating arrow. Around her, the water is painted in concentric ornamental rings\
+    \ — cobalt, teal, dark green — like a decorative mirror. Fireflies dot the reeds at the border. The frog's eyes hold a quiet, royal patience. Flat and radiant, full of hidden identity."
+  back_face:
+    name: Vasilisa Premudraya
+    type_line: Creature — Human Noble
+    power: 3
+    toughness: 3
+    text: |-
+      Flying
+      When this creature transforms into <this>, create two Food tokens and draw a card.
+      Whenever <this> deals combat damage to a player, you may scry 3.
+    flavor_text: "She shed the frog skin, and the hall fell silent."
+    art_file: tsarevna_lyagushka_back.png
+    art_style: 2
+    art_prompt: "a beautiful Russian noblewoman mid-transformation, wearing an embroidered linen dress, expression of quiet power,  grand hall behind her, other guests frozen in awe. Medieval slavic setting."
+    name_ru: Василиса Премудрая
+    name_en: Vasilisa the Wise
+  name_ru: Царевна-Лягушка
+  name_en: Frog Princess

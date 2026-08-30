@@ -1,0 +1,100 @@
+- name: Leshiy
+  cost: "{2}{G}{G}"
+  type_line: Creature — Spirit
+  power: 4
+  toughness: 4
+  text: |-
+    <this> gets +1/+1 for each Forest you control.
+    Other green creatures you control get +1/+0.
+  flavor_text: "He was the forest's voice, and the forest had much to say."
+  notes: "Leshiy — the lord of the forest. Domain-matters body, buffs animal retinue."
+  rarity: uncommon
+  color: green
+  art_style: 5
+  art_file: leshiy.png
+  art_prompt: "A towering bearded figure merges with ancient pine trunks at the forest's heart, his body half bark and half shadow, mossy antlers dissolving into canopy fog. Wolves and boars encircle him\
+    \ at a respectful distance. Dim amber light filters through layered spruce boughs. The atmosphere is heavy and still, as if the whole wood holds its breath in his presence."
+  name_ru: Леший
+  name_en: Leshiy
+- name: Mishka Kosolapy
+  cost: "{3}{G}"
+  type_line: Creature — Bear Mount
+  power: 4
+  toughness: 4
+  text: |-
+    Saddle 2
+    Whenever <this> attacks while saddled, create a Food token.
+  flavor_text: "He wasn't fast, he wasn't quiet, but nothing in the forest argued with him."
+  notes: "Green's big Mount. Bear you can ride. Food when saddled. 4/4 for 4 is solid even unsaddled."
+  rarity: uncommon
+  color: green
+  art_style: 13
+  art_file: mishka_kosolapy_clumsy_bear.png
+  art_prompt: "A massive brown bear lumbers through a birch forest at dusk, a small rider perched on its broad shoulders, clinging to a rope harness. The bear's breath steams in cold autumn air. Fallen\
+    \ leaves — gold and rust — drift around its paws. The low horizon is lost in pale silver mist. The scene is unhurried and immovable, as though the forest itself walks."
+  name_ru: Мишка Косолапый
+  name_en: Clumsy Bear
+- name: Zhivaya i Mortvaya Voda
+  cost: "{1}{G}"
+  type_line: Instant
+  text: |-
+    Choose one:
+    — Return target creature card from your graveyard to your hand.
+    — Put two +1/+1 counters on target creature.
+  flavor_text: Dead water joins what was broken. Living water restores the breath.
+  notes: "Modal spell — dead water (recursion) and living water (buff). Flexible, flavorful."
+  rarity: uncommon
+  color: green
+  art_style: 5
+  art_file: zhivaya_i_mortvaya_voda_living_and_dead_water.png
+  art_prompt: "Two spring-fed pools lie side by side in a misty hollow: one perfectly still and dark, the other faintly luminous. A cupped pair of hands pours water between them, the droplets catching dim\
+    \ amber light. Dead leaves float on the dark pool; tiny green shoots push through the mud at the edge of the bright one. The atmosphere is hushed, liminal, barely lit."
+  name_ru: Живая и Мёртвая Вода
+  name_en: Living and Dead Water
+- name: Zapovednaya Polyana
+  cost: "{2}{G}"
+  type_line: Enchantment
+  text: |-
+    Creatures you control on a quest get +1/+1 and have trample.
+    Whenever a creature you control completes a Quest, you gain 3 life.
+  flavor_text: No axe had ever touched this place. Even the wind walked softly here.
+  notes: "Green's 'on a quest' build-around. Makes questing creatures dangerous and rewards completion."
+  rarity: uncommon
+  color: green
+  art_style: 13
+  art_file: zapovednaya_polyana_sacred_clearing.png
+  art_prompt: "A perfect circular meadow opens within dense old-growth forest, grass impossibly green and unmarked. Soft gold light pours from directly above as if the clearing makes its own sky. Wildflowers\
+    \ ring the edge. A deer stands motionless at the center, unafraid. The surrounding trees lean inward like witnesses. The air seems thick with held breath and old promise."
+  name_ru: Заповедная Поляна
+  name_en: Sacred Clearing
+- name: Urozhay
+  cost: "{3}{G}"
+  type_line: Sorcery
+  text: Create a food token for each untapped land you control.
+  flavor_text: The field was golden from edge to edge. Even the crows ate well that year.
+  notes: Mass Food generation. Rewards go-wide.
+  rarity: uncommon
+  color: green
+  art_style: 9
+  art_file: urozhay_harvest.png
+  art_prompt: "A broad rye field stretches to a low horizon under an overcast northern sky. Peasant figures in linen shirts — solid and unhurried — bundle sheaves across the middle distance while crows\
+    \ wheel overhead. The grain is heavy and gold, painted with careful impasto.  The mood is weighty abundance, honest labor rewarded. Medieval slavic setting."
+  name_ru: Урожай
+  name_en: Harvest
+- name: Naydi Tsvetok Paporotnika
+  cost: "{2}{G}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +2/+2.
+    At the beginning of each end step, if enchanted creature didn't attack or block this turn, put a bloom counter on <this>. When there are three bloom counters, sacrifice it and search your library for any card, put it into your hand, then shuffle.
+  flavor_text: "The fern blooms once a year, on the shortest night, and only for those who sit perfectly still."
+  notes: "The fern flower quest — a quest of PATIENCE. Don't attack or block for three turns, then tutor."
+  rarity: uncommon
+  color: green
+  art_style: 5
+  art_file: naydi_tsvetok_paporotnika_find_the_fern_flower.png
+  art_prompt: "Deep in a summer midnight forest a lone figure sits cross-legged and motionless before a fern that is beginning, impossibly, to glow. A single blossom — warm amber, petal-edged in white —\
+    \ unfurls in the darkness. The surrounding fronds dissolve into layered shadow and fog. No wind moves. Every other detail blurs at the edges; only the flower and the still figure are sharp."
+  name_ru: Найди Цветок Папоротника
+  name_en: Find the Fern Flower

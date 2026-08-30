@@ -1,0 +1,297 @@
+- name: Pakhar
+  cost: "{W}"
+  type_line: Creature — Human Peasant
+  power: 1
+  toughness: 2
+  text: ''
+  flavor_text: He who works the land feeds the world.
+  notes: "Vanilla 1-drop. Peasant type matters for the set. The backbone of White's go-wide."
+  rarity: common
+  color: white
+  art_style: 9
+  art_file: pakhar_plowman.png
+  art_prompt: "a weathered peasant man in a white linen shirt guiding a wooden plow through dark rich earth, a patient draft horse pulling ahead, open flat fields stretching to the horizon under a pale\
+    \ morning sky, simple dignity"
+  name_ru: Пахарь
+  name_en: Plowman
+- name: Kalika Perekhozhiy
+  cost: "{1}{W}"
+  type_line: Creature — Human Cleric
+  power: 1
+  toughness: 3
+  text: "When <this> enters the battlefield, you gain 2 life."
+  flavor_text: "They came to Ilya's door, and bade him rise and walk."
+  notes: "The pilgrims who healed Ilya Muromets. Common ETB lifegain, sets up WB lifedrain."
+  rarity: common
+  color: white
+  art_style: 8
+  art_file: kalika_perekhozhiy_wandering_pilgrim.png
+  art_prompt: "an old barefoot pilgrim in a rough homespun robe walking a dirt road, a wooden staff in one hand and a brass hand-bell in the other, a heavy pack on his back, sunlight catching his white\
+    \ beard, distant church domes on the horizon"
+  name_ru: Калика Перехожий
+  name_en: Wandering Pilgrim
+- name: Derevenskiy Starosta
+  cost: "{2}{W}"
+  type_line: Creature — Human Peasant
+  power: 2
+  toughness: 3
+  text: Other Peasant creatures you control get +0/+1.
+  flavor_text: "The elder spoke, and the village listened — even the domovoi."
+  notes: "Peasant lord at common — only a toughness boost, keeping it humble. Enables go-wide."
+  rarity: common
+  color: white
+  art_style: 9
+  art_file: derevenskiy_starosta_village_elder.png
+  art_prompt: "a broad-shouldered old man with a grey beard standing at the centre of a village gathering, peasants listening respectfully around him, log houses with carved window frames behind, he holds\
+    \ a carved wooden staff of office, stern but kind expression, summer evening light"
+  name_ru: Деревенский Староста
+  name_en: Village Elder
+- name: Vityaz Storozhevoy
+  cost: "{1}{W}"
+  type_line: Creature — Human Soldier
+  power: 2
+  toughness: 2
+  text: Vigilance
+  flavor_text: ''
+  notes: Simple efficient creature. Vityaz creature type for Druzhina archetype.
+  rarity: common
+  color: white
+  art_style: 10
+  art_file: vityaz_storozhevoy_watchman_knight.png
+  art_prompt: "a young Russian warrior in chain mail and a conical helmet, standing watch on a wooden palisade, a round shield with a sun emblem on his arm, a straight sword at his belt, dawn breaking behind\
+    \ him, alert vigilant posture"
+  name_ru: Витязь Сторожевой
+  name_en: Watchman Knight
+- name: Derevenskaya Devitsa
+  cost: "{W}"
+  type_line: Creature — Human Peasant
+  power: 1
+  toughness: 1
+  text: "{T}: Target creature on a quest gains +1/+1 until end of turn."
+  flavor_text: ''
+  notes: "The quest-support common for White. Tiny creature, but her tap ability makes your questing hero bigger."
+  rarity: common
+  color: white
+  art_style: 9
+  art_file: derevenskaya_devitsa_village_maiden.png
+  art_prompt: "a young peasant woman in an embroidered white blouse and sarafan dress, blond hair woven into a single long braid, holding out a round loaf of bread wrapped in an embroidered cloth, standing\
+    \ at the edge of a village, a concerned smile, morning light, wildflowers at her feet. Rural slavic medieval setting"
+  name_ru: Деревенская Девица
+  name_en: Village Maiden
+- name: Pogranichnaya Zastava
+  cost: "{3}{W}"
+  type_line: Creature — Human Soldier
+  power: 1
+  toughness: 5
+  text: |-
+    Defender
+    When <this> enters the battlefield, create a Food token.
+  flavor_text: "The outpost held the border, and the bread held the men."
+  notes: "Wall for Kitezh Grad archetype. Defender + Food is the 'fortified and provisioned' feel."
+  rarity: common
+  color: white
+  art_style: 10
+  art_file: tverdynya_zastava_frontier_garrison.png
+  art_prompt: "a squat wooden frontier fortress with thick log walls and a watchtower, soldiers visible on the ramparts, barrels of provisions and sacks of grain stacked inside the gate, the steppe stretching\
+    \ endlessly beyond, overcast sky suggesting a coming storm"
+  name_ru: Пограничная Застава
+  name_en: Frontier Garrison
+- name: Pastva
+  cost: "{3}{W}"
+  type_line: Creature — Human Cleric
+  power: 2
+  toughness: 4
+  text: |-
+    Whenever you complete a Quest, create a 1/1 white Human Peasant creature token.
+    (A Quest is completed when it is sacrificed as part of its own effect.)
+  flavor_text: ''
+  notes: "Quest payoff at common. Modest stats, but generates bodies when quests complete."
+  rarity: common
+  color: white
+  art_style: 8
+  art_file: pastva_vernykh_flock_of_the_faithful.png
+  art_prompt: "a group of devout peasants kneeling in prayer before a small wooden church, candles in their hands, an old priest with a censer leading the prayer, golden candlelight against blue dusk, humble\
+    \ faces turned upward in faith"
+  name_ru: Паства
+  name_en: Congregation
+- name: Konny Druzhinnnik
+  cost: "{2}{W}"
+  type_line: Creature — Human Soldier
+  power: 2
+  toughness: 2
+  text: "First strike as long as <this> is on a quest."
+  flavor_text: "The Knyaz's men rode with purpose. To falter was to fall."
+  notes: Rewards being on a quest with a combat keyword. A 2/2 first striker is solid.
+  rarity: common
+  color: white
+  art_style: 10
+  art_file: konny_druzhinnnik_mounted_retainer.png
+  art_prompt: "a mounted Russian warrior in scale armour on a stocky steppe horse, lance couched and ready, a small pennant fluttering from the lance tip, riding across open grassland at a canter, dust\
+    \ rising behind, determined expression under a riveted helmet"
+  name_ru: Конный Дружинник
+  name_en: Mounted Retainer
+- name: Svetly Otrok
+  cost: "{1}{W}"
+  type_line: Creature — Human Peasant
+  power: 2
+  toughness: 1
+  text: "When <this> dies, if it was on a quest, you gain 3 life."
+  flavor_text: "The youngest son set out, and none believed he would return."
+  notes: The expendable quest hero. Encourages risky attacks with questing creatures.
+  rarity: common
+  color: white
+  art_style: 2
+  art_file: svetly_otrok_fair_youth.png
+  art_prompt: "a young fair-haired boy in simple peasant clothes stepping onto a road that leads into a vast landscape, a small bundle over his shoulder, looking ahead with innocent determination, birch\
+    \ trees lining the road, soft golden light of early morning, the road stretching into distant blue haze"
+  name_ru: Светлый Отрок
+  name_en: Fair Youth
+- name: Monastyrsky Kot
+  cost: "{W}"
+  type_line: Creature — Cat
+  power: 1
+  toughness: 1
+  text: Lifelink
+  flavor_text: "This one doesn't tell tales, but it sure knows more."
+  notes: The Pushkin cat (from Ruslan and Lyudmila prologue). Simple lifelink 1-drop.
+  rarity: common
+  color: white
+  art_style: 2
+  art_file: monastyrsky_kot_monastery_cat.png
+  art_prompt: "a plump grey tabby cat sitting contentedly on a sun-warmed stone wall of a monastery, an ancient oak tree behind it, the cat's eyes half-closed and wise, warm afternoon light, white monastery\
+    \ walls in the background"
+  name_ru: Монастырский Кот
+  name_en: Monastery Cat
+- name: Blagoslovenie
+  cost: "{W}"
+  type_line: Instant
+  text: "Target creature gets +2/+2 until end of turn. If it's on a quest, it also gains indestructible until end of turn."
+  flavor_text: "Go with God, and fear nothing."
+  notes: "White's common combat trick, with quest bonus."
+  rarity: common
+  color: white
+  art_style: 8
+  art_file: blagoslovenie_blessing.png
+  art_prompt: "a priest's weathered hands raised in blessing over a kneeling armored slavic warrior, golden light radiating from the hands downward, the warrior's bowed head and closed eyes, inside a small\
+    \ candlelit wooden church, icons visible on the wall behind. Slavic medieval setting."
+  name_ru: Благословение
+  name_en: Blessing
+- name: Krestniy Khod
+  cost: "{2}{W}"
+  type_line: Sorcery
+  text: Create two 1/1 white Human Peasant creature tokens. Draw a card.
+  flavor_text: "They carried the icon through the fields, and the harvest came in gold."
+  notes: "White's token maker. Feeds go-wide, provides bodies for saddling mounts."
+  rarity: common
+  color: white
+  art_style: 9
+  art_file: krestniy_khod_holy_procession.png
+  art_prompt: "a long procession of peasants carrying a large painted icon through golden wheat fields, the icon held high on a wooden frame, villagers in white clothes following behind singing, a priest\
+    \ in vestments leading, late summer light, the wheat bowing in the breeze"
+  name_ru: Крестный Ход
+  name_en: Holy Procession
+- name: Utrenniy Zvon
+  cost: "{W}"
+  type_line: Sorcery
+  text: Untap any number of tapped creatures you control.
+  flavor_text: Drop your earthly deeds and come to the service
+  notes: ''
+  rarity: common
+  color: white
+  art_style: 9
+  art_prompt: "A close up of a medieval slavic orthodox church's bell tower. The big bell is swinging, so are the smaller bells. Early morning light"
+  art_file: utrenniy_zvon_morning_bells.png
+  name_ru: Утренний Звон
+  name_en: Morning Bells
+- name: Den Prostoyat
+  cost: "{1}{W}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +0/+3 and has defender.
+    At the end of the combat, if enchanted creature blocked this turn, you may choose and exile a creature that attacked this turn. Sacrifice <this>.
+  flavor_text: "Let's just hold for a day and live throught the night"
+  notes: A defensive Quest. Works in Kitezh Grad (UW control) and WG village decks.
+  rarity: common
+  color: white
+  art_style: 12
+  art_file: den_prostoyat_hold_for_a_day.png
+  art_prompt: Daytime. A small medieval slavic city with white walls is under siege. A company of soldiers in chain mails are holding the gates from the inside. Arrows and stones are raining from over the
+    wall.
+  name_ru: День Простоять
+  name_en: Hold for a Day
+- name: Proshcheniye
+  cost: "{1}{W}"
+  type_line: Instant
+  text: |-
+    Destroy target Enchantment. You gain 2 life.
+    If the target is a Nakaz, <this> costs {1} less to cast
+  flavor_text: "The priest spoke the words, and the weight lifted from the sinner's heart."
+  notes: The key Nakaz-management card for White. Lets WB decks aggressively use Nakaz spells and then cleanse themselves.
+  rarity: common
+  color: white
+  art_style: 8
+  art_file: proshcheniye_absolution.png
+  art_prompt: "a penitent figure kneeling before a stern old priest inside a dark wooden church, the priest's hand extended in absolution, a faint golden glow where the hand touches the penitent's forehead,\
+    \ heavy shadows, candle flames reflected in the icons on the wall"
+  name_ru: Прощение
+  name_en: Absolution
+- name: Obraza na Shitah
+  cost: "{2}{W}"
+  type_line: Enchantment
+  text: |
+    Creatures you control get +0/+1
+    {W}{W}: Target creature gets protection from a color of your choice until end of turn.
+  flavor_text: "Every shield bore a saint's face; every saint watched over a different road."
+  notes: "The global 'on a quest' enchantment for White at common. Small but persistent bonus."
+  rarity: common
+  color: white
+  art_style: 10
+  art_file: obraza_na_shitah_icons_on_the_shields.png
+  art_prompt: An army of medieval slavic foot soldiers in chain mails and large shields stands in formation before the battle in bright daylight. The centerpiece of every shield is an orthodox icon of a
+    saint.
+  name_ru: Образа на Щитах
+  name_en: Icons on the Shields
+- name: Ratnik
+  cost: "{1}{W}"
+  type_line: Creature - Human Soldier
+  power: 2
+  toughness: 2
+  text: "<this> gets +1/+1 for each other Soldier you control"
+  flavor_text: One in the field is not a warrior.
+  rarity: common
+  color: white
+  art_style: 9
+  art_prompt: "A medieval slavic warrior in a chain mail, pointed helmet, with a spear and a large wooden shield standing in a formation in broad daylight."
+  art_file: ratnik_foot_soldier.png
+  name_ru: Ратник
+  name_en: Foot Soldier
+- name: Voyevoda
+  cost: "{3}{W}"
+  type_line: Creature - Human Soldier
+  power: 3
+  toughness: 3
+  text: "Whenever <this> attacks or blocks, all other soldiers you control get +1/+1 until the end of turn."
+  flavor_text: "Indeed it's better to be killed then taken prisoner!"
+  rarity: common
+  color: white
+  art_style: 10
+  art_prompt: "A medieval slavic chieftain in a chain mail, riding a white horse, red cloak, pointed helmet, with a straight sord held high in a charge gesture, on a small hill.  In the background, battlefield\
+    \ with an army of foot soldiers and riders charging into battle. Broad daylight"
+  art_file: voyevoda_warrior_chieftain.png
+  name_ru: Воевода
+  name_en: Warrior Chieftain
+- name: Postrig
+  cost: "{1}{W}"
+  type_line: Enchantment - Aura
+  text: |-
+    Enchant Creature
+    Enchanted Creature cannot attack or block.
+  flavor_text: "I'm fed up with bloodshed and vanity. My path lies with God."
+  rarity: common
+  color: white
+  art_style: 8
+  art_prompt: Inside of a medieval slavic orthodox church. A disciple in a heel-long white shirt is laying face-down on a red carpet stripe. A bishop in a black robe is praying over him.
+  art_file: postrig_tonsure.png
+  name_ru: Постриг
+  name_en: Tonsure

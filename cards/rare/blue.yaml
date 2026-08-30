@@ -1,0 +1,109 @@
+- name: Tsar Morskoy
+  cost: "{3}{U}{U}"
+  type_line: Legendary Creature — Spirit Noble
+  power: 4
+  toughness: 5
+  text: "Whenever one or more cards are put on the bottom of a library, draw a card. \n{U}{U}, {T}: Put target creature attacking you on the bottom of its owner's library."
+  flavor_text: Everything that sinks to the bottom belongs to me.
+  notes: "The Sea King. Steals anything that comes back from death, actively pulls from graveyards."
+  rarity: rare
+  color: blue
+  art_style: 9
+  art_file: tsar_morskoy_sea_king.png
+  art_prompt: "An ancient, vast figure enthroned on the seafloor, robes of kelp and deep water trailing into darkness, a crown of bone and barnacle on his heavy brow. His face is old as stone — patient,\
+    \ absolute. Around his throne, the shapes of sunken ships and drowned things orbit slowly in the cold current. A pale bioluminescent light rises from the seabed, illuminating his hands, which are open\
+    \ and waiting."
+  name_ru: Царь Морской
+  name_en: Sea King
+- name: Chudo-Yudo Ryba-Kit
+  cost: "{5}{U}{U}"
+  type_line: Creature — Fish Leviathan
+  power: 7
+  toughness: 7
+  text: |-
+    When <this> enters the battlefield, exile up to three target nonland permanents.
+    When <this> dies or leaves the battlefield, return all exiled cards to the battlefield under their owners' control.
+  flavor_text: "An island, they thought. They built a fire on its back. Then the island moved."
+  notes: The whale from Konek-Gorbunok. Oblivion Ring on a 7/7 body.
+  rarity: rare
+  color: blue
+  art_style: 13
+  art_file: chudo_yudo_ryba_kit_wonder_whale.png
+  art_prompt: "A grey autumn sea stretches to the horizon beneath a vast pale sky. In the middle distance what appears to be a low wooded island — pine trees, a smoldering campfire, tiny figures — is revealed\
+    \ by the curve of an emerging tail to be the back of an incomprehensibly large whale beginning to submerge. The figures on its back are unaware. The scale is vertiginous, the mood one of cold, indifferent\
+    \ wonder."
+  name_ru: Чудо-Юдо Рыба-Кит
+  name_en: Wonder Whale
+- name: Ucheniy Kot
+  cost: "{1}{U}"
+  type_line: Legendary Creature — Cat
+  power: 1
+  toughness: 3
+  text: "{T}: Look at the top or bottom card of your library. You may put it into your hand. If you do, put another card from your hand in its place. Play this ability only if you have one or more cards\
+    \ in your hand."
+  flavor_text: "On a golden chain around an oak, the cat walks: right — he sings, left — he tells tales."
+  notes: "Pushkin's cat. Scry-to-draw conversion is very powerful in a scry-dense set."
+  rarity: rare
+  color: blue
+  art_style: 2
+  art_file: ucheniy_kot_learned_cat.png
+  art_prompt: |-
+    A thick golden chain wrapped around the trunk of a massive oak
+    A large, black, self-satisfied tomcat walks on top of the chain on the hind legs, tail curled. His expression is calm and knowing, mouth open telling the tale.
+  name_ru: Учёный Кот
+  name_en: Learned Cat
+- name: Morskaya Tsarevna
+  cost: "{2}{U}{U}"
+  type_line: Legendary Creature — Spirit Noble
+  power: 3
+  toughness: 3
+  text: |-
+    Flash
+    When <this> enters the battlefield, take control of target creature. It looses its activated and triggered abilities.
+    When <this> dies, put this creature to the bottom of its owner's library.
+  flavor_text: She ruled the coral halls where the drowned forgot the sky.
+  notes: Anti-quest tech + transform payoff. Disrupts enemy quests and rewards your transformations.
+  rarity: rare
+  color: blue
+  art_style: 9
+  art_file: morskaya_tsarevna_princess_of_the_sea.png
+  art_prompt: "A woman of regal bearing dives up from the ocean, the water around her waist perfectly still while above it her dark hair and white garments move in an unfelt wind. Her expression is distant\
+    \ and sovereign. Overcast cold light filters down from above, catching the silver of her coral crown and the pale solidity of her arms. The oil paint is thick in the lights, the depths behind her fathomless\
+    \ and dark."
+  name_ru: Морская Царевна
+  name_en: Princess of the Sea
+- name: Ne Govori Ni Slova
+  cost: "{1}{U}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    When <this> enters battlefield, counter target spell.
+    Whenever you play an instant or sourcery spell, skip your next draw step. Sacrifice <this>.
+  flavor_text: "The wise woman sealed his lips with river clay. 'Silence saves,' she said. 'But silence also starves.'"
+  notes: Hard counter for UU. Nakaz makes your next control action cost your draw step.
+  rarity: rare
+  color: blue
+  art_style: 5
+  art_file: nakaz_ne_govori_ni_slova_speak_not_a_word.png
+  art_prompt: "An old woman presses river clay across a young peasant man's lips with deliberate, unhurried hands. He is very still. Around them, deep fog dissolves the room into soft umber shadow — only\
+    \ their faces and hands emerge from the haze, lit by a dim amber glow from somewhere below. His eyes are open and frightened. Hers are closed. The image has the melancholy stillness of a held breath,\
+    \ a world made mute by a single firm gesture. Medieval slavic setting."
+  name_ru: Не Говори Ни Слова
+  name_en: Speak Not a Word
+- name: Prinesi To Ne Znayu Chto
+  cost: "{2}{U}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    As Poydi Tuda Ne Znayu Kuda enters the battlefield, name a nonland card.
+    Tap enchanted creature: Reveal the top card of your library. If it's the named card, put it into your hand, you may cast it this turn without paying its mana cost. Sacrifice Poydi Tuda Ne Znayu Kuda. Otherwise, but that card on the bottom of your library.
+  flavor_text: Bring me that — I know not what. Find it there — I know not where.
+  notes: "Blue rare Quest. The impossible task from the Fedot tale. Name a card, tap to dig for it. If you guess right, free cast + quest complete. High variance, huge payoff."
+  rarity: rare
+  color: blue
+  art_style: 12
+  art_file: poydi_tuda_ne_znayu_kuda_go_i_know_not_where.png
+  art_prompt: "A man holding beautifully carved small wooden box with both hands, peering into it with awe and disbelief. The lid of the box is open. Bright blinding blue-greenish light shines from inside\
+    \ of the box on the man's face. Medieval slavic setting."
+  name_ru: Принеси То Не Знаю Что
+  name_en: Bring I Know Not What

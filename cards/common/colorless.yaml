@@ -1,0 +1,88 @@
+- name: Lapot Samokhodny
+  cost: "{1}"
+  type_line: Artifact — Equipment
+  text: |-
+    Equipped creature gets +1/+0 and has "This creature can't be blocked by more than one creature."
+    Equip {1}
+  flavor_text: "It fit no foot, yet every road opened before it."
+  notes: Common equipment. The magic shoe from folklore — menacing-lite effect.
+  rarity: common
+  color: colorless
+  art_style: 13
+  art_file: lapot_samokhodny_self_walking_shoe.png
+  art_prompt: "a single woven bark shoe walking by itself down a dusty road, no foot inside it, leaving small footprints in the dust, the road stretching ahead into the distance"
+  name_ru: Лапоть Самоходный
+  name_en: Self-Walking Shoe
+- name: Samobranka
+  cost: "{2}"
+  type_line: Artifact
+  text: "{2}, {T}: Create a Food token."
+  flavor_text: "Unroll the cloth, and a feast appears — but never ask where the food comes from."
+  notes: The tablecloth-samobranka. Repeatable Food generation on an artifact.
+  rarity: common
+  color: colorless
+  art_style: 2
+  art_file: samobranka_self_spreading_tablecloth.png
+  art_prompt: "a white embroidered tablecloth spread on grass in a forest clearing, covered with food that has appeared from nowhere — pies, roasted fowl, bread, fruit — steam rising from hot dishes, the\
+    \ cloth's embroidered edges glowing faintly with enchantment"
+  name_ru: Самобранка
+  name_en: Self-Spreading Tablecloth
+- name: Volshebnoe Zerkaltse
+  cost: "{2}"
+  type_line: Artifact
+  text: "{1}, {T}: Scry 1."
+  flavor_text: "Mirror, mirror, tell me true..."
+  notes: The Pushkin magic mirror. Repeatable scry on an artifact.
+  rarity: common
+  color: colorless
+  art_style: 9
+  art_file: volshebnoe_zerkaltse_magic_mirror.png
+  art_prompt: "an ornate silver hand mirror lying on a dark velvet cloth, its surface showing not a reflection but a vision of a distant castle and a woman's face, the mirror frame decorated with tiny carved\
+    \ serpents, candlelight glinting off the silver"
+  name_ru: Волшебное Зеркальце
+  name_en: Magic Mirror
+- name: Klubochek
+  cost: "{1}"
+  type_line: Artifact
+  text: "{T}, sacrifice <this>: Search your library for a basic land card, put it into your hand, then shuffle. If you control a creature on a quest, put it onto the battlefield tapped instead."
+  flavor_text: "The old woman gave him a ball of thread. 'Follow it,' she said. 'It knows the way.'"
+  notes: "Baba Yaga's ball of thread. Land-finding with quest bonus. One-shot."
+  rarity: common
+  color: colorless
+  art_style: 2
+  art_file: klubochek_guiding_ball_of_thread.png
+  art_prompt: "a small ball of golden thread rolling by itself along a forest path, unwinding as it goes leaving a glowing trail behind, the path dark and forking ahead, enchanted guidance"
+  name_ru: Клубочек
+  name_en: Guiding Ball of Thread
+- name: Gorshochek Kashi
+  cost: "{2}"
+  type_line: Artifact
+  text: |-
+    At the beginning of your upkeep, create a Food token.
+    When you control five or more Food tokens, sacrifice <this> and each Food you control. Each player gains 7 life.
+  flavor_text: "'Cook, little pot, cook!' But no one remembered the words to make it stop."
+  notes: "The fairy-tale pot that won't stop cooking! Free Food that eventually overflows."
+  rarity: common
+  color: colorless
+  art_style: 1
+  art_file: gorshochek_kashi_porridge_pot.png
+  art_prompt: "a small clay pot on a table overflowing with thick porridge, the porridge spilling over the rim and flowing across the table onto the floor, more porridge still bubbling up endlessly"
+  name_ru: Горшочек Каши
+  name_en: Porridge Pot
+- name: Dubinka Samoboyka
+  cost: "{3}"
+  type_line: Artifact — Equipment
+  text: |-
+    Equipped creature gets +2/+0.
+    Whenever equipped creature attacks, <this> deals 1 damage to defending player.
+    Equip {2}
+  flavor_text: It flew from the sack and beat everyone in the room — friend and foe alike.
+  notes: The enchanted club from the Tablecloth/Club/Goat triad. Aggressive equipment.
+  rarity: common
+  color: colorless
+  art_style: 2
+  art_file: dubina_samoboyka_self_striking_club.png
+  art_prompt: "a thick wooden stick flying through the air by itself, over a crowd if townsfolk in a street. The stick mid-swing with motion lines, chasing a man that's running away from it in fear. Medieval\
+    \ slavic townscape setting."
+  name_ru: Дубинка-Самобойка
+  name_en: Self-Striking Club

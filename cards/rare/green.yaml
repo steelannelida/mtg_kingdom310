@@ -1,0 +1,113 @@
+- name: Baba Yaga
+  cost: "{2}{B}{G}"
+  type_line: Legendary Creature — Human Warlock
+  power: 3
+  toughness: 5
+  text: |-
+    When <this> enters the battlefield, choose one:
+    — Search your library for a Quest card, reveal it, put it into your hand, then shuffle.
+    — Destroy target creature with power 2 or less.
+    — Create three Food tokens.
+    Whenever a creature you control completes a Quest, you may have that creature fight target creature an opponent controls.
+  flavor_text: "I smell Russian spirit! Have you come of your own will, or were you sent?"
+  notes: "Helper, tester, devourer. Three modes on entry. BG identity."
+  rarity: rare
+  color: green
+  color_identity:
+  - black
+  - green
+  art_style: 5
+  art_file: baba_yaga.png
+  art_prompt: "An ancient crone stands at the threshold of her bone-fenced hut deep in a birch forest, lit by a single lantern that bleeds amber into thick fog. Her iron mortar looms behind her. Three roads\
+    \ diverge at her feet. Her eyes hold neither malice nor mercy — only the weight of every traveler who has ever come seeking answers, and every one who did not return."
+  name_ru: Баба Яга
+  name_en: Baba Yaga
+- name: "Leshiy, Khozyain Lesa"
+  cost: "{3}{G}{G}"
+  type_line: Legendary Creature — Spirit
+  power: "*"
+  toughness: "*"
+  text: |-
+    Leshiy's power and toughness are each equal to the number of Forests you control plus the number of green creatures you control.
+    At the beginning of your end step, if you control five or more creatures, create a 2/2 green Wolf creature token.
+    Other green creatures you control have trample.
+  flavor_text: The trees bowed. The wolves sat. The forest had spoken.
+  notes: "Leshy as the mythic-feeling rare. Grows with board, generates wolves, grants trample."
+  rarity: rare
+  color: green
+  art_style: 13
+  art_file: leshiy_khozyain_lesa.png
+  art_prompt: "A vast primeval pine forest at dusk, silver birches glowing against a pewter sky. A colossal figure of knotted bark and tangled root rises from the treeline — barely distinguishable from\
+    \ the forest itself, eyes like pale moons. Grey wolves gather at its feet like shadows. Thin autumn light catches the moss on its shoulders. The forest has no horizon; it simply continues, forever."
+  name_ru: "Леший, Хозяин Леса"
+  name_en: "Leshy, Lord of the Forest"
+- name: Konek-Gorbunok
+  cost: "{1}{G}"
+  type_line: Legendary Creature — Horse
+  power: 2
+  toughness: 2
+  text: |-
+    Haste
+    Creatures you control on a quest get +1/+1 and have trample.
+    {T}: Target creature you control completes all Quests attached to it. (Sacrifice those Quests and resolve their effects.)
+  flavor_text: He was small and ugly and could do anything.
+  notes: THE quest enabler. Tap to auto-complete any quest. Absurdly powerful but fragile (1/1).
+  rarity: rare
+  color: green
+  art_style: 2
+  art_file: konek_gorbunok.png
+  art_prompt: Single-hunch camel that looks like a pony. But with a hump. A young lad in a long red caftan coat and a red riding hood with fur is riding the pony.
+  name_ru: Конёк-Горбунок
+  name_en: Little Humpbacked Horse
+- name: Khozyaika Mednoy Gory
+  cost: "{2}{G}{G}"
+  type_line: Legendary Creature — Spirit Noble
+  power: 3
+  toughness: 4
+  text: |-
+    When <this> enters the battlefield, create three Treasure tokens.
+    Whenever you sacrifice an artifact, put a +1/+1 counter on <this>.
+    When <this> dies, create a 0/X green Wall creature token with defender where X is the number +1/+1 counter on hozyaika Mednoy Gory.
+  flavor_text: "She showed him the chambers of emerald and jade. 'All this is yours,' she said, 'if you never forget me.'"
+  notes: "Bazhov's Mistress. Creates treasure and jewels, grows from artifact sacrifice, leaves malachite walls."
+  rarity: rare
+  color: green
+  art_style: 13
+  art_file: khozyaika_mednoy_gory.png
+  art_prompt: Deep underground a woman in a gown of living malachite stands in a vaulted cavern whose walls pulse with green and copper light. Veins of ore spiral outward from her like a crown. She holds
+    out one hand; on her palm rest gems that glow with their own cold fire. Her face is beautiful and absolutely without warmth. The mountain breathes around her.
+  name_ru: Хозяйка Медной Горы
+  name_en: Mistress of the Copper Mountain
+- name: Svyashennoye Derevo
+  cost: "{3}{G}"
+  type_line: Enchantment
+  text: |-
+    Whenever you create a Food token, you may put a +1/+1 counter on target creature you control.
+    Sacrifice three Food: Return target creature card from your graveyard to the battlefield.
+  flavor_text: "The old women left bread at its roots. In spring, the roots reached deeper."
+  notes: Food build-around enchantment. Converts Food to +1/+1 counters or resurrection.
+  rarity: rare
+  color: green
+  art_style: 13
+  art_file: svyatoye_derevo.png
+  art_prompt: "A gnarled oak of immense age stands in a village clearing at the edge of a birch forest, its roots half-exposed, its bark hung with ribbons and offerings of bread. Thin spring light filters\
+    \ through bare upper branches. An old woman kneels at the roots. The tree is clearly ancient beyond reckoning — and clearly alive in a way no ordinary tree is."
+  name_ru: Священное Дерево
+  name_en: Sacred Tree
+- name: Spasti Bratsa
+  cost: "{1}{G}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Whenever enchanted creature attacks and isn't dealt damage this turn, put a journey counter on <this>.
+    When there are three journey counters on <this>, sacrifice it. Search your library for a creature card, reveal it, put it into your hand, then shuffle.
+  flavor_text: "She ran past the apple tree, past the oven, past the river — and found him at last."
+  notes: "Green rare Quest. Gusi-Lebedi flavor — the sister's rescue journey. Three safe attacks = creature tutor. High reward, needs setup."
+  rarity: rare
+  color: green
+  art_style: 10
+  art_file: spasti_bratsa.png
+  art_prompt: "A young girl runs across an open Russian steppe at golden hour, her red shawl streaming behind her. Behind her: an apple tree, a clay oven, a wide river — each passed and left behind. Ahead,\
+    \ silhouetted against a burning sky, a small figure waits. The vast landscape dwarfs her but cannot stop her. Every line of her body is forward motion, purpose, love."
+  name_ru: Спасти Братца
+  name_en: Save Your Sibling

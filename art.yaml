@@ -1,0 +1,35 @@
+- id: 1
+  name: Lubok woodblock
+  prompt: hand-colored woodblock print, thick uneven black outlines, flat unmodeled color fills in ochre, madder red, and dull green, deliberate registration slips where color sits outside the line, coarse laid-paper texture, no perspective — figures stacked vertically rather than receding.
+
+- id: 2
+  name: Mavrina-adjacent folk brightness
+  prompt: gouache on toned paper, saturated non-naturalistic palette — cobalt, vermilion, chrome yellow against warm grey, flattened picture plane, loose confident brush with visible bristle marks, forms outlined in a darker tone of their own color rather than black, ornamental patterning filling negative space
+
+- id: 5
+  name: Norstein-adjacent cutout atmosphere
+  prompt: layered cutout figures against deep atmospheric haze, soft edges dissolving into fog, low-key palette of umber, soot black, and dim amber, single weak light source, heavy film grain and dust, shallow depth of field with foreground elements out of focus, melancholy stillness
+
+- id: 8
+  name: Cold monastic austerity
+  prompt: egg tempera on gessoed panel, gold-leaf flat ground, inverse perspective, elongated stylized figures, cracked craquelure surface, restrained palette of deep red ochre, malachite green, and lapis, hieratic frontal composition, no cast shadows
+
+- id: 9
+  name: Wanderers-school realism
+  prompt: oil on canvas, muted naturalistic palette of umber, olive, and grey-blue, overcast diffuse northern light, weighty solid figures with careful anatomical modeling, visible impasto in the highlights, atmospheric recession into a low horizon, sombre unidealized faces, nineteenth-century easel painting
+
+- id: 10
+  name: National-romantic epic
+  prompt: large-scale oil painting, heroic monumental composition with low viewpoint, rich earth palette warmed by ochre and deep red, dramatic cloud-filled sky occupying the upper half, glazed shadows against thickly loaded lights, ceremonial stillness, figures rendered with archaeological attention to armor and textile
+
+- id: 12
+  name: Tenebrist chiaroscuro
+  prompt: oil on dark ground, single raking light source from the upper left, deep enveloping shadow consuming most of the canvas, warm flesh tones against near-black, sharp value contrast, dramatic gesture caught mid-motion, seventeenth-century baroque lighting
+
+- id: 13
+  name: Northern romantic landscape
+  prompt: oil painting with the figure small against overwhelming landscape, vast sky, birch and pine, thin cold light of early spring or late autumn, palette of silver-grey, wet earth brown, and pale gold, deep atmospheric perspective, melancholy expansiveness, meticulous foreground detail dissolving into distant haze
+
+- id: 14
+  name: Sketch-study immediacy
+  prompt: oil sketch on toned board, alla prima, rapid confident brushwork with much of the ground left showing, limited palette mixed from earth pigments, forms suggested rather than finished, energetic and unlabored, the feel of a study made from life in a single sitting

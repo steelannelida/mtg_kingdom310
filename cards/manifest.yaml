@@ -1,0 +1,26 @@
+files:
+  # Commons
+  - common/white.yaml
+  - common/blue.yaml
+  - common/black.yaml
+  - common/red.yaml
+  - common/green.yaml
+  - common/colorless.yaml
+  # Uncommons
+  - uncommon/white.yaml
+  - uncommon/blue.yaml
+  - uncommon/black.yaml
+  - uncommon/red.yaml
+  - uncommon/green.yaml
+  - uncommon/colorless.yaml
+  - uncommon/multicolor.yaml
+  - uncommon/lands.yaml
+  # Rares
+  - rare/white.yaml
+  - rare/blue.yaml
+  - rare/black.yaml
+  - rare/red.yaml
+  - rare/green.yaml
+  - rare/colorless.yaml
+  - rare/lands.yaml
+  - rare/multicolor.yaml

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNK Card Catalog — Tridevskoye Tsarstvo</title>
+
+</head>
+<body>
+  <header>
+    <h1>Tridevskoye Tsarstvo — Card Catalog</h1>
+    <div id="stats"></div>
+    <div id="lang-switch">
+      <button class="lang-btn" data-lang="ru" onclick="switchLang('ru')">Кириллица</button>
+      <button class="lang-btn" data-lang="translit" onclick="switchLang('translit')">Translit</button>
+      <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
+    </div>
+    <a href="stats.html" style="color:var(--accent);font-size:12px;text-decoration:none;margin-left:auto">Stats</a>
+  </header>
+
+  <div id="app">
+    <aside id="sidebar">
+      <div id="filters">
+        <input type="text" id="search" placeholder="Search by name or text...">
+
+        <div class="filter-group">
+          <label>Color</label>
+          <div class="filter-buttons" id="color-filters">
+            <button data-color="white" class="color-btn white active">W</button>
+            <button data-color="blue" class="color-btn blue active">U</button>
+            <button data-color="black" class="color-btn black active">B</button>
+            <button data-color="red" class="color-btn red active">R</button>
+            <button data-color="green" class="color-btn green active">G</button>
+            <button data-color="colorless" class="color-btn colorless active">C</button>
+            <button data-color="multicolor" class="color-btn multicolor active">M</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Type</label>
+          <div class="filter-buttons" id="type-filters">
+            <button data-type="Creature" class="type-btn active">Creature</button>
+            <button data-type="Instant" class="type-btn active">Instant</button>
+            <button data-type="Sorcery" class="type-btn active">Sorcery</button>
+            <button data-type="Enchantment" class="type-btn active">Enchantment</button>
+            <button data-type="Artifact" class="type-btn active">Artifact</button>
+            <button data-type="Land" class="type-btn active">Land</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Mana Value</label>
+          <div class="filter-buttons" id="cmc-filters">
+            <button data-cmc="0" class="cmc-btn active">0</button>
+            <button data-cmc="1" class="cmc-btn active">1</button>
+            <button data-cmc="2" class="cmc-btn active">2</button>
+            <button data-cmc="3" class="cmc-btn active">3</button>
+            <button data-cmc="4" class="cmc-btn active">4</button>
+            <button data-cmc="5" class="cmc-btn active">5</button>
+            <button data-cmc="6+" class="cmc-btn active">6+</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Rarity</label>
+          <div class="filter-buttons" id="rarity-filters">
+            <button data-rarity="common" class="rarity-btn active">Common</button>
+            <button data-rarity="uncommon" class="rarity-btn active">Uncommon</button>
+            <button data-rarity="rare" class="rarity-btn active">Rare</button>
+            <button data-rarity="mythic" class="rarity-btn active">Mythic</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-count"></div>
+      <div id="card-list"></div>
+    </aside>
+
+    <main id="detail">
+      <div id="card-detail">
+        <p class="placeholder-text">Select a card from the list</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script>
+    // Cache-bust app.js and style.css on every load
+    document.write('<link rel="stylesheet" href="style.css?t=' + Date.now() + '">');
+    document.write('<script src="app.js?t=' + Date.now() + '"><\/script>');
+  </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+- name: Navka
+  cost: "{B}"
+  type_line: Creature — Spirit
+  power: 1
+  toughness: 1
+  text: "When <this> dies, each opponent loses 1 life."
+  flavor_text: "She wandered the marsh path, crying for a name she was never given."
+  notes: "Black's 1-drop. Aggressive, wants to die. Feeds Morbid, feeds sacrifice."
+  rarity: common
+  color: black
+  art_style: 5
+  art_file: navka.png
+  art_prompt: "a small ghostly child-figure walking along a misty marsh path at night, translucent and pale, bare feet not quite touching the ground, wispy hair floating as if underwater, dark bog pools\
+    \ on either side, a single will-o-wisp light ahead, profound sadness"
+  name_ru: Навка
+  name_en: Navka
+- name: Upyr
+  cost: "{1}{B}"
+  type_line: Creature — Zombie
+  power: 3
+  toughness: 2
+  text: |-
+    <this> can't block.
+    When <this> enters the battlefield, you lose 1 life.
+  flavor_text: "He rose from the grave bloated and hungry, remembering nothing but need."
+  notes: Aggressive undercosted creature with double drawback. The Slavic vampire — just a hungry corpse.
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: upyr.png
+  art_prompt: "a bloated grey corpse crawling out of a freshly disturbed grave at night, dirt on its burial shroud, mouth open showing blackened teeth, fingers clawing at the earth, a tilted wooden cross\
+    \ behind it, sickly moonlight, pure visceral horror"
+  name_ru: Упырь
+  name_en: Upyr
+- name: Starukha-Vedma
+  cost: "{2}{B}"
+  type_line: Creature — Human Warlock
+  power: 1
+  toughness: 3
+  text: "{1}{B}, {T}: Target creature gets -1/-1 until end of turn."
+  flavor_text: "She muttered over the black pot, and somewhere a strong man stumbled."
+  notes: "Repeatable creature weakening. The village witch, the porcha (evil eye) caster."
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: starukha_vedma_old_witch.png
+  art_prompt: "a hunched old woman stirring a black iron pot over a low fire in a dark hut, her face lit from below by the embers, sharp cruel eyes under a headscarf, dried herbs and animal bones hanging\
+    \ from the rafters, thick smoke curling upward"
+  name_ru: Старуха-Ведьма
+  name_en: Old Witch
+- name: Mertvets iz Navi
+  cost: "{3}{B}"
+  type_line: Creature — Zombie Spirit
+  power: 3
+  toughness: 2
+  text: "Morbid — When <this> enters the battlefield, if a creature died this turn, return target creature card with mana value 2 or less from your graveyard to your hand."
+  flavor_text: The dead return bearing gifts — but the gifts smell of earth.
+  notes: "Black's Morbid common. Decent body, conditional recursion."
+  rarity: common
+  color: black
+  art_style: 5
+  art_file: mertvets_iz_navi_corpse_from_nav.png
+  art_prompt: "a grey shambling figure emerging from thick fog, still wearing fragments of burial clothes, carrying a small wrapped bundle in its outstretched hands like an offering, earth clinging to it,\
+    \ the figure half-dissolved into mist at the edges, liminal between worlds"
+  name_ru: Мертвец из Нави
+  name_en: Corpse from Nav
+- name: Chert Melkiy
+  cost: "{1}{B}"
+  type_line: Creature — Demon
+  power: 2
+  toughness: 1
+  text: "When <this> enters the battlefield, you may sacrifice another creature. If you do, draw a card."
+  flavor_text: "Sign nothing. Promise nothing. And certainly don't shake his hand."
+  notes: Sacrifice for card draw. The small-time devil who offers you a deal. Feeds BR sacrifice theme.
+  rarity: common
+  color: black
+  art_style: 1
+  art_file: chert_melkiy_petty_devil.png
+  art_prompt: "a small impish devil with tiny horns and a ratlike tail, wearing an ill-fitting human coat, holding out a rolled parchment contract with a sly grin, firelight behind him, comically sinister"
+  name_ru: Чёрт Мелкий
+  name_en: Petty Devil
+- name: Nochnaya Mara
+  cost: "{2}{B}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 2
+  text: "When <this> enters the battlefield, target creature an opponent controls gets -2/-0 until your next turn."
+  flavor_text: "She sat on his chest, and his sword arm went cold."
+  notes: The mara/nochnitza — sleep paralysis spirit. Weakens an attacker or defender for a full turn cycle.
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: nochnaya_mara_night_hag.png
+  art_prompt: "a dark shadowy female figure crouching on the chest of a sleeping warrior in a dark room, the warrior's face twisted in anguish, his sword arm limp, the figure weightless and dark as smoke,\
+    \ faint moonlight through a small window, sleep paralysis terror"
+  name_ru: Ночная Мара
+  name_en: Night Hag
+- name: Kladbishchenskiy Storozh
+  cost: "{3}{B}"
+  type_line: Creature — Human Peasant
+  power: 2
+  toughness: 4
+  text: "{T}: Exile target card from a graveyard."
+  flavor_text: "I've seen things climb out of this ground. Best not to leave them anything to wear."
+  notes: Graveyard hate on a body. Peasant type links him to White in WB.
+  rarity: common
+  color: black
+  art_style: 9
+  art_file: kladbishchenskiy_storozh_graveyard_watchman.png
+  art_prompt: "Twilight. A grizzled old man in a heavy coat sitting on a stool, a shovel leaning against a fence, his expression weary but watchful, graveyard with crooked crosses and an orthodox church\
+    \ silhouette in the background"
+  name_ru: Кладбищенский Сторож
+  name_en: Graveyard Watchman
+- name: Drekavats
+  cost: "{1}{B}"
+  type_line: Creature — Spirit
+  power: 1
+  toughness: 1
+  text: |-
+    Flying
+    Soulshift 1 (When this creature dies, you may return target Spirit card with mana value 1 or less from your graveyard to your hand.)
+  flavor_text: Its wail meant someone nearby would die before morning.
+  notes: "Soulshift at common, on a small flyer. Starts the Spirit recursion chain for BG and UB decks."
+  rarity: common
+  color: black
+  art_style: 5
+  art_file: drekavats_screaming_spirit.png
+  art_prompt: "a wispy shrieking spirit streaking through a dark night sky above a village, its form elongated and tattered like torn cloth in wind, mouth stretched impossibly wide in a scream, faint green\
+    \ glow, rooftops below with people cowering, pure dread"
+  name_ru: Дрекавац
+  name_en: Screaming Spirit
+- name: Kladbishchenskiy vor
+  cost: "{2}{B}"
+  type_line: Creature — Human Rogue
+  power: 2
+  toughness: 2
+  text: "When Grabitel Mogil enters the battlefield, exile target card from a graveyard. If it was a creature card, create a Treasure token."
+  flavor_text: "The dead have no use for gold, but the living always do."
+  notes: Graveyard interaction + Treasure. Feeds UR Treasure themes.
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: grabitel_mogil_grave_robber.png
+  art_prompt: "a furtive man in dark clothes digging into an old burial mound by lantern light, a gold ring and a tarnished coin visible in the turned earth, his face half-lit showing greed and nervousness,\
+    \ wooden grave markers leaning in the background"
+  name_ru: Кладбищенский Вор
+  name_en: Grave Robber
+- name: Trup Ozhivshiy
+  cost: "{4}{B}"
+  type_line: Creature — Zombie
+  power: 4
+  toughness: 3
+  text: "Morbid — <this> costs {2} less to cast if a creature died this turn."
+  flavor_text: The battlefield was still warm when the first one sat up.
+  notes: "Black's common big creature. Normally overcosted, but with Morbid it's a 2-mana 4/3."
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: trup_ozhivshiy_risen_corpse.png
+  art_prompt: "a large armored corpse sitting upright on a battlefield littered with fallen warriors, still holding a broken sword, its dead eyes open and staring, other bodies lying still around it, crows\
+    \ scattering, dusk light over the carnage, it alone has moved"
+  name_ru: Труп Ожившый
+  name_en: Risen Corpse
+- name: Sglaz
+  cost: "{B}"
+  type_line: Instant
+  text: Target creature gets -2/-2 until end of turn.
+  flavor_text: "She looked at the cow, and the cow gave no more milk."
+  notes: "Black's common cheap removal. Kills small creatures, shrinks big ones."
+  rarity: common
+  color: black
+  art_style: 1
+  art_file: sglaz_evil_eye.png
+  art_prompt: "a close-up of a single malevolent eye peering through a crack in a wooden fence. dark and intense with ill intent, the feeling of a curse being cast through a glance"
+  name_ru: Сглаз
+  name_en: Evil Eye
+- name: Pominki
+  cost: "{1}{B}"
+  type_line: Sorcery
+  text: Each player sacrifices a creature. You create a Food token.
+  flavor_text: "The dead are fed first, then the living eat what remains."
+  notes: "Edict effect + Food. Feeds BR sacrifice, WB Food synergies."
+  rarity: common
+  color: black
+  art_style: 9
+  art_file: pominki_funeral_feast.png
+  art_prompt: "a somber gathering around a rough wooden table in a peasant hut, a funeral feast — blini, kutya porridge, and a cup of vodka set at an empty place for the dead, mourners in dark clothes eating\
+    \ quietly, a single candle burning by the empty seat, heavy grief"
+  name_ru: Поминки
+  name_en: Funeral Feast
+- name: Ne Oglyadyvaisya
+  cost: "{1}{B}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash
+    When <this> enters battlefield, return target creature card from graveyard into battlefield
+    Whenever a card is put into your graveyard, sacrifice <this> and a creature.
+  flavor_text: "Go forward, and do not look behind you, no matter what you hear."
+  rarity: common
+  color: black
+  art_style: 5
+  art_file: nakaz_ne_oglyadyvaisya_don_t_look_back.png
+  art_prompt: "a figure walking forward on a narrow path through darkness, hands clenched at their sides, behind them a ghostly horrifying face looming close trying to make them turn around, the figure's\
+    \ shadow stretching ahead into dim light, tension between forward motion and the terror behind"
+  notes: ''
+  name_ru: Не Оглядывайся
+  name_en: "Don't Look Back"
+- name: Holodnaya Zemlya
+  cost: "{1}{B}"
+  type_line: Enchantment
+  text: "Whenever a creature you control dies, each opponent loses 1 life."
+  flavor_text: The ground never truly thawed. What went in did not come out.
+  notes: "Black's common 'aristocrats' enabler. Rewards dying."
+  rarity: common
+  color: black
+  art_style: 5
+  art_file: holodnaya_zemlya_cold_earth.png
+  art_prompt: "a patch of frozen black earth in a winter field, frost patterns spreading outward from a small grave mound, the soil cracked and hard, dead grass poking through ice, a sense that the ground\
+    \ itself is hungry, bleak grey sky, deep cold"
+  name_ru: Холодная Земля
+  name_en: Cold Earth
+- name: Noch Proderzhatsa
+  cost: "{1}{B}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets -1/-1.
+    When enchanted creature blocks and survives combat, draw two cards. Sacrifice <this>.
+  flavor_text: The dead scratched at the circle until dawn. He did not look up.
+  notes: "Black common Quest. Weakens your creature, but surviving a block completes it. Gogol's Viy night-vigil flavor."
+  rarity: common
+  color: black
+  art_style: 12
+  art_file: noch_proderzhatsa_survive_the_night.png
+  art_prompt: "a terrified young man standing inside a chalk circle on the floor of a dark church, reading from a prayer book by a single candle, dark shadows reaching toward him from all sides but stopping\
+    \ at the circle's edge, the candle flickering. Medieval slavic setting"
+  name_ru: Ночь Продержаться
+  name_en: Survive the Night
+- name: Kikimora
+  cost: "{2}{B}"
+  type_line: Creature — Spirit
+  power: 2
+  toughness: 2
+  text: "When <this> enters the battlefield, target player discards a card."
+  flavor_text: "She lived behind the stove and tangled the thread every night, and no one could say what she wanted."
+  rarity: common
+  color: black
+  art_file: kikimora.png
+  art_style: 5
+  art_prompt: "a shadowy female spirit crouching behind a clay stove in a dark peasant hut, tangling a spindle of thread with long thin fingers, glowing eyes in the darkness, malevolent but small"
+  name_ru: Кикимора
+  name_en: Kikimora
+- name: Ne svisti
+  cost: "{1}{B}"
+  type_line: Enchantment - Nakaz
+  text: |-
+    Flash.
+    When <this> enters battlefield, choose a player
+    When chosen player plays a creature card, that player discards two cards. Sacrifice  <this>
+  flavor_text: "Don't whistle your money away"
+  rarity: common
+  color: black
+  art_file: ne_svisti.png
+  art_style: 1
+  art_prompt: "an old peasant whistling carelessly, behind his back a small implish devil sneaking away from him with a pot of gold. Medieval slavic setting."
+  notes: ''
+  name_ru: Не Cвисти
+  name_en: "Don't whistle"
+- name: Zakladnaya Chertu
+  cost: "{2}{B}{B}"
+  type_line: Sorcery
+  text: |-
+    Return up to two target creatures from your graveyard to the battlefield.
+    At the end of this turn loose life equal to the sum of powers of those creatures.
+  rarity: common
+  color: black
+  art_file: zakladnaya_chertu.png
+  art_style: 12
+  art_prompt: "a Russian peasant signing a contract with a shadowy devil figure by candlelight in a dark cellar, the quill dripping blood, sinister grin on the devil's face, baroque dramatic shadows"
+  name_ru: Заклад Чёрту
+  name_en: Demonic Mortgage
+- name: Topkoye mesto
+  cost: "{1}{B}{B}"
+  type_line: Enchantment
+  text: "{B}{B}: Target player discards two cards. Play this ability only if that player controls a creature attacking you or a creature on a quest."
+  rarity: common
+  color: black
+  art_file: topkoye_mesto.png
+  art_style: 5
+  art_prompt: "a murky Russian bog at dusk, black water between clumps of sedge grass, will-o-wisps hovering over the surface, fog rolling in from the treeline, oppressive and suffocating stillness"
+  name_ru: Топкое Место
+  name_en: Swampy place

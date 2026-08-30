@@ -1,0 +1,237 @@
+- name: Ivan Tsarevich
+  cost: "{1}{R}{W}"
+  type_line: Legendary Creature — Human Noble
+  power: 3
+  toughness: 3
+  text: |-
+    Vigilance, haste
+    Whenever <this> becomes the target of a Quest, create a 2/2 green Wolf creature token with haste.
+    Whenever <this> completes a Quest, put a +1/+1 counter on each creature you control.
+  flavor_text: "The Tsar's youngest son — neither the strongest nor the wisest, but the one who returned."
+  notes: "THE quest hero. Every quest generates a Wolf helper, every completion buffs the team."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - red
+  - white
+  art_file: ivan_tsarevich.png
+  art_style: 9
+  art_prompt: "young Russian Tsarevich in light armor, sword at his side, grey wolves running beside him through a forest, determined expression, morning light through birch trees"
+  name_ru: Иван Царевич
+  name_en: Ivan Tsarevich
+- name: Ivan Durak
+  cost: "{U}{R}"
+  type_line: Legendary Creature — Human Peasant
+  power: 1
+  toughness: 1
+  text: |-
+    Whenever <this> completes a Quest, draw three cards and create two Treasure tokens.
+    <this> can't be blocked by creatures with power 3 or greater.
+    Prevent all damage that would be dealt to <this> by creatures with power 3 or greater.
+  flavor_text: "Send the fool. If he dies, no great loss. — He did not die."
+  notes: "The Fool. Unblockable against big threats, any 1/1 can kill him. Enormous quest payoff."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - blue
+  - red
+  art_file: ivan_durak.png
+  art_style: 9
+  art_prompt: "scruffy young Russian peasant with a wide foolish grin, tattered sheepskin coat, sitting atop a warm clay stove, magical embers floating around him, naive and content expression"
+  name_ru: Иван Дурак
+  name_en: Ivan Durak
+- name: Vasilisa Premudraya
+  cost: "{G}{U}"
+  type_line: Legendary Creature — Human Noble Warlock
+  power: 2
+  toughness: 4
+  text: |-
+    Whenever you scry, you may look at one additional card.
+    {T}: Scry 2.
+    {G}{U}, {T}: Transform target creature you control.
+  flavor_text: "She wove moonlight into shirts and baked dawn into bread. The Tsar said 'impossible.' She said nothing."
+  notes: The wisest woman. Scry master + forced transform activator. Enables UG transform archetype.
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - green
+  - blue
+  art_file: vasilisa_premudraya.png
+  art_style: 9
+  art_prompt: "beautiful young Russian noblewoman with calm intelligent eyes, silver moonlight weaving between her fingers like thread, elaborate kokoshnik headdress, serene knowing expression, night forest\
+    \ behind her"
+  name_ru: Василиса Премудрая
+  name_en: Vasilisa the Wise
+- name: Dobrynya i Zmei
+  cost: "{2}{R}{W}"
+  type_line: Legendary Enchantment — Saga Quest
+  text: |-
+    (This is both a Saga and a Quest — it advances automatically like a Saga, but creatures it names are on a quest.)
+    As <this> enters the battlefield, choose a creature you control. It is on a quest as long as <this> is on the battlefield.
+    I — Chosen creature gains +3/+0 and first strike until your next turn.
+    II — Chosen creature fights target creature an opponent controls.
+    III — If chosen creature is still on the battlefield, it gains a +1/+1 counter, double strike, and indestructible until end of turn. Create a 4/4 red Dragon creature token with flying.
+  flavor_text: He swam three days in the blood of the serpent before the earth drank it dry.
+  notes: "The Saga-Quest hybrid. Tells Dobrynya's complete dragon-fighting story. May need to be mythic."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - red
+  - white
+  art_file: dobrynya_i_zmei.png
+  art_style: 10
+  art_prompt: "armored Russian bogatyr knight on horseback battling a massive three-headed serpent over a river, dramatic low viewpoint, blood-red sky, chain mail and round shield gleaming, epic heroic\
+    \ composition"
+  name_ru: Добрыня и Змей
+  name_en: Dobrynya and the Serpent
+- name: Tsarevna Lebed
+  cost: "{2}{W}{U}"
+  type_line: Legendary Creature — Bird
+  power: 2
+  toughness: 3
+  text: |-
+    Flying
+    When <this> deals combat damage to a player, you may transform it.
+  flavor_text: ''
+  notes: "Pushkin's Swan Princess. Flies as a bird, transforms on damage. DFC."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - white
+  - blue
+  dfc: true
+  art_file: tsarevna_lebed.png
+  art_style: 13
+  art_prompt: "white swan with regal bearing gliding across a moonlit lake, faint suggestion of a woman's face in the swan's form, silver light on the water, ethereal and otherworldly"
+  back_face:
+    name: Tsarevna Lebed
+    type_line: Legendary Creature — Human Noble
+    power: 3
+    toughness: 4
+    text: |-
+      At the beginning of your upkeep, scry 2 and you gain 2 life.
+      When this creature transforms into this, you may search your library for an enchantment card, reveal it, put it into your hand, then shuffle.
+      {3}: Transform <this>.
+    flavor_text: "On her brow, a star blazes. Beneath her braid, the crescent moon."
+    art_file: tsarevna_lebed_back.png
+    art_style: 13
+    art_prompt: "a luminous Russian princess standing at the edge of a moonlit lake, a star gleaming on her brow, the crescent moon visible beneath her long silver braid, white and silver robes, serene\
+      \ and otherworldly, birch forest behind her"
+    name_ru: Царевна Лебедь
+    name_en: Swan Princess
+  name_ru: Царевна Лебедь
+  name_en: Swan Princess
+- name: Chernomor
+  cost: "{1}{U}{B}"
+  type_line: Legendary Creature — Human Warlock
+  power: 1
+  toughness: 3
+  text: |-
+    Flying
+    When <this> enters the battlefield, exile target creature an opponent controls. It remains exiled as long as you control an equipment attached to <this>.
+    {U}{B}: Attach target equipment you control to <this>.
+  flavor_text: "His beard held the strength of thirty knights, and his head barely held his malice."
+  notes: "Pushkin's Chernomor. Power comes from equipment (the beard). Imprisons while equipped."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - blue
+  - black
+  art_file: chernomor.png
+  art_style: 12
+  art_prompt: "hunched sinister old wizard with an impossibly long grey beard trailing across the floor, dark ornate robes, malevolent gleaming eyes, dwarf-like stature with immense menacing presence, single\
+    \ torch casting dramatic shadows"
+  name_ru: Черномор
+  name_en: Chernomor
+- name: Ruslan
+  cost: "{2}{R}{G}"
+  type_line: Legendary Creature — Human Soldier
+  power: 4
+  toughness: 4
+  text: |-
+    Trample
+    Whenever <this> attacks, choose one that hasn't been chosen:
+    — <this> gets +3/+0 until end of turn.
+    — <this> gains indestructible until end of turn.
+    — Destroy target enchantment.
+    — <this> fights target creature an opponent controls.
+    When all four modes have been chosen, <this> gains double strike and "can't be blocked by fewer than three creatures" for the rest of the game.
+  flavor_text: Four trials on the road to Lyudmila. He passed them all.
+  notes: "Pushkin's Ruslan. Four attack modes, each used once. Permanent powerhouse after all four."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - red
+  - green
+  art_file: ruslan.png
+  art_style: 10
+  art_prompt: "powerful Russian warrior in full chain mail and conical helmet, sword raised high, charging across an open steppe battlefield, heroic low viewpoint, dramatic storm clouds behind him, fearless\
+    \ expression"
+  name_ru: Руслан
+  name_en: Ruslan
+- name: Vodyanoy Tsar
+  cost: "{3}{U}{B}"
+  type_line: Legendary Creature — Spirit Noble
+  power: 4
+  toughness: 4
+  text: |-
+    At the beginning of your upkeep, each player mills two cards.
+    Whenever a creature card is put into a graveyard from anywhere, you may pay {1}. If you do, create a 1/1 blue Spirit creature token.
+    {U}{B}, sacrifice three Spirits: Return target creature card from a graveyard to the battlefield under your control.
+  flavor_text: He sat on the river bottom and waited. Everything comes to the river eventually.
+  notes: "UB graveyard lord. Mills everyone, generates Spirit tokens, converts Spirits to reanimation."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - blue
+  - black
+  art_file: vodyanoy_tsar.png
+  art_style: 5
+  art_prompt: "ancient river spirit king enthroned on the muddy bottom of a deep dark river, draped in weeds and fish scales, pale drowned spirits drifting around him, cold still water, patient menace"
+  name_ru: Водяной Царь
+  name_en: Water King
+- name: "Poloz, Velikiy Zmei Urala"
+  cost: "{3}{R}{G}"
+  type_line: Legendary Creature — Dragon Serpent
+  power: 6
+  toughness: 5
+  text: |-
+    Trample
+    Whenever Poloz attacks, create two Treasure tokens.
+    Whenever you sacrifice an artifact, Poloz gets +1/+0 until end of turn.
+    {R}{G}, sacrifice three Treasures: Poloz deals damage equal to its power to target creature.
+  flavor_text: "The Great Serpent coiled around the mountain's heart, where the gold veins ran deepest."
+  notes: "Bazhov's golden serpent. Treasure generation + artifact sacrifice + massive damage blast."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - red
+  - green
+  art_file: poloz.png
+  art_style: 10
+  art_prompt: "colossal golden serpent coiled around an Ural mountain peak, scales glowing like molten gold, glittering ore veins in the rock face behind it, immense scale dwarfing the landscape below,\
+    \ ancient and powerful"
+  name_ru: "Полоз, Великий Змей Урала"
+  name_en: "Poloz, Great Serpent of the Urals"
+- name: "Morozko, Dyed Moroz"
+  cost: "{2}{W}{U}"
+  type_line: Legendary Creature — Spirit Noble
+  power: 3
+  toughness: 5
+  text: |-
+    When Morozko enters the battlefield, tap up to three target creatures opponents control. They don't untap during their controllers' next untap step.
+    Whenever a creature an opponent controls becomes tapped, you may pay {1}. If you do, put a frost counter on it.
+    Creatures with frost counters get -2/-0.
+  flavor_text: "Are you warm, maiden? Are you warm, red-cheeked one?"
+  notes: "Father Frost at rare. Mass freeze on entry, ongoing frost counters that weaken tapped creatures."
+  rarity: rare
+  color: multicolor
+  color_identity:
+  - white
+  - blue
+  art_file: morozko.png
+  art_style: 13
+  art_prompt: "tall regal frost spirit with white beard and elaborate fur robes walking through a deep winter forest, ice crystals forming in the air around his outstretched staff, bare birch trees bending\
+    \ under heavy snow, cold pale winter light"
+  name_ru: "Морозко, Дед Мороз"
+  name_en: Father Frost

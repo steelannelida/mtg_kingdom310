@@ -1,0 +1,122 @@
+- name: Dobrynya Nikitich
+  cost: "{2}{R}"
+  type_line: Legendary Creature — Human Soldier
+  power: 3
+  toughness: 3
+  text: |-
+    First strike
+    Whenever <this> completes a Quest, destroy target artifact or enchantment.
+  flavor_text: He rode to the Puchai River and found the Serpent waiting.
+  notes: The second bogatyr at uncommon. Quest completion as artifact/enchantment removal.
+  rarity: uncommon
+  color: red
+  art_style: 10
+  art_file: dobrynya_nikitich.png
+  art_prompt: "A heroic bogatyr on horseback crests a riverbank, sword already drawn, facing a massive coiled serpent rising from turbulent water. His armor is depicted with archaeological precision — lamellar\
+    \ plates, conical helmet, round shield. Storm clouds fill the upper half of the canvas. Low viewpoint makes both hero and serpent monumental. National-romantic epic oil, rich ochre and deep red, ceremonial\
+    \ drama."
+  name_ru: Добрыня Никитич
+  name_en: Dobrynya Nikitich
+- name: Vsadnik na Krasnom Kone
+  cost: "{2}{R}{R}"
+  type_line: Creature — Spirit Knight Mount
+  power: 3
+  toughness: 3
+  text: |-
+    Haste
+    Saddle 2
+    When <this> attacks while saddled, it deals 2 damage to any target.
+  flavor_text: "The sun rode ahead of the day, and the shadows burned where it passed."
+  notes: "The Red rider (sun/day) from Vasilisa. Three riders cycle (White dawn, Red sun, Black night)."
+  rarity: uncommon
+  color: red
+  art_style: 10
+  art_file: vsadnik_na_krasnom_kone_rider_on_the_red_horse.png
+  art_prompt: "A crimson-clad rider on a blazing chestnut horse gallops across an open steppe, the sun directly behind him turning horse and rider into a burning silhouette. Shadows stream ahead of him\
+    \ across the golden grass. His lance trails fire where it points. The horizon is wide and low, the sky enormous. National-romantic epic — heroic low viewpoint, rich vermilion and deep gold, dramatic\
+    \ light."
+  name_ru: Всадник на Красном Коне
+  name_en: Rider on the Red Horse
+- name: Zmeyonok
+  cost: "{1}{R}"
+  type_line: Creature — Dragon
+  power: 2
+  toughness: 1
+  text: |-
+    Flying
+    When <this> dies, it deals 1 damage to any target.
+  flavor_text: "Three heads would come later. For now, the single one was trouble enough."
+  notes: Young Gorynych. Aggressive small dragon with death trigger.
+  rarity: uncommon
+  color: red
+  art_style: 9
+  art_file: zmeyonok_young_dragon.png
+  art_prompt: "A small, scrappy one-headed dragon hatchling perches on a fence post in a village yard, wings half-spread, looking extremely pleased with itself while a chicken escapes behind it. Smoke curls\
+    \ from one nostril. The scale is almost comedic — it is barely larger than the chicken. "
+  name_ru: Змеёнок
+  name_en: Young Dragon
+- name: Solovey-Razboynik
+  cost: "{3}{R}"
+  type_line: Legendary Creature — Human Rogue
+  power: 3
+  toughness: 3
+  text: |-
+    When <this> enters the battlefield, tap all creatures target opponent controls with power 2 or less.
+    Whenever <this> deals combat damage to a player, create two Treasure tokens.
+  flavor_text: His whistle knocked riders from their saddles and bent the oaks to the ground.
+  notes: "The legendary bandit. His whistle stuns weaker creatures, his robbery generates Treasure."
+  rarity: uncommon
+  color: red
+  art_style: 9
+  art_file: solovey_razboynik_nightingale_the_robber.png
+  art_prompt: "A powerfully built bandit sits astride a massive oak branch high above a road, fingers at his lips mid-whistle. Below, horses rear and riders tumble, the trees on either side bending toward\
+    \ the source of the sound. His face is grinning, ruthless, entirely unidealized. Wanderers realism — heavy anatomical weight, muted olive and umber, overcast forest light, impasto on the bark and the\
+    \ figure's broad hands."
+  name_ru: Соловей-Разбойник
+  name_en: Nightingale the Robber
+- name: Maslenitsa
+  cost: "{2}{R}"
+  type_line: Sorcery
+  text: |-
+    <this> deals 2 damage to each creature that didn't attack this turn.
+    Create a Food token.
+  flavor_text: "They built the straw woman tall, and burned her to bring the spring."
+  notes: Punishes creatures that stayed home. Rewards aggression. Food is the Maslenitsa feast.
+  rarity: uncommon
+  color: red
+  art_style: 1
+  art_file: maslenitsa_burning_of_winter.png
+  art_prompt: "A massive straw effigy of a woman in colorful folk clothes blazes against a night sky, surrounded by a cheering crowd of villagers in winter clothes. The firelight turns every face amber.\
+    \ Tables of food are visible in the foreground — blini, steaming pots. The effigy's burning silhouette dominates the upper half of the image. Medieval slavic setting"
+  name_ru: Масленица
+  name_en: Burning of Winter
+- name: Zmeyeborstvo
+  cost: "{1}{R}"
+  type_line: Enchantment — Aura Quest
+  text: |-
+    Enchant creature you control (it is on a quest)
+    Enchanted creature gets +1/+0.
+    When enchanted creature deals combat damage to a creature with flying and that creature dies this turn: create 2 Treasure tokens, put a +2/+0 counter on enchanted creature. Sacrifice <this>.
+  flavor_text: "Every dragonslayer inherits the dragon's fire."
+  notes: "Red's Quest — kill a flyer, become the dragon. Enormous reward, specific condition."
+  rarity: uncommon
+  color: red
+  art_style: 10
+  art_file: zmeyeborstvo_dragon_slaying.png
+  art_prompt: 'A rider on a horseback drives a spear downward into the neck of a great serpent that slithers on the ground below him in agony. Blood is pouring from the wound. '
+  name_ru: Змееборство
+  name_en: Dragon-Slaying
+- name: Sukhovey
+  cost: "{R}"
+  type_line: Instant
+  text: "<this> deals 3 damage to target creature that's blocking or blocked."
+  flavor_text: "The wind came from the steppe carrying dust, heat, and the memory of fire."
+  notes: Combat-only burn. Kills most blockers. Steppe flavor.
+  rarity: uncommon
+  color: red
+  art_style: 10
+  art_file: sukhovey_scorching_wind.png
+  art_prompt: "An endless steppe under a pale, washed-out sky. A wall of brown dust and heat distortion sweeps across the grassland, bending every blade flat. In the foreground a lone dead tree leans at\
+    \ an angle, bark scorched. The wind is invisible but total — felt in the landscape's surrender to it. "
+  name_ru: Суховей
+  name_en: Scorching Wind

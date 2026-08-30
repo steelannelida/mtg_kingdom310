@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNK — Set Stats</title>
+  <script>
+    document.write('<link rel="stylesheet" href="style.css?t=' + Date.now() + '">');
+  </script>
+  <style>
+    body { overflow: auto; }
+    .stats-container { padding: 24px; max-width: 1200px; margin: 0 auto; }
+    .stats-container h2 { color: var(--accent); font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin: 24px 0 12px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+    th, td { padding: 6px 10px; border: 1px solid var(--border); font-size: 12px; text-align: center; }
+    th { background: var(--bg-sidebar); color: var(--accent); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    td.label { text-align: left; color: var(--text-dim); font-weight: 600; }
+    td.total { font-weight: 700; color: var(--accent); background: rgba(201,164,74,0.08); }
+    td.zero { color: var(--border); }
+    .back-link { color: var(--accent); text-decoration: none; font-size: 12px; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tridevskoye Tsarstvo — Set Stats</h1>
+    <a href="index.html" class="back-link">Back to catalog</a>
+  </header>
+  <div class="stats-container" id="stats-container">Loading...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script>
+const CARDS_BASE = '../cards/';
+
+const COLORS = ['white','blue','black','red','green','multicolor','colorless'];
+const COLOR_LABELS = {white:'White',blue:'Blue',black:'Black',red:'Red',green:'Green',multicolor:'Multi',colorless:'Colorless'};
+const RARITIES = ['common','uncommon','rare','mythic'];
+const TYPES = ['Creature','Instant','Sorcery','Enchantment','Artifact','Land'];
+
+function getPrimaryType(typeLine) {
+  const tl = typeLine.toLowerCase();
+  if (tl.includes('land')) return 'Land';
+  if (tl.includes('creature')) return 'Creature';
+  if (tl.includes('instant')) return 'Instant';
+  if (tl.includes('sorcery')) return 'Sorcery';
+  if (tl.includes('enchantment')) return 'Enchantment';
+  if (tl.includes('artifact')) return 'Artifact';
+  return 'Other';
+}
+
+async function loadCards() {
+  const cacheBust = '?t=' + Date.now();
+  const resp = await fetch(CARDS_BASE + 'manifest.yaml' + cacheBust);
+  const manifest = jsyaml.load(await resp.text());
+  const results = await Promise.all(manifest.files.map(async file => {
+    const r = await fetch(CARDS_BASE + file + cacheBust);
+    return jsyaml.load(await r.text()) || [];
+  }));
+  return results.flat();
+}
+
+function cell(n) {
+  if (n === 0) return '<td class="zero">-</td>';
+  return `<td>${n}</td>`;
+}
+
+function buildTable(title, cards, rowKey, rowLabels, colKey, colLabels) {
+  const rows = Object.keys(rowLabels);
+  const cols = Object.keys(colLabels);
+
+  // Count
+  const counts = {};
+  for (const r of rows) { counts[r] = {}; for (const c of cols) counts[r][c] = 0; }
+  for (const card of cards) {
+    const r = rowKey(card);
+    const c = colKey(card);
+    if (counts[r] && counts[r][c] !== undefined) counts[r][c]++;
+  }
+
+  let html = `<h2>${title}</h2><table>`;
+  html += '<tr><th></th>';
+  for (const c of cols) html += `<th>${colLabels[c]}</th>`;
+  html += '<th>Total</th></tr>';
+
+  const colTotals = {};
+  for (const c of cols) colTotals[c] = 0;
+  let grandTotal = 0;
+
+  for (const r of rows) {
+    html += `<tr><td class="label">${rowLabels[r]}</td>`;
+    let rowTotal = 0;
+    for (const c of cols) {
+      const n = counts[r][c];
+      html += cell(n);
+      rowTotal += n;
+      colTotals[c] += n;
+    }
+    grandTotal += rowTotal;
+    html += `<td class="total">${rowTotal}</td></tr>`;
+  }
+
+  html += '<tr><td class="label total">Total</td>';
+  for (const c of cols) html += `<td class="total">${colTotals[c]}</td>`;
+  html += `<td class="total">${grandTotal}</td></tr>`;
+  html += '</table>';
+  return html;
+}
+
+async function main() {
+  const cards = await loadCards();
+  const container = document.getElementById('stats-container');
+
+  const typeLabels = {}; TYPES.forEach(t => typeLabels[t] = t);
+  const colorLabels = COLOR_LABELS;
+  const rarityLabels = {common:'Common',uncommon:'Uncommon',rare:'Rare',mythic:'Mythic'};
+
+  let html = `<p>${cards.length} cards total</p>`;
+
+  // Type x Rarity
+  html += buildTable(
+    'Type by Rarity',
+    cards,
+    c => getPrimaryType(c.type_line),
+    typeLabels,
+    c => c.rarity || 'common',
+    rarityLabels
+  );
+
+  // Type x Color
+  html += buildTable(
+    'Type by Color',
+    cards,
+    c => getPrimaryType(c.type_line),
+    typeLabels,
+    c => c.color || 'colorless',
+    colorLabels
+  );
+
+  // Color x Rarity
+  html += buildTable(
+    'Color by Rarity',
+    cards,
+    c => c.color || 'colorless',
+    colorLabels,
+    c => c.rarity || 'common',
+    rarityLabels
+  );
+
+  // Art status
+  const withPrompt = cards.filter(c => c.art_prompt).length;
+  const withArt = cards.filter(c => c.art_file).length;
+  html += `<h2>Art Status</h2>
+    <table>
+      <tr><td class="label">Cards with art prompt</td><td>${withPrompt}</td><td class="total">${(withPrompt/cards.length*100).toFixed(0)}%</td></tr>
+      <tr><td class="label">Cards with art file assigned</td><td>${withArt}</td><td class="total">${(withArt/cards.length*100).toFixed(0)}%</td></tr>
+    </table>`;
+
+  container.innerHTML = html;
+}
+
+main();
+  </script>
+</body>
+</html>
