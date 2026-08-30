@@ -1,4 +1,4 @@
-# Tridevskoye Tsarstvo
+# Tridesyatoye Tzarstvo
 
 An unofficial Magic: The Gathering fan set rooted in Russian and East Slavic folklore — byliny, fairy tales, and pre-Christian mythology. 215 cards across common, uncommon, and rare rarities.
 
