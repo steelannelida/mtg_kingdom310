@@ -1,4 +1,5 @@
 const CARDS_BASE = '../cards/';
+const IS_READONLY = window.location.hostname.endsWith('github.io');
 let allCards = [];
 let allStyles = {};
 let selectedCard = null;
@@ -169,6 +170,7 @@ function renderDetail() {
       ${cardColumnHtml}
     </div>
 
+    ${IS_READONLY ? '' : `
     <div class="edit-column">
       <div class="edit-section">
         <div class="edit-header">
@@ -219,9 +221,10 @@ function renderDetail() {
         <div id="previous-art"></div>
       </div>
     </div>
+    `}
   `;
 
-  loadPreviousArt(card);
+  if (!IS_READONLY) loadPreviousArt(card);
 
   // Auto-fit card text to the fixed-height text box (front and back face)
   el.querySelectorAll('.card-render').forEach(fitCardText);
