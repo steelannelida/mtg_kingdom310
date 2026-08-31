@@ -693,7 +693,6 @@ header h1 {
 
 /* ── Mobile ─────────────────────────────────────────── */
 @media (max-width: 700px) {
-  /* Lock the viewport — no page scroll, layout is split-pane */
   body { overflow: hidden; }
 
   header {
@@ -710,24 +709,21 @@ header h1 {
   #app {
     flex-direction: column;
     flex: 1;
-    height: 0;          /* forces flex child to respect parent height */
+    height: 0;
     overflow: hidden;
   }
 
-  /* ── Sidebar (top half: filters + list) ── */
+  /* ── Sidebar: compact bar at top, no intrinsic height ── */
   #sidebar {
     width: 100%;
     min-width: unset;
     border-right: none;
-    border-bottom: 1px solid var(--border);
-    flex: 1;            /* takes all space not used by the card panel */
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    flex: 0 0 auto;
+    overflow: visible;  /* allow dropdown to escape */
+    position: relative;
+    z-index: 10;
   }
 
-  /* Filter toggle button */
   #filter-toggle {
     display: flex;
     align-items: center;
@@ -740,7 +736,6 @@ header h1 {
     font-size: 12px;
     width: 100%;
     cursor: pointer;
-    flex-shrink: 0;
   }
 
   #filters {
@@ -748,31 +743,57 @@ header h1 {
     max-height: 0;
     padding: 0 12px;
     transition: max-height 0.25s ease, padding 0.25s ease;
-    flex-shrink: 0;
+    background: var(--bg-sidebar);
   }
   #filters.open {
     max-height: 380px;
     padding: 12px;
     overflow-y: auto;
+    border-bottom: 1px solid var(--border);
   }
 
-  #card-count { flex-shrink: 0; }
+  /* Count bar doubles as dropdown toggle */
+  #card-count {
+    padding: 7px 12px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+  #card-count::after {
+    content: '▼';
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-left: 6px;
+  }
 
-  /* List takes all remaining space in the sidebar */
+  /* Card list as absolute dropdown */
   #card-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    max-height: 55vh;
+    overflow-y: auto;
+    background: var(--bg-sidebar);
+    border-bottom: 2px solid var(--accent);
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  }
+  #card-list.open { display: block; }
+
+  /* ── Detail: takes all remaining space ── */
+  #detail {
     flex: 1;
     min-height: 0;
-    max-height: none;
-  }
-
-  /* ── Card detail (bottom panel, height-driven by card) ── */
-  #detail {
-    flex: 0 0 auto;
-    padding: 6px 8px 8px;
+    padding: 8px;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #card-detail {
@@ -780,6 +801,8 @@ header h1 {
     align-items: center;
     gap: 0;
     max-width: 100%;
+    height: 100%;
+    justify-content: center;
   }
 
   #card-detail .card-column,
@@ -790,28 +813,26 @@ header h1 {
     justify-content: center;
   }
 
-  /* Card sized by height so the list gets whatever is left */
+  /* Card fills available height, width follows aspect ratio */
   .card-render {
-    max-height: calc(46vh - 20px);
     width: auto;
     max-width: 90vw;
+    max-height: calc(100% - 4px);
   }
 
-  /* DFC: keep side-by-side, each card at half-width */
+  /* DFC: side-by-side, each half the available width */
   .dfc-pair {
     flex-direction: row;
     width: auto;
     max-width: 90vw;
   }
-
   .dfc-pair .card-render {
     flex: 1;
-    max-height: calc(46vh - 20px);
     max-width: 44vw;
+    max-height: none;
     width: auto;
   }
 
-  /* Edit column: always hidden on mobile */
   .edit-column { display: none !important; }
   #mobile-back { display: none !important; }
 }

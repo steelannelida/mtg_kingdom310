@@ -120,7 +120,10 @@ function renderList() {
   const listEl = document.getElementById('card-list');
   const countEl = document.getElementById('card-count');
 
-  countEl.textContent = `Showing ${filtered.length} of ${allCards.length} cards`;
+  const pos = selectedCard ? filtered.findIndex(c => c._id === selectedCard._id) : -1;
+  countEl.textContent = pos >= 0
+    ? `#${pos + 1} of ${filtered.length} cards`
+    : `${filtered.length} cards`;
 
   listEl.innerHTML = filtered.map(card => {
     const isSelected = selectedCard && selectedCard._id === card._id;
@@ -141,9 +144,14 @@ function renderList() {
 
 function selectCard(id) {
   selectedCard = allCards.find(c => c._id === id);
+  document.getElementById('card-list').classList.remove('open');
   renderList();
   renderDetail();
   saveStateToHash();
+}
+
+function toggleCardList() {
+  document.getElementById('card-list').classList.toggle('open');
 }
 
 function renderDetail() {
@@ -743,6 +751,15 @@ function restoreStateFromHash() {
     }
   }
 }
+
+// --- Close card-list dropdown when tapping outside ---
+document.addEventListener('click', e => {
+  const list = document.getElementById('card-list');
+  const count = document.getElementById('card-count');
+  if (list.classList.contains('open') && !list.contains(e.target) && !count.contains(e.target)) {
+    list.classList.remove('open');
+  }
+});
 
 // --- Swipe navigation ---
 (function setupSwipe() {
