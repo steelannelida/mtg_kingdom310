@@ -144,9 +144,6 @@ function selectCard(id) {
   renderList();
   renderDetail();
   saveStateToHash();
-  if (IS_MOBILE()) {
-    document.getElementById('detail').scrollIntoView({ behavior: 'smooth' });
-  }
 }
 
 function renderDetail() {
@@ -746,6 +743,36 @@ function restoreStateFromHash() {
     }
   }
 }
+
+// --- Swipe navigation ---
+(function setupSwipe() {
+  let startX = 0, startY = 0;
+  const detail = document.getElementById('detail');
+
+  detail.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+
+  detail.addEventListener('touchend', e => {
+    if (!selectedCard) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+
+    const filters = getActiveFilters();
+    const filtered = allCards.filter(c => cardMatchesFilters(c, filters));
+    const idx = filtered.findIndex(c => c._id === selectedCard._id);
+
+    if (dx < 0 && idx < filtered.length - 1) {
+      selectCard(filtered[idx + 1]._id);
+      scrollToSelected();
+    } else if (dx > 0 && idx > 0) {
+      selectCard(filtered[idx - 1]._id);
+      scrollToSelected();
+    }
+  }, { passive: true });
+})();
 
 // --- Init ---
 loadCards().then(() => {

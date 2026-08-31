@@ -693,49 +693,41 @@ header h1 {
 
 /* ── Mobile ─────────────────────────────────────────── */
 @media (max-width: 700px) {
-  body { overflow: auto; }
+  /* Lock the viewport — no page scroll, layout is split-pane */
+  body { overflow: hidden; }
 
   header {
     padding: 10px 14px;
     flex-wrap: wrap;
     gap: 8px;
+    flex-shrink: 0;
   }
-
   header h1 { font-size: 13px; }
-
   #lang-switch { order: 3; width: 100%; }
-
   .stats-link { display: none; }
 
+  /* App fills remaining height as a column */
   #app {
     flex-direction: column;
-    overflow: visible;
-    height: auto;
+    flex: 1;
+    height: 0;          /* forces flex child to respect parent height */
+    overflow: hidden;
   }
 
-  /* Sidebar: full width, collapsible filter section */
+  /* ── Sidebar (top half: filters + list) ── */
   #sidebar {
     width: 100%;
     min-width: unset;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    overflow: visible;
-  }
-
-  #filter-toggle { display: flex; }
-
-  /* Filters toggle */
-  #filters {
+    flex: 1;            /* takes all space not used by the card panel */
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    max-height: 0;
-    padding: 0 12px;
-    transition: max-height 0.25s ease, padding 0.25s ease;
-  }
-  #filters.open {
-    max-height: 400px;
-    padding: 12px;
   }
 
+  /* Filter toggle button */
   #filter-toggle {
     display: flex;
     align-items: center;
@@ -748,87 +740,78 @@ header h1 {
     font-size: 12px;
     width: 100%;
     cursor: pointer;
-    text-align: left;
+    flex-shrink: 0;
   }
 
-  #card-count { border-bottom: none; }
-
-  #card-list {
-    max-height: 35vh;
+  #filters {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 12px;
+    transition: max-height 0.25s ease, padding 0.25s ease;
+    flex-shrink: 0;
+  }
+  #filters.open {
+    max-height: 380px;
+    padding: 12px;
     overflow-y: auto;
   }
 
-  /* Detail panel */
+  #card-count { flex-shrink: 0; }
+
+  /* List takes all remaining space in the sidebar */
+  #card-list {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+  }
+
+  /* ── Card detail (bottom panel, height-driven by card) ── */
   #detail {
-    padding: 12px;
-    overflow: visible;
-    justify-content: flex-start;
+    flex: 0 0 auto;
+    padding: 6px 8px 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   #card-detail {
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 0;
     max-width: 100%;
   }
 
-  /* Back button (mobile only) */
-  #mobile-back {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: none;
-    border: none;
-    color: var(--accent);
-    font-size: 13px;
-    cursor: pointer;
-    padding: 0 0 8px 0;
-  }
-
-  /* Card render: centered, constrained width */
   #card-detail .card-column,
   #card-detail .card-column:has(.dfc-pair) {
     flex: none;
-    width: 100%;
+    width: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
+  /* Card sized by height so the list gets whatever is left */
   .card-render {
-    width: min(300px, 90vw);
+    max-height: calc(46vh - 20px);
+    width: auto;
+    max-width: 90vw;
   }
 
-  /* DFC pair: stack vertically on mobile */
+  /* DFC: keep side-by-side, each card at half-width */
   .dfc-pair {
-    flex-direction: column;
-    width: min(300px, 90vw);
+    flex-direction: row;
+    width: auto;
+    max-width: 90vw;
   }
 
   .dfc-pair .card-render {
-    width: 100%;
-    border-radius: 0;
+    flex: 1;
+    max-height: calc(46vh - 20px);
+    max-width: 44vw;
+    width: auto;
   }
 
-  .dfc-pair .card-render:first-child {
-    border-radius: 12px 12px 0 0;
-    border-right: 2px solid var(--border);
-    border-bottom: none;
-  }
-
-  .dfc-pair .card-render:last-child {
-    border-radius: 0 0 12px 12px;
-  }
-
-  /* Restore DFC text box height for stacked layout */
-  .dfc-pair .card-render .card-text-box { height: 145px; padding: 10px 11px; }
-  .dfc-pair .card-render .card-rules    { font-size: 13px; line-height: 1.5; }
-  .dfc-pair .card-render .card-flavor   { font-size: 12px; margin-top: 10px; padding-top: 10px; }
-  .dfc-pair .card-render .card-header   { height: auto; padding: 14px 16px 10px; }
-  .dfc-pair .card-render .card-title    { font-size: 16px; }
-  .dfc-pair .card-render .card-type-bar { height: auto; padding: 8px 16px; font-size: 13px; }
-  .dfc-pair .card-render .card-footer   { height: auto; padding: 8px 16px; font-size: 12px; }
-  .dfc-pair .card-render .card-pt       { font-size: 16px; }
-
-  /* Edit column: hide on mobile */
+  /* Edit column: always hidden on mobile */
   .edit-column { display: none !important; }
+  #mobile-back { display: none !important; }
 }
