@@ -15,11 +15,15 @@
       <button class="lang-btn" data-lang="translit" onclick="switchLang('translit')">Translit</button>
       <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
     </div>
-    <a href="stats.html" style="color:var(--accent);font-size:12px;text-decoration:none;margin-left:auto">Stats</a>
+    <a href="stats.html" class="stats-link">Stats</a>
   </header>
 
   <div id="app">
     <aside id="sidebar">
+      <button id="filter-toggle" onclick="toggleFilters()">
+        <span>Filters &amp; Search</span>
+        <span id="filter-toggle-icon">▼</span>
+      </button>
       <div id="filters">
         <input type="text" id="search" placeholder="Search by name or text...">
 

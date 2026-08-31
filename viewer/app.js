@@ -144,6 +144,9 @@ function selectCard(id) {
   renderList();
   renderDetail();
   saveStateToHash();
+  if (IS_MOBILE()) {
+    document.getElementById('detail').scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 function renderDetail() {
@@ -166,6 +169,7 @@ function renderDetail() {
     : renderCardFace(card, colorClass, { rarity: true });
 
   el.innerHTML = `
+    ${IS_MOBILE() ? `<button id="mobile-back" onclick="mobileBack()">‹ Back</button>` : ''}
     <div class="card-column">
       ${cardColumnHtml}
     </div>
@@ -413,6 +417,16 @@ async function restoreArt(previousFile) {
   }
 }
 
+// --- Mobile helpers ---
+const IS_MOBILE = () => window.innerWidth <= 700;
+
+function toggleFilters() {
+  const filters = document.getElementById('filters');
+  const icon = document.getElementById('filter-toggle-icon');
+  const open = filters.classList.toggle('open');
+  icon.textContent = open ? '▲' : '▼';
+}
+
 // --- Language switch ---
 function getCurrentLang() {
   return localStorage.getItem('cardLang') || 'translit';
@@ -650,6 +664,13 @@ document.addEventListener('keydown', (e) => {
     scrollToSelected();
   }
 });
+
+function mobileBack() {
+  selectedCard = null;
+  renderList();
+  renderDetail();
+  document.getElementById('sidebar').scrollIntoView({ behavior: 'smooth' });
+}
 
 function scrollToSelected() {
   const el = document.querySelector('.card-item.selected');
