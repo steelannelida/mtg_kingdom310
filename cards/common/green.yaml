@@ -118,7 +118,7 @@
     \ eyes half-open and content, warm amber firelight"
   name_ru: Бабушкина Кошка
   name_en: "Grandmother's Cat"
-- name: Lesnoy Starichok
+- name: Starichok-Lesovichok
   cost: "{3}{G}"
   type_line: Creature — Spirit
   power: 2
@@ -132,7 +132,7 @@
   art_file: lesnoy_starichok_forest_elder.png
   art_prompt: "a tiny old man no bigger than a mushroom standing among enormous tree roots, a long white beard trailing on the moss, wearing a cap made of birch bark, the massive trees around him visibly\
     \ parting to make way, miniature scale against the vast forest"
-  name_ru: Лесной Старичок
+  name_ru: Старичок-лесовичок
   name_en: Forest Elder
 - name: Voron-Vestnik
   cost: "{1}{G}"

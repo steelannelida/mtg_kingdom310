@@ -71,7 +71,7 @@
     \ will pass this line."
   name_ru: Застава Богатырская
   name_en: Bogatyr Outpost
-- name: Iskupatsa v Kipyatke
+- name: Iskupatsa v Vode Varenoy
   cost: "{1}{W}"
   type_line: Enchantment — Aura Quest
   text: |-
@@ -87,5 +87,5 @@
   art_prompt: "A young man plunges into an enormous iron cauldron of violently boiling water, steam billowing into near-black air, a single raking torch from above cutting a blade of warm light across his\
     \ arched back and the churning surface. The surrounding court watches from deep shadow — faces barely visible, expressions unreadable. The composition is all contrast: blazing white foam against darkness,\
     \ agony indistinguishable from ecstasy."
-  name_ru: Искупаться в Кипятке
+  name_ru: Искупаться в Воде Вареной
   name_en: Bathe in Boiling Water

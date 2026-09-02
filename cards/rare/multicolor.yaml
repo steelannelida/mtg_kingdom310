@@ -1,5 +1,5 @@
 - name: Ivan Tsarevich
-  cost: "{1}{R}{W}"
+  cost: "{1}{G}{W}"
   type_line: Legendary Creature — Human Noble
   power: 3
   toughness: 3
@@ -12,7 +12,7 @@
   rarity: rare
   color: multicolor
   color_identity:
-  - red
+  - green
   - white
   art_file: ivan_tsarevich.png
   art_style: 9
@@ -36,15 +36,16 @@
   - blue
   - red
   art_file: ivan_durak.png
-  art_style: 9
-  art_prompt: "scruffy young Russian peasant with a wide foolish grin, tattered sheepskin coat, sitting atop a warm clay stove, magical embers floating around him, naive and content expression"
+  art_style: 13
+  art_prompt: "scruffy young Russian peasant with a wide foolish grin, tattered sheepskin coat, sitting atop a warm russian oven inside a wooden house , magical embers floating around him, naive and content\
+    \ expression"
   name_ru: Иван Дурак
   name_en: Ivan Durak
 - name: Vasilisa Premudraya
   cost: "{G}{U}"
   type_line: Legendary Creature — Human Noble Warlock
   power: 2
-  toughness: 4
+  toughness: 2
   text: |-
     Whenever you scry, you may look at one additional card.
     {T}: Scry 2.
@@ -62,28 +63,6 @@
     \ behind her"
   name_ru: Василиса Премудрая
   name_en: Vasilisa the Wise
-- name: Dobrynya i Zmei
-  cost: "{2}{R}{W}"
-  type_line: Legendary Enchantment — Saga Quest
-  text: |-
-    (This is both a Saga and a Quest — it advances automatically like a Saga, but creatures it names are on a quest.)
-    As <this> enters the battlefield, choose a creature you control. It is on a quest as long as <this> is on the battlefield.
-    I — Chosen creature gains +3/+0 and first strike until your next turn.
-    II — Chosen creature fights target creature an opponent controls.
-    III — If chosen creature is still on the battlefield, it gains a +1/+1 counter, double strike, and indestructible until end of turn. Create a 4/4 red Dragon creature token with flying.
-  flavor_text: He swam three days in the blood of the serpent before the earth drank it dry.
-  notes: "The Saga-Quest hybrid. Tells Dobrynya's complete dragon-fighting story. May need to be mythic."
-  rarity: rare
-  color: multicolor
-  color_identity:
-  - red
-  - white
-  art_file: dobrynya_i_zmei.png
-  art_style: 10
-  art_prompt: "armored Russian bogatyr knight on horseback battling a massive three-headed serpent over a river, dramatic low viewpoint, blood-red sky, chain mail and round shield gleaming, epic heroic\
-    \ composition"
-  name_ru: Добрыня и Змей
-  name_en: Dobrynya and the Serpent
 - name: Tsarevna Lebed
   cost: "{2}{W}{U}"
   type_line: Legendary Creature — Bird
@@ -91,7 +70,7 @@
   toughness: 3
   text: |-
     Flying
-    When <this> deals combat damage to a player, you may transform it.
+    {3}: Transform <this>.
   flavor_text: ''
   notes: "Pushkin's Swan Princess. Flies as a bird, transforms on damage. DFC."
   rarity: rare
@@ -110,8 +89,7 @@
     toughness: 4
     text: |-
       At the beginning of your upkeep, scry 2 and you gain 2 life.
-      When this creature transforms into this, you may search your library for an enchantment card, reveal it, put it into your hand, then shuffle.
-      {3}: Transform <this>.
+      When this creature transforms, you may search your library for an enchantment card, reveal it, put it into your hand, then shuffle.
     flavor_text: "On her brow, a star blazes. Beneath her braid, the crescent moon."
     art_file: tsarevna_lebed_back.png
     art_style: 13
@@ -127,9 +105,9 @@
   power: 1
   toughness: 3
   text: |-
-    Flying
-    When <this> enters the battlefield, exile target creature an opponent controls. It remains exiled as long as you control an equipment attached to <this>.
-    {U}{B}: Attach target equipment you control to <this>.
+    {U}: <this> gains flying until the end of turn
+    {B}{B}: Exile target creature. Use this ability only if <this> dealt combat damage to its controller this turn.
+    Whenever <this> is dealt combat damage, return all creatures exiled by <this>'s abilities into battlefield.
   flavor_text: "His beard held the strength of thirty knights, and his head barely held his malice."
   notes: "Pushkin's Chernomor. Power comes from equipment (the beard). Imprisons while equipped."
   rarity: rare
@@ -154,8 +132,7 @@
     — <this> gets +3/+0 until end of turn.
     — <this> gains indestructible until end of turn.
     — Destroy target enchantment.
-    — <this> fights target creature an opponent controls.
-    When all four modes have been chosen, <this> gains double strike and "can't be blocked by fewer than three creatures" for the rest of the game.
+    At the end of turn, when all three modes have been chosen, <this> gains double strike and "can't be blocked by fewer than three creatures".
   flavor_text: Four trials on the road to Lyudmila. He passed them all.
   notes: "Pushkin's Ruslan. Four attack modes, each used once. Permanent powerhouse after all four."
   rarity: rare
@@ -165,31 +142,9 @@
   - green
   art_file: ruslan.png
   art_style: 10
-  art_prompt: "powerful Russian warrior in full chain mail and conical helmet, sword raised high, charging across an open steppe battlefield, heroic low viewpoint, dramatic storm clouds behind him, fearless\
-    \ expression"
+  art_prompt: "powerful, beautiful young Russian warrior in full chain mail and conical helmet, sword raised high, standing ready in Steppe"
   name_ru: Руслан
   name_en: Ruslan
-- name: Vodyanoy Tsar
-  cost: "{3}{U}{B}"
-  type_line: Legendary Creature — Spirit Noble
-  power: 4
-  toughness: 4
-  text: |-
-    At the beginning of your upkeep, each player mills two cards.
-    Whenever a creature card is put into a graveyard from anywhere, you may pay {1}. If you do, create a 1/1 blue Spirit creature token.
-    {U}{B}, sacrifice three Spirits: Return target creature card from a graveyard to the battlefield under your control.
-  flavor_text: He sat on the river bottom and waited. Everything comes to the river eventually.
-  notes: "UB graveyard lord. Mills everyone, generates Spirit tokens, converts Spirits to reanimation."
-  rarity: rare
-  color: multicolor
-  color_identity:
-  - blue
-  - black
-  art_file: vodyanoy_tsar.png
-  art_style: 5
-  art_prompt: "ancient river spirit king enthroned on the muddy bottom of a deep dark river, draped in weeds and fish scales, pale drowned spirits drifting around him, cold still water, patient menace"
-  name_ru: Водяной Царь
-  name_en: Water King
 - name: "Poloz, Velikiy Zmei Urala"
   cost: "{3}{R}{G}"
   type_line: Legendary Creature — Dragon Serpent
@@ -197,7 +152,7 @@
   toughness: 5
   text: |-
     Trample
-    Whenever Poloz attacks, create two Treasure tokens.
+    Whenever Poloz deals combat damage to a player, create two Treasure tokens.
     Whenever you sacrifice an artifact, Poloz gets +1/+0 until end of turn.
     {R}{G}, sacrifice three Treasures: Poloz deals damage equal to its power to target creature.
   flavor_text: "The Great Serpent coiled around the mountain's heart, where the gold veins ran deepest."

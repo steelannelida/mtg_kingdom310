@@ -67,7 +67,7 @@
   text: |-
     When <this> enters the battlefield, create three Treasure tokens.
     Whenever you sacrifice an artifact, put a +1/+1 counter on <this>.
-    When <this> dies, create a 0/X green Wall creature token with defender where X is the number +1/+1 counter on hozyaika Mednoy Gory.
+    When <this> leaves battlefield, create a 0/X green Wall creature token with defender where X is the number +1/+1 counter on hozyaika Mednoy Gory.
   flavor_text: "She showed him the chambers of emerald and jade. 'All this is yours,' she said, 'if you never forget me.'"
   notes: "Bazhov's Mistress. Creates treasure and jewels, grows from artifact sacrifice, leaves malachite walls."
   rarity: rare

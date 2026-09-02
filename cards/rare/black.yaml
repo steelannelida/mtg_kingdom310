@@ -25,7 +25,7 @@
   text: |-
     Menace
     Whenever another creature dies, put a +1/+1 counter on <this>.
-    {B}, remove two +1/+1 counters from <this>: Return target creature card from your graveyard to the battlefield.
+    {T}, {B}, remove two +1/+1 counters from <this>: Return target creature card from your graveyard to the battlefield.
   flavor_text: She rode at the head of an army that was not entirely alive.
   notes: "The warrior princess who captured Koschei. Grows from death, converts growth into reanimation."
   rarity: rare
@@ -62,7 +62,7 @@
     text: |-
       Flying, menace
       At the beginning of your upkeep, each opponent loses 2 life.
-      When <this> deals combat damage to a player, that player sacrifices two creatures.
+      When <this> deals combat damage to a player, that player sacrifices a creature.
     flavor_text: She was beautiful in life. Death made her powerful.
     art_style: 12
     art_file: vedma_iz_groba_witch_from_the_grave.png

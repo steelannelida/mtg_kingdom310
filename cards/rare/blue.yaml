@@ -22,7 +22,7 @@
   toughness: 7
   text: |-
     When <this> enters the battlefield, exile up to three target nonland permanents.
-    When <this> dies or leaves the battlefield, return all exiled cards to the battlefield under their owners' control.
+    When <this> leaves the battlefield, return all exiled cards to the battlefield under their owners' control.
   flavor_text: "An island, they thought. They built a fire on its back. Then the island moved."
   notes: The whale from Konek-Gorbunok. Oblivion Ring on a 7/7 body.
   rarity: rare
@@ -73,7 +73,7 @@
   name_ru: Морская Царевна
   name_en: Princess of the Sea
 - name: Ne Govori Ni Slova
-  cost: "{1}{U}"
+  cost: "{U}"
   type_line: Enchantment - Nakaz
   text: |-
     Flash
@@ -95,7 +95,7 @@
   type_line: Enchantment — Aura Quest
   text: |-
     Enchant creature you control (it is on a quest)
-    As Poydi Tuda Ne Znayu Kuda enters the battlefield, name a nonland card.
+    As <this> enters the battlefield, name a nonland card.
     Tap enchanted creature: Reveal the top card of your library. If it's the named card, put it into your hand, you may cast it this turn without paying its mana cost. Sacrifice Poydi Tuda Ne Znayu Kuda. Otherwise, but that card on the bottom of your library.
   flavor_text: Bring me that — I know not what. Find it there — I know not where.
   notes: "Blue rare Quest. The impossible task from the Fedot tale. Name a card, tap to dig for it. If you guess right, free cast + quest complete. High variance, huge payoff."

@@ -3,8 +3,8 @@
   type_line: Legendary Creature — Dragon
   power: 3
   toughness: 3
-  text: "Flying, Indestructible\n<this> comes into battlefield with 3 head counters.\nWhenever <this> would die, if it has more then 1 head counter, remove 1 head counter instead. \n{R}: <this> gets +1/+0\
-    \ until the end of turn for each head counter on it"
+  text: "Flying\n<this> comes into battlefield with 3 head counters.\nWhenever <this> would die, if it has more then 1 head counter, remove 1 head counter instead. \n{R}: <this> gets +1/+0 until the end\
+    \ of turn for each head counter on it"
   flavor_text: "Three heads, three fires, three reasons to run."
   notes: The three-headed dragon. Three damage to three targets on entry. The Red rare finisher.
   rarity: rare
