@@ -1,0 +1,5 @@
+Name:Medovy Sbiten
+ManaCost:1 G
+Types:Sorcery
+A:SP$ Token | TokenAmount$ 2 | TokenOwner$ You | TokenScript$ c_a_food_sac | SpellDescription$ Create two Food tokens.
+Oracle:Create two Food tokens.

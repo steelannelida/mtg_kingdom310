@@ -1,0 +1,8 @@
+Name:Mertvets iz Navi
+ManaCost:3 B
+Types:Creature Zombie Spirit
+PT:3/2
+T:Mode$ ChangesZone | Origin$ Any | CheckSVar$ Morbid | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ Morbid — When CARDNAME enters, if a creature died this turn, return target creature card with mana value 2 or less from your graveyard to your hand.
+SVar:TrigChange:DB$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ValidTgts$ Creature.YouCtrl+cmcLE2 | TgtPrompt$ Select target creature card with mana value 2 or less
+SVar:Morbid:Count$Morbid.1.0
+Oracle:Morbid — When CARDNAME enters the battlefield, if a creature died this turn, return target creature card with mana value 2 or less from your graveyard to your hand.

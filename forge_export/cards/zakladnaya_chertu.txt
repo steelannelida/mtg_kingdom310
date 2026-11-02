@@ -1,0 +1,9 @@
+Name:Zakladnaya Chertu
+ManaCost:2 B B
+Types:Sorcery
+A:SP$ ChangeZone | Origin$ Graveyard | Destination$ Battlefield | TargetMin$ 0 | TargetMax$ 2 | ValidTgts$ Creature.YouCtrl | TgtPrompt$ Choose target creature card in your graveyard | RememberChanged$ True | SubAbility$ DBDelay | SpellDescription$ Return up to two target creatures from your graveyard to the battlefield.
+SVar:DBDelay:DB$ DelayedTrigger | Mode$ Phase | Phase$ End of Turn | ValidPlayer$ You | RememberObjects$ Remembered | Execute$ TrigLoseLife | SubAbility$ DBCleanup | TriggerDescription$ At the end of this turn, you lose life equal to the sum of powers of those creatures.
+SVar:TrigLoseLife:DB$ LoseLife | Defined$ You | LifeAmount$ X
+SVar:X:TriggerRemembered$CardPower
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+Oracle:Return up to two target creatures from your graveyard to the battlefield.\nAt the end of this turn loose life equal to the sum of powers of those creatures.

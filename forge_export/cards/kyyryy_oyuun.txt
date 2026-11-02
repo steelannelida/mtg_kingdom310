@@ -1,0 +1,6 @@
+Name:Kyyryy Oyuun
+ManaCost:1 R
+Types:Creature Human Shaman
+PT:1/2
+A:AB$ DealDamage | Cost$ T Sac<1/Food> | ValidTgts$ Any | NumDmg$ 2 | SpellDescription$ CARDNAME deals 2 damage to any target.
+Oracle:{T}, sacrifice a Food: CARDNAME deals 2 damage to any target.

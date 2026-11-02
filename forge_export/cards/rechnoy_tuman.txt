@@ -1,0 +1,6 @@
+Name:Rechnoy Tuman
+ManaCost:U
+Types:Instant
+A:SP$ Pump | ValidTgts$ Creature | NumAtt$ -4 | NumDef$ 0 | SubAbility$ DBScry | SpellDescription$ Target creature gets -4/-0 until end of turn. Scry 1.
+SVar:DBScry:DB$ Scry | ScryNum$ 1
+Oracle:Target creature gets -4/-0 until end of turn.\nScry 1.

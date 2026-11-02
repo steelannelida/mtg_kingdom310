@@ -1,0 +1,8 @@
+Name:Upyr
+ManaCost:1 B
+Types:Creature Zombie
+PT:3/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigLoseLife | TriggerDescription$ When CARDNAME enters, you lose 1 life.
+S:Mode$ CantBlock | ValidCard$ Card.Self | Description$ CARDNAME can't block.
+SVar:TrigLoseLife:DB$ LoseLife | Defined$ You | LifeAmount$ 1
+Oracle:CARDNAME can't block.\nWhen CARDNAME enters the battlefield, you lose 1 life.

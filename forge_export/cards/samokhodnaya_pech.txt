@@ -1,0 +1,8 @@
+Name:Samokhodnaya Pech
+ManaCost:3 R
+Types:Artifact Creature Construct Mount
+PT:2/4
+K:Saddle:1
+T:Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ Whenever CARDNAME attacks while saddled, create a Food token.
+SVar:TrigToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+Oracle:Saddle 1\nWhenever CARDNAME attacks while saddled, create a Food token.

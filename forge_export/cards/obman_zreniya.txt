@@ -1,0 +1,6 @@
+Name:Obman Zreniya
+ManaCost:1 U
+Types:Instant
+A:SP$ Pump | ValidTgts$ Creature | SubAbility$ DBClone | StackDescription$ None | SpellDescription$ Target creature becomes a copy of another target creature you control until end of turn.
+SVar:DBClone:DB$ Clone | Defined$ ParentTarget | ValidTgts$ Creature.YouCtrl | CloneTarget$ ThisTargetedCard | Duration$ UntilEndOfTurn
+Oracle:Target creature becomes a copy of another target creature you control until end of turn.

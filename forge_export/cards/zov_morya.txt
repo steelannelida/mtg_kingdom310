@@ -1,0 +1,7 @@
+Name:Zov Morya
+ManaCost:1 U
+Types:Instant
+A:SP$ ChangeZone | Origin$ Battlefield | Destination$ Hand | ValidTgts$ Creature | RememberChanged$ True | SubAbility$ DBDraw | SpellDescription$ Return target creature to its owner's hand. If that creature was on a quest, its controller draws a card.
+SVar:DBDraw:DB$ Draw | DefinedPlayer$ TargetedController | NumCards$ 1 | ConditionDefined$ Remembered | ConditionPresent$ Card.EnchantedBy Aura.Quest | ConditionCompare$ GE1 | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+Oracle:Return target creature to its owner's hand.\nIf that creature was on a quest, its controller draws a card.

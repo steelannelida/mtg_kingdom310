@@ -1,0 +1,8 @@
+Name:Polovtsy
+ManaCost:3 R
+Types:Creature Human Warrior
+PT:3/3
+T:Mode$ Attacks | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever CARDNAME attacks, it gets +1/+0 for every other attacking creature.
+SVar:TrigPump:DB$ Pump | Defined$ Self | NumAtt$ X | NumDef$ 0
+SVar:X:Count$Valid Creature.attacking+Other
+Oracle:Whenever CARDNAME attacks, it gets +1/+0 for every other attacking creature.

@@ -1,0 +1,5 @@
+Name:Utrenniy Zvon
+ManaCost:W
+Types:Sorcery
+A:SP$ UntapAll | ValidCards$ Creature.YouCtrl+tapped | SpellDescription$ Untap any number of tapped creatures you control.
+Oracle:Untap any number of tapped creatures you control.

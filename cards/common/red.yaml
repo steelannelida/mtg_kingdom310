@@ -12,6 +12,8 @@
   art_file: udaloy_molodets_brash_youth.png
   art_prompt: "a tall 20-year-old athletically-built blond-haired peasant, dressed in a loose linen shirt and grey pants, marching down a dirt road away from a village, barefoot, holding an uprooted birch\
     \ on his shoulder, a reckless grin on his face. Medieval slavic setting"
+  forge:
+    K: "Haste"
   name_ru: Удалой Молодец
   name_en: Brash Youth
 - name: Kuznets
@@ -28,6 +30,10 @@
   art_file: kuznets_smith.png
   art_prompt: "a muscular blacksmith hammering a glowing blade on an anvil, sparks flying in an arc, a dark smoky forge behind him, tongs and finished swords hanging on the wall, his face lit red by the\
     \ forge fire, sweat glistening, powerful focused concentration"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When CARDNAME enters, create a Treasure token."
+    SVar:
+      TrigToken: "DB$ Token | TokenScript$ c_a_treasure_sac | TokenOwner$ You"
   name_ru: Кузнец
   name_en: Smith
 - name: Gorynychenok
@@ -44,6 +50,8 @@
   art_file: gorynychevo_otrodye_dragonspawn.png
   art_prompt: "a small  dragon with 3 heads the size of a large dog perched on a rocky outcrop, smoke curling from its nostrils, stubby wings half-spread, red and green scales, a mischievous rather than\
     \ terrifying expression, smoldering hillside behind"
+  forge:
+    K: "Flying"
   name_ru: Горыныченок
   name_en: Dragonspawn
 - name: Okhrabrevshiy Mujik
@@ -60,6 +68,8 @@
   art_file: okhrabrevshiy_mujik_emboldened_peasant.png
   art_prompt: "a stocky peasant man in light-grey linen clothes, gripping an old rusty sword awkwardly but with determination, his jaw set, wearing simple clothes, standing at a fork in the road, the dangerous\
     \ path ahead, his knuckles white on the hilt. Medieval slavic setting."
+  forge:
+    S: "Mode$ Continuous | Affected$ Card.Self+EnchantedBy Aura.Quest | AddPower$ 1 | Description$ CARDNAME gets +1/+0 as long as it's on a quest."
   name_ru: Осмелевший Мужик
   name_en: Emboldened Peasant
 - name: Sivka-Burka
@@ -79,6 +89,13 @@
   art_file: sivka_burka.png
   art_prompt: "a magnificent dappled grey horse with a wild mane rearing up on a hilltop, muscles rippling, hooves striking sparks from stone, an otherworldly gleam in its eyes, wind whipping its tail,\
     \ steppe grass bending around it, heroic and magical"
+  forge:
+    K:
+      - "Haste"
+      - "Saddle:1"
+    T: "Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever CARDNAME attacks while saddled, it gets +2/+0 until end of turn."
+    SVar:
+      TrigPump: "DB$ Pump | Defined$ Self | NumAtt$ 2 | NumDef$ 0"
   name_ru: Сивка-Бурка
   name_en: Sivka-Burka
 - name: Samokhodnaya Pech
@@ -97,6 +114,11 @@
   art_file: samokhodnaya_pech_self_propelled_oven.png
   art_prompt: "a large Russian brick oven painted white sliding down a snowy village road, smoke puffing from its chimney, a lazy young peasant man sitting on top with his legs dangling, villagers gaping\
     \ in astonishment. Medieval slavic village."
+  forge:
+    K: "Saddle:1"
+    T: "Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ Whenever CARDNAME attacks while saddled, create a Food token."
+    SVar:
+      TrigToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
   name_ru: Самоходная Печь
   name_en: Self-Propelled Oven
 - name: Razboynik s Bolshoy Dorogi
@@ -113,6 +135,10 @@
   art_file: razboynik_s_bolshoy_dorogi_highwayman.png
   art_prompt: "a bearded bandit in a sheepskin coat stepping out from behind an oak tree onto a forest road, a cudgel in one hand and a stolen purse in the other, a crooked grin on his scarred face, dappled\
     \ forest light, menace with a dash of charm"
+  forge:
+    T: "Mode$ DamageDone | ValidSource$ Card.Self | ValidTarget$ Player | CombatDamage$ True | Execute$ TrigToken | TriggerDescription$ Whenever CARDNAME deals combat damage to a player, create a Treasure token."
+    SVar:
+      TrigToken: "DB$ Token | TokenScript$ c_a_treasure_sac | TokenOwner$ You"
   name_ru: Разбойник с Большой Дороги
   name_en: Highwayman
 - name: Kyyryy Oyuun
@@ -128,6 +154,8 @@
   art_style: 12
   art_file: kyyryy_oyuun_bonfire_dancer.png
   art_prompt: "a nothern shaman with long black hair dressed in deer leather dancing extatically around a roaring bonfire at night in the snow, arms raised,"
+  forge:
+    A: "AB$ DealDamage | Cost$ T Sac<1/Food> | ValidTgts$ Any | NumDmg$ 2 | SpellDescription$ CARDNAME deals 2 damage to any target."
   name_ru: Кыыр Ойуун
   name_en: Bonfire Dancer
 - name: Pugach
@@ -144,6 +172,10 @@
   art_file: pugach_firecracker.png
   art_prompt: "a tiny red imp bursting out of a puff of sulphurous smoke, coughing and sputtering, tiny horns and a tail, sharp little teeth bared in a snarl, sparks popping around it, comical and irritating\
     \ rather than frightening"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDamage | TriggerDescription$ When CARDNAME enters, it deals 1 damage to any target."
+    SVar:
+      TrigDamage: "DB$ DealDamage | ValidTgts$ Any | NumDmg$ 1"
   name_ru: Пугач
   name_en: Firecracker
 - name: Udal Molodetskaya
@@ -160,6 +192,10 @@
   art_file: udal_molodetskaya_youthful_bravado.png
   art_prompt: "a young warrior charging headlong at a much larger opponent with reckless abandon, his mace raised high with BOTH hands, an dashing, excited smile on his face, his opponent recoiling in surprise\
     \ at the audacity, dynamic motion, the moment of fearless commitment. Both opponents in chain mails. Medieval slavic setting."
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | NumAtt$ 3 | NumDef$ 1 | SubAbility$ DBFirstStrike | SpellDescription$ Target creature gets +3/+1 until end of turn. If it's on a quest, it also gains first strike until end of turn."
+    SVar:
+      DBFirstStrike: "DB$ Pump | Defined$ Targeted | KW$ First Strike | ConditionDefined$ Targeted | ConditionPresent$ Creature.EnchantedBy Aura.Quest | ConditionCompare$ GE1"
   name_ru: Удаль Молодецкая
   name_en: Youthful Bravado
 - name: Grom i Molniya
@@ -174,6 +210,8 @@
   art_file: grom_i_molniya_thunder_and_lightning.png
   art_prompt: "a massive bolt of lightning splitting a huge ancient oak tree in half, the trunk exploding into splinters and flame, the sky above dark and churning with storm clouds, the ground scorched\
     \ in a radiating pattern, raw divine power"
+  forge:
+    A: "SP$ DealDamage | ValidTgts$ Creature | NumDmg$ 3 | SpellDescription$ CARDNAME deals 3 damage to target creature."
   name_ru: Гром и Молния
   name_en: Thunder and Lightning
 - name: Po shuchyemu veleniyu
@@ -187,6 +225,10 @@
   art_style: 14
   art_file: pechnoye_zhelaniye_oven_s_wish.png
   art_prompt: "a golden pike fish leaping from a frozen river hole, its scales shimmering with magic, a lazy young peasant pondering, whimsical fairy-tale energy"
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | KW$ Haste | SubAbility$ DBDraw | SpellDescription$ Target creature gains haste until end of turn. Draw a card."
+    SVar:
+      DBDraw: "DB$ Draw | Defined$ You | NumCards$ 1"
   name_ru: По щучьему велению
   name_en: "Pike's Command"
 - name: Klich Bogatyrskiy
@@ -200,6 +242,12 @@
   art_style: 10
   art_file: klich_bogatyrskiy_bogatyr_s_call.png
   art_prompt: "a rider blowing a great curved warhorn on a hilltop, riders below drawing swords and wheeling their horses toward battle, dramatic sky, the moment before the charge. Medieval slavic setting."
+  forge:
+    # NOTE (2026-09-25): SP$ Pump only reads a single Defined$/ValidTgts$ object -- it
+    # silently ignores ValidCards$ entirely (that param is only implemented by PumpAll's
+    # effect class), so this never buffed anything. Fixed to PumpAll, which is what every
+    # real "creatures you control get +X/+X" card uses.
+    A: "SP$ PumpAll | ValidCards$ Creature.YouCtrl | NumAtt$ 1 | NumDef$ 0 | KW$ Haste | SpellDescription$ Creatures you control get +1/+0 and gain haste until end of turn."
   name_ru: Клич Богатырский
   name_en: "Bogatyr's Call"
 - name: Tantsy vokrug Kostra
@@ -213,6 +261,10 @@
   art_style: 10
   art_file: pozharniy_tanets_fire_dance.png
   art_prompt: "A ring of young peasants, male and female, gathered around a large bonfire in the night, one young woman jumping over the fire, plates of food and cups nearby"
+  forge:
+    A: "SP$ DealDamage | ValidTgts$ Player,Planeswalker | NumDmg$ 2 | SubAbility$ DBToken | SpellDescription$ CARDNAME deals 2 damage to target player or planeswalker. Create a Food token."
+    SVar:
+      DBToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
   name_ru: Танцы вокруг Костра
   name_en: Fire Dance
 - name: Ne Slezay s Konya
@@ -230,6 +282,26 @@
   art_file: nakaz_ne_skhodi_s_konya_don_t_dismount.png
   art_prompt: "a rider galloping at full speed across a steppe, leaning forward urgently, the horse's hooves barely touching the ground, behind them shadowy hands reaching up from the earth trying to grab\
     \ the horse's legs, the rider's face determined and terrified, motion blur. Medieval slavic setting."
+  forge:
+    K: "Flash"
+    T:
+      - "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigUntap | TriggerDescription$ When CARDNAME enters, untap target creature. It gains haste and gets +2/+0 until end of turn."
+      - "Mode$ Taps | ValidCard$ Creature.YouCtrl | Attacker$ False | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ Whenever a creature you control becomes tapped other than by attacking, sacrifice it and CARDNAME."
+    SVar:
+      TrigUntap: "DB$ Untap | ValidTgts$ Creature | SubAbility$ DBPump"
+      DBPump: "DB$ Pump | Defined$ Targeted | KW$ Haste | NumAtt$ 2 | NumDef$ 0"
+      # NOTE (2026-09-25): DB$ Sacrifice has no "Defined$" param at all -- it reads
+      # "SacValid$" (a type filter) + "Defined$ Player" (whose battlefield to filter), and
+      # silently defaults SacValid$ to "Self" when absent. The original "Defined$
+      # TriggeredCard" was never read, so this always sacrificed CARDNAME twice (via the
+      # unqualified root falling back to Self) and never touched the tapped creature.
+      # Fixed by remembering the triggered creature first, then sacrificing self and the
+      # remembered creature as two separate steps (SacValid$ Card.IsRemembered narrows the
+      # forced choice down to exactly that one card).
+      TrigSac: "DB$ Pump | RememberObjects$ TriggeredCard | SubAbility$ DBSacSelf"
+      DBSacSelf: "DB$ Sacrifice | SubAbility$ DBSacOther"
+      DBSacOther: "DB$ Sacrifice | SacValid$ Card.IsRemembered | Defined$ You | SubAbility$ DBCleanup"
+      DBCleanup: "DB$ Cleanup | ClearRemembered$ True"
   name_ru: Не Слезай с Коня
   name_en: "Don't Dismount"
 - name: Ukrast Tsarevnu
@@ -246,6 +318,13 @@
   art_file: ukrast_tsarevnu_abduct_the_princess.png
   art_prompt: "a rider holding a royal maiden on the same horse, sweeping through a fortress gate out into the field, guards behind them too slow to react, the horse at full gallop, hair streaming in the\
     \ wind, dramatic escape moment. Medieval slavic setting."
+  forge:
+    K: "Enchant:Creature.YouCtrl"
+    T: "Mode$ AttackerUnblocked | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigPrevent | TriggerDescription$ Whenever enchanted creature attacks and isn't blocked, prevent all combat damage it would deal this turn. Gain control of target creature defending player controls until the end of your next turn. Sacrifice CARDNAME."
+    SVar:
+      TrigPrevent: "DB$ Pump | Defined$ TriggeredAttacker | KW$ Prevent all combat damage that would be dealt by CARDNAME. | SubAbility$ DBControl"
+      DBControl: "DB$ GainControl | ValidTgts$ Creature.DefenderCtrl | LoseControl$ UntilTheEndOfYourNextTurn | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self"
   name_ru: Украсть Царевну
   name_en: Abduct the Princess
 - name: Pechenegi
@@ -259,6 +338,8 @@
   art_file: pechenegi.png
   art_style: 9
   art_prompt: "a Pecheneg warrior on horseback charging across the steppe, recurve bow in hand, leather armor and felt cap, dust rising behind the raiding party, aggressive and fast"
+  forge:
+    K: "Haste"
   name_ru: Печенеги
   name_en: Pechenegi
 - name: Polovtsy
@@ -274,6 +355,11 @@
   art_prompt: "A large army of steppe nomadic riders in formation, with spears, under a flag depicting a wolf. Medieval slavic setting."
   flavor_text: ''
   notes: ''
+  forge:
+    T: "Mode$ Attacks | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever CARDNAME attacks, it gets +1/+0 for every other attacking creature."
+    SVar:
+      TrigPump: "DB$ Pump | Defined$ Self | NumAtt$ X | NumDef$ 0"
+      X: "Count$Valid Creature.attacking+Other"
   name_ru: Половцы
   name_en: Polovtsy
 - name: Stepnoy Pozhar
@@ -287,6 +373,14 @@
   art_style: 10
   art_file: stepnoy_pozhar_steppe_fire.png
   art_prompt: Fire sweeping through steppe. Medieval Slavic setting.
+  forge:
+    # NOTE (2026-09-25): DamageAll's ValidCards$ is implicitly scoped to the ValidTgts$
+    # player when used directly as the root ability -- confirmed against the real card
+    # Aggravate, which uses the exact same "SP$ DamageAll | ValidTgts$ Player | ... |
+    # ValidCards$ Creature" root pattern (no ".TargetedPlayerCtrl" qualifier, no chained
+    # DamageResolve). The original ".TargetedPlayerCtrl" qualifier + DamageResolve
+    # sub-ability combo silently did nothing at all.
+    A: "SP$ DamageAll | ValidTgts$ Player | NumDmg$ 1 | ValidCards$ Creature | SpellDescription$ CARDNAME deals 1 damage to each creature target player controls."
   name_ru: Степной Пожар
   name_en: Steppe Fire
 - name: Nochnoy Nabeg
@@ -300,5 +394,11 @@
   notes: ''
   art_style: 12
   art_file: nochnoy_nabeg_night_assault.png
+  forge:
+    # NOTE (2026-09-25): same SP$ Pump-ignores-ValidCards$ bug as Klich Bogatyrskiy --
+    # fixed to PumpAll (see real cards Goblin War Cry / Stand or Fall for the confirmed
+    # "mass can't-block" idiom: DB$/SP$ PumpAll | ValidCards$ ... | KW$ HIDDEN ... can't
+    # block.). Also dropped IsCurse$, which isn't present on either real-card example.
+    A: "SP$ PumpAll | ValidCards$ Creature.withoutVigilance | KW$ HIDDEN This card can't block. | SpellDescription$ Creatures without vigilance can't block this turn."
   name_ru: Ночной Набег
   name_en: Night Assault

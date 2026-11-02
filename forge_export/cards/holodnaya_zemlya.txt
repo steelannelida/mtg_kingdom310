@@ -1,0 +1,6 @@
+Name:Holodnaya Zemlya
+ManaCost:1 B
+Types:Enchantment
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Creature.YouCtrl | Execute$ TrigLose | TriggerDescription$ Whenever a creature you control dies, each opponent loses 1 life.
+SVar:TrigLose:DB$ LoseLife | Defined$ Player.Opponent | LifeAmount$ 1
+Oracle:Whenever a creature you control dies, each opponent loses 1 life.

@@ -1,0 +1,5 @@
+Name:Nochnoy Nabeg
+ManaCost:3 R
+Types:Sorcery
+A:SP$ PumpAll | ValidCards$ Creature.withoutVigilance | KW$ HIDDEN This card can't block. | SpellDescription$ Creatures without vigilance can't block this turn.
+Oracle:Creatures without vigilance can't block this turn.

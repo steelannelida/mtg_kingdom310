@@ -1,0 +1,6 @@
+Name:Otplyitye
+ManaCost:2 U
+Types:Sorcery
+A:SP$ Draw | NumCards$ 2 | SubAbility$ DBDiscard | SpellDescription$ Draw two cards, then discard a card.
+SVar:DBDiscard:DB$ Discard | Defined$ You | NumCards$ 1 | Mode$ TgtChoose
+Oracle:Draw two cards, then discard a card.

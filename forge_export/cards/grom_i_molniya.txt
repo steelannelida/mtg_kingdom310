@@ -1,0 +1,5 @@
+Name:Grom i Molniya
+ManaCost:1 R
+Types:Instant
+A:SP$ DealDamage | ValidTgts$ Creature | NumDmg$ 3 | SpellDescription$ CARDNAME deals 3 damage to target creature.
+Oracle:CARDNAME deals 3 damage to target creature.

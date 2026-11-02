@@ -1,0 +1,7 @@
+Name:Ratnik
+ManaCost:1 W
+Types:Creature Human Soldier
+PT:2/2
+S:Mode$ Continuous | Affected$ Card.Self | AddPower$ X | AddToughness$ X | Description$ CARDNAME gets +1/+1 for each other Soldier you control.
+SVar:X:Count$Valid Creature.YouCtrl+Other+Soldier
+Oracle:CARDNAME gets +1/+1 for each other Soldier you control

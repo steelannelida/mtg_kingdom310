@@ -1,0 +1,6 @@
+Name:Postrig
+ManaCost:1 W
+Types:Enchantment Aura
+K:Enchant:Creature
+S:Mode$ CantAttack,CantBlock | ValidCard$ Creature.EnchantedBy | Description$ Enchanted creature can't attack or block.
+Oracle:Enchant Creature\nEnchanted Creature cannot attack or block.

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="1360" viewBox="0 0 480.0 680.0">
+<defs>
+<style>
+    @font-face { font-family: 'Beleren'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/Beleren.ttf'); }
+    @font-face { font-family: 'MPlantin'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/MPlantin.woff'); }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic.woff2') format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic-ext.woff2') format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+2000-206F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+1E00-1E9F; }
+    </style>
+
+        <radialGradient id="vign-Kuznets" cx="50%" cy="45%" r="75%">
+          <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+        </radialGradient>
+        
+<symbol id="mana-1" viewBox="-848.00 -218.00 116.00 116.00"><g>
+	<circle fill="#CAC5C0" cx="-790" cy="-160.002" r="50" />
+</g>
+<path fill="#0D0F0F" d="M-784.315-199.999v64.108c0,7.671,3.226,11.504,9.687,11.504h1.684v4.388h-34.111v-4.388h2.141  c6.247,0,9.369-3.833,9.369-11.504v-42.054c0-7.758-2.697-11.643-8.081-11.643h-3.429v-4.247h1.237c6.66,0,12.691-2.057,18.08-6.165  L-784.315-199.999L-784.315-199.999z" /></symbol>
+<symbol id="mana-R" viewBox="-218.00 -8.00 116.00 116.00"><g>
+	<circle fill="#E49977" cx="-160" cy="50" r="50" />
+</g>
+<path fill="#0D0F0F" d="M-118.035,66.617c-3.736,8.912-11.16,13.367-22.275,13.367c-2.037,0-4.246,0.254-6.621,0.762  c-3.564,0.764-5.346,1.828-5.346,3.186c0,0.424,0.295,0.91,0.891,1.463c0.592,0.553,1.104,0.826,1.527,0.826  c-2.123,0-0.68,0.064,4.326,0.191c5.008,0.127,8.148,0.191,9.422,0.191c-7.383,4.326-19.732,6.319-37.043,5.981  c-5.688-0.084-10.566-2.588-14.639-7.51c-3.992-4.669-5.984-9.888-5.984-15.658c0-6.108,2.057-11.308,6.176-15.595  c4.113-4.282,9.229-6.427,15.338-6.427c1.357,0,3.16,0.297,5.41,0.891c2.248,0.594,3.756,0.891,4.518,0.891  c3.139,0,7.045-1.293,11.713-3.883c4.666-2.588,6.875-3.883,6.621-3.883c-0.85,8.912-3.82,14.896-8.914,17.948  c-3.648,2.123-5.473,4.201-5.473,6.236c0,1.273,0.764,2.293,2.291,3.057c1.188,0.595,2.502,0.892,3.945,0.892  c2.207,0,4.371-1.356,6.494-4.071c2.119-2.718,3.055-5.177,2.801-7.386c-0.254-2.545-0.084-5.603,0.51-9.164  c0.168-1.02,0.783-2.27,1.844-3.754c1.061-1.486,2.016-2.398,2.865-2.738c0,0.762-0.275,2.037-0.828,3.818  c-0.553,1.781-0.826,3.1-0.826,3.947c0,1.867,0.508,3.309,1.527,4.326c1.525-0.592,2.883-2.502,4.074-5.729  c1.016-2.459,1.609-4.836,1.781-7.127c-3.566-0.17-6.982-1.781-10.248-4.838c-3.268-3.057-4.9-6.365-4.9-9.928  c0-0.594,0.082-1.188,0.256-1.783c0.508,0.764,1.271,1.953,2.289,3.564c1.443,2.121,2.547,3.182,3.313,3.182  c1.016,0,1.525-1.061,1.525-3.182c0-2.715-0.723-5.176-2.164-7.383c-1.613-2.631-3.693-3.947-6.238-3.947  c-1.189,0-2.971,0.637-5.344,1.91c-2.379,1.271-4.543,1.91-6.492,1.91c-0.596,0-3.229-0.766-7.895-2.293  c8.23-1.355,12.348-2.586,12.348-3.691c0-2.885-5.645-4.838-16.93-5.855c-1.105-0.084-3.141-0.254-6.111-0.51  c0.338-0.424,2.758-0.891,7.258-1.4c3.818-0.422,6.492-0.637,8.018-0.637c20.197,0,33.012,9.805,38.443,29.408  c0.934-0.773,1.402-2.066,1.402-3.871c0-2.324-0.68-5.25-2.037-8.777c-0.512-1.375-1.318-3.441-2.42-6.193  c6.957,8.867,10.439,17.27,10.439,25.199c0,4.178-0.979,7.973-2.93,11.381c-1.27,2.303-3.65,5.244-7.127,8.826  c-3.48,3.58-5.857,6.352-7.131,8.313c4.668-1.271,7.725-2.248,9.168-2.928c3.223-1.44,6.15-3.606,8.783-6.492  C-116.635,62.756-117.102,64.412-118.035,66.617z M-173.537,16.592c0,1.525-0.85,2.502-2.545,2.926l-3.311,0.51  c-1.189,0.594-2.928,2.928-5.219,7c-0.256-1.271-0.637-3.053-1.146-5.346c-0.764,0.086-2.035,0.764-3.818,2.037  c-0.764,0.594-1.996,1.484-3.693,2.672c0.512-3.055,2.207-6.148,5.094-9.293c3.055-3.477,6.025-5.217,8.91-5.217  C-175.447,11.881-173.537,13.453-173.537,16.592z M-151.387,28.301c0,1.443-0.785,2.654-2.355,3.629  c-1.57,0.977-3.119,1.465-4.646,1.465c-2.037,0-3.863-1.146-5.473-3.438c-1.955-2.801-3.947-4.625-5.984-5.477  c0.424-0.422,0.934-0.635,1.529-0.635c0.764,0,2.055,0.594,3.881,1.781c1.824,1.189,2.99,1.783,3.502,1.783  c0.424,0,1.123-0.594,2.1-1.783c0.975-1.188,2.057-1.781,3.246-1.781C-152.787,23.846-151.387,25.332-151.387,28.301z" /></symbol>
+<clipPath id="frameclip-Kuznets"><path d="M 10 10 H 470 V 670 H 10 Z"/></clipPath>
+<clipPath id="artclip-Kuznets"><path d="M 29 70.1 H 451 V 378.2 H 29 Z"/></clipPath>
+</defs>
+<rect width="480.0" height="680.0" fill="#0a0a0a"/>
+
+<!-- frame background: the real per-color texture, clipped to the template's
+     own inner-border shape (rect1585) -->
+<g clip-path="url(#frameclip-Kuznets)">
+
+        <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/frames/red.png" x="0" y="0" width="480.0" height="680.0" preserveAspectRatio="xMidYMid slice"/>
+        <rect width="480.0" height="680.0" fill="url(#vign-Kuznets)"/>
+        
+</g>
+
+<!-- art: clipped to the template's own art-box shape (rect1823) -->
+<g clip-path="url(#artclip-Kuznets)">
+  <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/art/kuznets_smith.png" x="29.0" y="70.1" width="422.0" height="308.1" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<path d="M 29 70.1 H 451 V 378.2 H 29 Z" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+<!-- name plate: the template's own scalloped path2013 shape -->
+<path d="M 28.5 23.7 c -9.3 7.4 -9.4 31.9 0 39.9 h 423 c 8.4 -5 8.6 -34.2 0 -39.9 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="53.0" font-family="'PT Serif Title', serif" font-size="25" font-weight="700" fill="#141414">Кузнец</text>
+<use href="#mana-1" x="397.5" y="33.6" width="20" height="20"/><use href="#mana-R" x="420.5" y="33.6" width="20" height="20"/>
+
+<!-- type plate: the template's own path2013-0 shape -->
+<path d="M 28.5 385.8 c -5.4 8.2 -6.2 25 0 34.7 h 423 c 6.7 -5.9 6.5 -29.1 0 -34.7 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="412.0" font-family="'Beleren', 'Georgia', serif" font-size="25" fill="#141414">Creature — Human Artificer</text>
+
+<!-- rules-text box: path8112 in the template is an open decorative
+     connector (fill:none), not a closed box; the fill rect below is
+     closed from the same top/right/bottom edge coordinates it draws, and
+     the connector itself is then drawn on top as the real accent line,
+     including its run up the left margin past the type/art boxes -->
+<rect x="26.5" y="428.1" width="423.0" height="200.79999999999995" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="37.0" y="460.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="fill:#141414;">When Kuznets enters the battlefield,</text><text x="37.0" y="484.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="fill:#141414;">create a Treasure token.</text><text x="37.0" y="532.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="font-style:italic;fill:#3a3a3a;">"Bring me iron from the mountain, and</text><text x="37.0" y="556.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="fill:#141414;">I'll forge you a blade that sings."</text>
+<path d="M 26.5 428.1 h 423 V 628.9 H 22.4 V 423.6 c -6.9 -15 -7.7 -29.2 0 -42.2 V 65.4 c -7.4 -9.4 -9.4 -31.7 0 -44.5" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+
+        <path d="M 369.7 617.4 h 81.1 c 5.7 8.3 4.8 29.1 0 37.6 h -81.1 c -6.4 -9.5 -6.5 -28.2 0 -37.6 z" fill="#efe9d8" stroke="#2a2a2a" stroke-width="2"/>
+        <text x="410.0" y="642.0" font-family="'Beleren', 'Georgia', serif" font-size="24" font-weight="700" text-anchor="middle" fill="#141414">2/2</text>
+</svg>

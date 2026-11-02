@@ -1,0 +1,13 @@
+Name:Ne Slezay s Konya
+ManaCost:1 R
+Types:Enchantment Nakaz
+K:Flash
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigUntap | TriggerDescription$ When CARDNAME enters, untap target creature. It gains haste and gets +2/+0 until end of turn.
+T:Mode$ Taps | ValidCard$ Creature.YouCtrl | Attacker$ False | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ Whenever a creature you control becomes tapped other than by attacking, sacrifice it and CARDNAME.
+SVar:TrigUntap:DB$ Untap | ValidTgts$ Creature | SubAbility$ DBPump
+SVar:DBPump:DB$ Pump | Defined$ Targeted | KW$ Haste | NumAtt$ 2 | NumDef$ 0
+SVar:TrigSac:DB$ Pump | RememberObjects$ TriggeredCard | SubAbility$ DBSacSelf
+SVar:DBSacSelf:DB$ Sacrifice | SubAbility$ DBSacOther
+SVar:DBSacOther:DB$ Sacrifice | SacValid$ Card.IsRemembered | Defined$ You | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+Oracle:Flash\nUntap target creature. It gains haste and gets +2/+0 until end of turn.\nWhenever a creature you control becomes tapped other than by attacking, sacrifice it and CARDNAME.

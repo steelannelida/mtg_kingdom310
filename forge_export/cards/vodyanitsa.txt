@@ -1,0 +1,7 @@
+Name:Vodyanitsa
+ManaCost:1 U
+Types:Creature Spirit
+PT:1/1
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDig | TriggerDescription$ When CARDNAME enters, look at the top three cards of your library. Put one into your hand and the rest on the bottom in any order.
+SVar:TrigDig:DB$ Dig | DigNum$ 3 | ChangeNum$ 1 | NoReveal$ True
+Oracle:When CARDNAME enters the battlefield, look at the top three cards of your library. Put one into your hand and the rest on the bottom in any order.

@@ -14,6 +14,7 @@
     \ morning sky, simple dignity"
   name_ru: Пахарь
   name_en: Plowman
+  forge: {}
 - name: Kalika Perekhozhiy
   cost: "{1}{W}"
   type_line: Creature — Human Cleric
@@ -30,6 +31,10 @@
     \ beard, distant church domes on the horizon"
   name_ru: Калика Перехожий
   name_en: Wandering Pilgrim
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigLife | TriggerDescription$ When CARDNAME enters, you gain 2 life."
+    SVar:
+      TrigLife: "DB$ GainLife | Defined$ You | LifeAmount$ 2"
 - name: Derevenskiy Starosta
   cost: "{2}{W}"
   type_line: Creature — Human Peasant
@@ -46,6 +51,8 @@
     \ a carved wooden staff of office, stern but kind expression, summer evening light"
   name_ru: Деревенский Староста
   name_en: Village Elder
+  forge:
+    S: "Mode$ Continuous | Affected$ Creature.YouCtrl+Other+Peasant | AddToughness$ 1 | Description$ Other Peasant creatures you control get +0/+1."
 - name: Vityaz Storozhevoy
   cost: "{1}{W}"
   type_line: Creature — Human Soldier
@@ -62,6 +69,8 @@
     \ him, alert vigilant posture"
   name_ru: Витязь Сторожевой
   name_en: Watchman Knight
+  forge:
+    K: "Vigilance"
 - name: Derevenskaya Devitsa
   cost: "{W}"
   type_line: Creature — Human Peasant
@@ -76,6 +85,8 @@
   art_file: derevenskaya_devitsa_village_maiden.png
   art_prompt: "a young peasant woman in an embroidered white blouse and sarafan dress, blond hair woven into a single long braid, holding out a round loaf of bread wrapped in an embroidered cloth, standing\
     \ at the edge of a village, a concerned smile, morning light, wildflowers at her feet. Rural slavic medieval setting"
+  forge:
+    A: "AB$ Pump | Cost$ T | ValidTgts$ Creature.EnchantedBy Aura.Quest | NumAtt$ 1 | NumDef$ 1 | SpellDescription$ Target creature on a quest gains +1/+1 until end of turn."
   name_ru: Деревенская Девица
   name_en: Village Maiden
 - name: Pogranichnaya Zastava
@@ -96,6 +107,11 @@
     \ endlessly beyond, overcast sky suggesting a coming storm"
   name_ru: Пограничная Застава
   name_en: Frontier Garrison
+  forge:
+    K: "Defender"
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigFood | TriggerDescription$ When CARDNAME enters, create a Food token."
+    SVar:
+      TrigFood: "DB$ Token | TokenOwner$ You | TokenScript$ c_a_food_sac"
 - name: Pastva
   cost: "{3}{W}"
   type_line: Creature — Human Cleric
@@ -112,6 +128,10 @@
   art_file: pastva_vernykh_flock_of_the_faithful.png
   art_prompt: "a group of devout peasants kneeling in prayer before a small wooden church, candles in their hands, an old priest with a censer leading the prayer, golden candlelight against blue dusk, humble\
     \ faces turned upward in faith"
+  forge:
+    T: "Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Aura.Quest+YouCtrl | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ Whenever you complete a Quest, create a 1/1 white Human Peasant creature token."
+    SVar:
+      TrigToken: "DB$ Token | TokenScript$ w_1_1_human_peasant | TokenOwner$ You"
   name_ru: Паства
   name_en: Congregation
 - name: Konny Druzhinnnik
@@ -128,6 +148,8 @@
   art_file: konny_druzhinnnik_mounted_retainer.png
   art_prompt: "a mounted Russian warrior in scale armour on a stocky steppe horse, lance couched and ready, a small pennant fluttering from the lance tip, riding across open grassland at a canter, dust\
     \ rising behind, determined expression under a riveted helmet"
+  forge:
+    S: "Mode$ Continuous | Affected$ Card.Self+EnchantedBy Aura.Quest | AddKeyword$ First Strike | Description$ CARDNAME has first strike as long as it's on a quest."
   name_ru: Конный Дружинник
   name_en: Mounted Retainer
 - name: Svetly Otrok
@@ -144,6 +166,10 @@
   art_file: svetly_otrok_fair_youth.png
   art_prompt: "a young fair-haired boy in simple peasant clothes stepping onto a road that leads into a vast landscape, a small bundle over his shoulder, looking ahead with innocent determination, birch\
     \ trees lining the road, soft golden light of early morning, the road stretching into distant blue haze"
+  forge:
+    T: "Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self+EnchantedBy Aura.Quest | Execute$ TrigGain | TriggerDescription$ When CARDNAME dies, if it was on a quest, you gain 3 life."
+    SVar:
+      TrigGain: "DB$ GainLife | Defined$ You | LifeAmount$ 3"
   name_ru: Светлый Отрок
   name_en: Fair Youth
 - name: Monastyrsky Kot
@@ -162,6 +188,8 @@
     \ walls in the background"
   name_ru: Монастырский Кот
   name_en: Monastery Cat
+  forge:
+    K: "Lifelink"
 - name: Blagoslovenie
   cost: "{W}"
   type_line: Instant
@@ -174,6 +202,10 @@
   art_file: blagoslovenie_blessing.png
   art_prompt: "a priest's weathered hands raised in blessing over a kneeling armored slavic warrior, golden light radiating from the hands downward, the warrior's bowed head and closed eyes, inside a small\
     \ candlelit wooden church, icons visible on the wall behind. Slavic medieval setting."
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | NumAtt$ 2 | NumDef$ 2 | SubAbility$ DBIndestruct | SpellDescription$ Target creature gets +2/+2 until end of turn. If it's on a quest, it also gains indestructible until end of turn."
+    SVar:
+      DBIndestruct: "DB$ Pump | Defined$ Targeted | KW$ Indestructible | ConditionDefined$ Targeted | ConditionPresent$ Creature.EnchantedBy Aura.Quest | ConditionCompare$ GE1"
   name_ru: Благословение
   name_en: Blessing
 - name: Krestniy Khod
@@ -190,6 +222,10 @@
     \ in vestments leading, late summer light, the wheat bowing in the breeze"
   name_ru: Крестный Ход
   name_en: Holy Procession
+  forge:
+    A: "SP$ Token | TokenAmount$ 2 | TokenOwner$ You | TokenScript$ w_1_1_human_peasant | SubAbility$ DBDraw | SpellDescription$ Create two 1/1 white Human Peasant creature tokens. Draw a card."
+    SVar:
+      DBDraw: "DB$ Draw | Defined$ You | NumCards$ 1"
 - name: Utrenniy Zvon
   cost: "{W}"
   type_line: Sorcery
@@ -201,6 +237,8 @@
   art_style: 9
   art_prompt: "A close up of a medieval slavic orthodox church's bell tower. The big bell is swinging, so are the smaller bells. Early morning light"
   art_file: utrenniy_zvon_morning_bells.png
+  forge:
+    A: "SP$ UntapAll | ValidCards$ Creature.YouCtrl+tapped | SpellDescription$ Untap any number of tapped creatures you control."
   name_ru: Утренний Звон
   name_en: Morning Bells
 - name: Den Prostoyat
@@ -218,6 +256,26 @@
   art_file: den_prostoyat_hold_for_a_day.png
   art_prompt: Daytime. A small medieval slavic city with white walls is under siege. A company of soldiers in chain mails are holding the gates from the inside. Arrows and stones are raining from over the
     wall.
+  forge:
+    K: "Enchant:Creature.YouCtrl"
+    S: "Mode$ Continuous | Affected$ Creature.EnchantedBy | AddToughness$ 3 | AddKeyword$ Defender | Description$ Enchanted creature gets +0/+3 and has defender."
+    # NOTE (2026-09-26): OptionalDecider$ on the T: line makes the WHOLE trigger
+    # declinable, including the chained Sacrifice -- but per the printed text, only the
+    # exile is a "may"; the sacrifice is unconditional. Also, ValidTgts$ (rather than
+    # TargetMin$ 0) requires a legal target to exist just to construct/queue the
+    # ability at all -- with zero legal targets the whole TrigExile (including its
+    # SubAbility$ DBSac chain) never gets created, so Den Prostoyat wouldn't even
+    # sacrifice itself. Fixed by making the exile "up to one" target (TargetMin$ 0),
+    # matching the same pattern used for Zakladnaya Chertu's optional return -- this
+    # alone gives the "may" semantics (choosing zero targets = declining), so the old
+    # OptionalDecider$/Optional$ confirm-prompt approach isn't needed at all. Found via
+    # a live playtesting report ("blocked and survived but nothing happened at end of
+    # combat") -- confirmed by a regression test where no legal exile target exists at
+    # all (an even simpler trigger of the same underlying bug).
+    T: "Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | TriggerZones$ Battlefield | IsPresent$ Creature.EnchantedBy+blockedThisTurn | Execute$ TrigExile | TriggerDescription$ At the end of combat, if enchanted creature blocked this turn, you may choose and exile a creature that attacked this turn. Sacrifice CARDNAME."
+    SVar:
+      TrigExile: "DB$ ChangeZone | Origin$ Battlefield | Destination$ Exile | ValidTgts$ Creature.attackedThisTurn | TargetMin$ 0 | TargetMax$ 1 | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self"
   name_ru: День Простоять
   name_en: Hold for a Day
 - name: Proshcheniye
@@ -234,6 +292,11 @@
   art_file: proshcheniye_absolution.png
   art_prompt: "a penitent figure kneeling before a stern old priest inside a dark wooden church, the priest's hand extended in absolution, a faint golden glow where the hand touches the penitent's forehead,\
     \ heavy shadows, candle flames reflected in the icons on the wall"
+  forge:
+    S: "Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 1 | ValidTarget$ Enchantment.Nakaz | EffectZone$ All | Description$ CARDNAME costs {1} less to cast if it targets a Nakaz."
+    A: "SP$ Destroy | ValidTgts$ Enchantment | SubAbility$ DBGain | SpellDescription$ Destroy target Enchantment. You gain 2 life."
+    SVar:
+      DBGain: "DB$ GainLife | Defined$ You | LifeAmount$ 2"
   name_ru: Прощение
   name_en: Absolution
 - name: Obraza na Shitah
@@ -250,6 +313,9 @@
   art_file: obraza_na_shitah_icons_on_the_shields.png
   art_prompt: An army of medieval slavic foot soldiers in chain mails and large shields stands in formation before the battle in bright daylight. The centerpiece of every shield is an orthodox icon of a
     saint.
+  forge:
+    S: "Mode$ Continuous | Affected$ Creature.YouCtrl | AddToughness$ 1 | Description$ Creatures you control get +0/+1."
+    A: "AB$ Protection | Cost$ W W | ValidTgts$ Creature | Gains$ Choice | Choices$ AnyColor | SpellDescription$ Target creature gains protection from a color of your choice until end of turn."
   name_ru: Образа на Щитах
   name_en: Icons on the Shields
 - name: Ratnik
@@ -266,6 +332,10 @@
   art_file: ratnik_foot_soldier.png
   name_ru: Ратник
   name_en: Foot Soldier
+  forge:
+    S: "Mode$ Continuous | Affected$ Card.Self | AddPower$ X | AddToughness$ X | Description$ CARDNAME gets +1/+1 for each other Soldier you control."
+    SVar:
+      X: "Count$Valid Creature.YouCtrl+Other+Soldier"
 - name: Voyevoda
   cost: "{3}{W}"
   type_line: Creature - Human Soldier
@@ -281,6 +351,12 @@
   art_file: voyevoda_warrior_chieftain.png
   name_ru: Воевода
   name_en: Warrior Chieftain
+  forge:
+    T:
+      - "Mode$ Attacks | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever CARDNAME attacks or blocks, other Soldiers you control get +1/+1 until end of turn."
+      - "Mode$ Blocks | ValidCard$ Card.Self | TriggerZones$ Battlefield | Execute$ TrigPump | Secondary$ True | TriggerDescription$ Whenever CARDNAME attacks or blocks, other Soldiers you control get +1/+1 until end of turn."
+    SVar:
+      TrigPump: "DB$ PumpAll | ValidCards$ Creature.YouCtrl+Other+Soldier | NumAtt$ +1 | NumDef$ +1"
 - name: Postrig
   cost: "{1}{W}"
   type_line: Enchantment - Aura
@@ -295,3 +371,6 @@
   art_file: postrig_tonsure.png
   name_ru: Постриг
   name_en: Tonsure
+  forge:
+    K: "Enchant:Creature"
+    S: "Mode$ CantAttack,CantBlock | ValidCard$ Creature.EnchantedBy | Description$ Enchanted creature can't attack or block."

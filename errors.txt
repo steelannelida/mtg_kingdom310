@@ -1,0 +1,2 @@
+- Krestniy Hod created 1 token instead of 2
+- Krestniy Hod didn't require mana or lands tapping

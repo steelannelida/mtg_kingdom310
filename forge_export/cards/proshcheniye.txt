@@ -1,0 +1,7 @@
+Name:Proshcheniye
+ManaCost:1 W
+Types:Instant
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 1 | ValidTarget$ Enchantment.Nakaz | EffectZone$ All | Description$ CARDNAME costs {1} less to cast if it targets a Nakaz.
+A:SP$ Destroy | ValidTgts$ Enchantment | SubAbility$ DBGain | SpellDescription$ Destroy target Enchantment. You gain 2 life.
+SVar:DBGain:DB$ GainLife | Defined$ You | LifeAmount$ 2
+Oracle:Destroy target Enchantment. You gain 2 life.\nIf the target is a Nakaz, CARDNAME costs {1} less to cast

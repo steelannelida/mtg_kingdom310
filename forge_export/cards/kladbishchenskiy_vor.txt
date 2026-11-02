@@ -1,0 +1,8 @@
+Name:Kladbishchenskiy vor
+ManaCost:2 B
+Types:Creature Human Rogue
+PT:2/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ When CARDNAME enters, exile target card from a graveyard. If it was a creature card, create a Treasure token.
+SVar:TrigChange:DB$ ChangeZone | Origin$ Graveyard | Destination$ Exile | ValidTgts$ Card | TgtPrompt$ Choose target card in a graveyard | SubAbility$ DBToken
+SVar:DBToken:DB$ Token | TokenScript$ c_a_treasure_sac | TokenOwner$ You | ConditionDefined$ Targeted | ConditionPresent$ Creature | ConditionCompare$ EQ1
+Oracle:When CARDNAME enters the battlefield, exile target card from a graveyard. If it was a creature card, create a Treasure token.

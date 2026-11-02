@@ -1,0 +1,5 @@
+Name:Volshebnoe Zerkaltse
+ManaCost:2
+Types:Artifact
+A:AB$ Scry | Cost$ 1 T | ScryNum$ 1 | SpellDescription$ Scry 1.
+Oracle:{1}, {T}: Scry 1.

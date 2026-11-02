@@ -1,0 +1,8 @@
+Name:Sery Volk
+ManaCost:2 G
+Types:Creature Wolf Mount
+PT:3/2
+K:Saddle:1
+T:Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigTrample | TriggerDescription$ Whenever CARDNAME attacks while saddled, it gains trample until end of turn.
+SVar:TrigTrample:DB$ Pump | Defined$ Self | KW$ Trample | Temporary$ True
+Oracle:Saddle 1\nWhenever CARDNAME attacks while saddled, it gains trample until end of turn.

@@ -1,0 +1,7 @@
+Name:Korabl Kupecheskiy
+ManaCost:3 U
+Types:Artifact Creature Ship
+PT:2/5
+K:Defender
+A:AB$ Draw | Cost$ 2 T | NumCards$ 1 | SorcerySpeed$ True | SpellDescription$ Draw a card. Activate only as a sorcery.
+Oracle:Defender\n{2}, {T}: Draw a card. Activate only as a sorcery.

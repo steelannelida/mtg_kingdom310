@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="1360" viewBox="0 0 480.0 680.0">
+<defs>
+<style>
+    @font-face { font-family: 'Beleren'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/Beleren.ttf'); }
+    @font-face { font-family: 'MPlantin'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/MPlantin.woff'); }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic.woff2') format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic-ext.woff2') format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+2000-206F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+1E00-1E9F; }
+    </style>
+
+        <radialGradient id="vign-Klubochek" cx="50%" cy="45%" r="75%">
+          <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+        </radialGradient>
+        
+<symbol id="mana-1" viewBox="-848.00 -218.00 116.00 116.00"><g>
+	<circle fill="#CAC5C0" cx="-790" cy="-160.002" r="50" />
+</g>
+<path fill="#0D0F0F" d="M-784.315-199.999v64.108c0,7.671,3.226,11.504,9.687,11.504h1.684v4.388h-34.111v-4.388h2.141  c6.247,0,9.369-3.833,9.369-11.504v-42.054c0-7.758-2.697-11.643-8.081-11.643h-3.429v-4.247h1.237c6.66,0,12.691-2.057,18.08-6.165  L-784.315-199.999L-784.315-199.999z" /></symbol>
+<symbol id="mana-T" viewBox="-953.00 307.00 116.00 116.00"><g>
+	<circle fill="#CAC5C0" cx="-895" cy="364.998" r="50" />
+</g>
+<path fill="#0D0F0F" d="M-859.668,373.918h-36.004l13.185-9.383c-4.898-3.887-10.566-5.828-16.984-5.828  c-3.211,0-5.414,0.613-6.59,1.836c-1.184,1.227-1.777,3.445-1.777,6.654c0,8.873,4.563,18.34,13.691,28.396l-10.391,10.521  c-12.09-14.705-18.129-27.844-18.129-39.424c0-6.928,2.086-12.447,6.27-16.545c4.18-4.098,9.746-6.148,16.668-6.148  c8.453,0,17.664,3.215,27.641,9.635l7.728-13.182L-859.668,373.918z" /></symbol>
+<clipPath id="frameclip-Klubochek"><path d="M 10 10 H 470 V 670 H 10 Z"/></clipPath>
+<clipPath id="artclip-Klubochek"><path d="M 29 70.1 H 451 V 378.2 H 29 Z"/></clipPath>
+</defs>
+<rect width="480.0" height="680.0" fill="#0a0a0a"/>
+
+<!-- frame background: the real per-color texture, clipped to the template's
+     own inner-border shape (rect1585) -->
+<g clip-path="url(#frameclip-Klubochek)">
+
+        <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/frames/artifact.png" x="0" y="0" width="480.0" height="680.0" preserveAspectRatio="xMidYMid slice"/>
+        <rect width="480.0" height="680.0" fill="url(#vign-Klubochek)"/>
+        
+</g>
+
+<!-- art: clipped to the template's own art-box shape (rect1823) -->
+<g clip-path="url(#artclip-Klubochek)">
+  <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/art/klubochek_guiding_ball_of_thread.png" x="29.0" y="70.1" width="422.0" height="308.1" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<path d="M 29 70.1 H 451 V 378.2 H 29 Z" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+<!-- name plate: the template's own scalloped path2013 shape -->
+<path d="M 28.5 23.7 c -9.3 7.4 -9.4 31.9 0 39.9 h 423 c 8.4 -5 8.6 -34.2 0 -39.9 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="53.0" font-family="'PT Serif Title', serif" font-size="25" font-weight="700" fill="#141414">Клубочек</text>
+<use href="#mana-1" x="420.5" y="33.6" width="20" height="20"/>
+
+<!-- type plate: the template's own path2013-0 shape -->
+<path d="M 28.5 385.8 c -5.4 8.2 -6.2 25 0 34.7 h 423 c 6.7 -5.9 6.5 -29.1 0 -34.7 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="412.0" font-family="'Beleren', 'Georgia', serif" font-size="25" fill="#141414">Artifact</text>
+
+<!-- rules-text box: path8112 in the template is an open decorative
+     connector (fill:none), not a closed box; the fill rect below is
+     closed from the same top/right/bottom edge coordinates it draws, and
+     the connector itself is then drawn on top as the real accent line,
+     including its run up the left margin past the type/art boxes -->
+<rect x="26.5" y="428.1" width="423.0" height="200.79999999999995" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<use href="#mana-T" x="39.0" y="448.5" width="14" height="14"/><text x="55.1" y="460.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">, sacrifice Klubochek: Search your library</text><text x="37.0" y="480.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">for a basic land card, put it into your</text><text x="37.0" y="500.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">hand, then shuffle. If you control a</text><text x="37.0" y="520.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">creature on a quest, put it onto the</text><text x="37.0" y="540.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">battlefield tapped instead.</text><text x="37.0" y="580.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="font-style:italic;fill:#3a3a3a;">"The old woman gave him a ball of thread.</text><text x="37.0" y="600.0" font-family="'MPlantin', 'Georgia', serif" font-size="17" style="fill:#141414;">'Follow it,' she said. 'It knows the way.'"</text>
+<path d="M 26.5 428.1 h 423 V 628.9 H 22.4 V 423.6 c -6.9 -15 -7.7 -29.2 0 -42.2 V 65.4 c -7.4 -9.4 -9.4 -31.7 0 -44.5" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+
+</svg>

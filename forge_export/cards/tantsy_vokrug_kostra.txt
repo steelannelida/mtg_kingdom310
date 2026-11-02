@@ -1,0 +1,6 @@
+Name:Tantsy vokrug Kostra
+ManaCost:R
+Types:Sorcery
+A:SP$ DealDamage | ValidTgts$ Player,Planeswalker | NumDmg$ 2 | SubAbility$ DBToken | SpellDescription$ CARDNAME deals 2 damage to target player or planeswalker. Create a Food token.
+SVar:DBToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+Oracle:CARDNAME deals 2 damage to target player or planeswalker. Create a Food token.

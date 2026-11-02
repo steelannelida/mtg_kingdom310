@@ -1,0 +1,5 @@
+Name:Samobranka
+ManaCost:2
+Types:Artifact
+A:AB$ Token | Cost$ 2 T | TokenScript$ c_a_food_sac | TokenOwner$ You | SpellDescription$ Create a Food token.
+Oracle:{2}, {T}: Create a Food token.

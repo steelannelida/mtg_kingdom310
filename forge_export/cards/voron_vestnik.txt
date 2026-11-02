@@ -1,0 +1,8 @@
+Name:Voron-Vestnik
+ManaCost:1 G
+Types:Creature Bird
+PT:1/1
+K:Flying
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigCounter | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may put a +1/+1 counter on target creature on a quest.
+SVar:TrigCounter:DB$ PutCounter | ValidTgts$ Creature.EnchantedBy Aura.Quest | CounterType$ P1P1 | CounterNum$ 1
+Oracle:Flying\nWhen CARDNAME enters the battlefield, you may put a +1/+1 counter on target creature on a quest.

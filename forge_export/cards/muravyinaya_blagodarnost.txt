@@ -1,0 +1,7 @@
+Name:Muravyinaya Blagodarnost
+ManaCost:X G G
+Types:Sorcery
+A:SP$ Token | TokenAmount$ X | TokenScript$ g_1_1_insect | TokenOwner$ You | SubAbility$ DBFood | SpellDescription$ Create X 1/1 Insect creature tokens. If you control a creature on a quest, in addition create X food tokens.
+SVar:DBFood:DB$ Token | TokenAmount$ X | TokenScript$ c_a_food_sac | TokenOwner$ You | ConditionPresent$ Creature.YouCtrl+EnchantedBy Aura.Quest | ConditionCompare$ GE1
+SVar:X:Count$xPaid
+Oracle:Create X 1/1 Insect creature tokens. If you control a creature on a quest, in addition create X food tokens

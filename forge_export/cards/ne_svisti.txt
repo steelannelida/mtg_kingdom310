@@ -1,0 +1,10 @@
+Name:Ne svisti
+ManaCost:1 B
+Types:Enchantment Nakaz
+K:Flash
+K:ETBReplacement:Other:ChooseP
+T:Mode$ SpellCast | ValidCard$ Creature | ValidActivatingPlayer$ Player.Chosen | TriggerZones$ Battlefield | Execute$ TrigDiscard | TriggerDescription$ When the chosen player plays a creature card, that player discards two cards. Sacrifice CARDNAME.
+SVar:ChooseP:DB$ ChoosePlayer | Defined$ You | Choices$ Player | SpellDescription$ As CARDNAME enters, choose a player.
+SVar:TrigDiscard:DB$ Discard | Defined$ ChosenPlayer | NumCards$ 2 | Mode$ TgtChoose | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self
+Oracle:Flash.\nWhen CARDNAME enters battlefield, choose a player\nWhen chosen player plays a creature card, that player discards two cards. Sacrifice  CARDNAME

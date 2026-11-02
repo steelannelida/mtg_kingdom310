@@ -1,0 +1,5 @@
+Name:Medved-Shatun
+ManaCost:2 G
+Types:Creature Bear
+PT:3/3
+Oracle:

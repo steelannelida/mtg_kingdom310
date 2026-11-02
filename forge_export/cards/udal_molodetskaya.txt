@@ -1,0 +1,6 @@
+Name:Udal Molodetskaya
+ManaCost:R
+Types:Instant
+A:SP$ Pump | ValidTgts$ Creature | NumAtt$ 3 | NumDef$ 1 | SubAbility$ DBFirstStrike | SpellDescription$ Target creature gets +3/+1 until end of turn. If it's on a quest, it also gains first strike until end of turn.
+SVar:DBFirstStrike:DB$ Pump | Defined$ Targeted | KW$ First Strike | ConditionDefined$ Targeted | ConditionPresent$ Creature.EnchantedBy Aura.Quest | ConditionCompare$ GE1
+Oracle:Target creature gets +3/+1 until end of turn.\nIf it's on a quest, it gains first strike until end of turn.

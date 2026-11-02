@@ -1,0 +1,11 @@
+Name:V Bochke po Moryu
+ManaCost:1 U
+Types:Enchantment Aura Quest
+K:Enchant:Creature
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigTap | TriggerDescription$ When CARDNAME enters, tap enchanted creature. It doesn't untap during its controller's next untap step.
+T:Mode$ Untaps | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigSearch | TriggerDescription$ When enchanted creature untaps, search your library for up to two Instant or Sorcery cards and put them into your hand, then shuffle. Sacrifice CARDNAME.
+SVar:TrigTap:DB$ Tap | Defined$ Enchanted | SubAbility$ DBPump
+SVar:DBPump:DB$ Pump | Defined$ Enchanted | KW$ HIDDEN This card doesn't untap during your next untap step. | Duration$ Permanent
+SVar:TrigSearch:DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Instant.YouOwn,Sorcery.YouOwn | ChangeNum$ 2 | Hidden$ True | Reveal$ True | Shuffle$ True | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self
+Oracle:Enchant creature (it is on a quest)\nWhen CARDNAME enters battlefield, tap Enchanted creature. It doesn't untap during its controller's next untap step.\nWhen enchanted creature untaps, search your library for upt to twp Instant or Sorcery cards and put them into your hand, then shuffle. Sacrifice CARDNAME.

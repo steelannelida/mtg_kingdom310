@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="1360" viewBox="0 0 480.0 680.0">
+<defs>
+<style>
+    @font-face { font-family: 'Beleren'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/Beleren.ttf'); }
+    @font-face { font-family: 'MPlantin'; src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/MPlantin.woff'); }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic.woff2') format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-cyrillic-ext.woff2') format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+2000-206F; }
+    @font-face { font-family: 'PT Serif Title'; font-weight: 700;
+      src: url('file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/fonts/PTSerif-Bold-latin-ext.woff2') format('woff2');
+      unicode-range: U+0100-02BA, U+1E00-1E9F; }
+    </style>
+
+        <radialGradient id="vign-Medved-Shatun" cx="50%" cy="45%" r="75%">
+          <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+        </radialGradient>
+        
+<symbol id="mana-2" viewBox="-743.00 -218.00 116.00 116.00"><g>
+	<circle fill="#CAC5C0" cx="-685" cy="-160.002" r="50" />
+</g>
+<path fill="#0D0F0F" d="M-657.558-139.897l-5.896,19.898h-48.991v-4.254c2.38-2.652,7.595-8.001,15.646-16.053  c4.849-4.852,9.649-9.972,14.407-15.371c2.378-2.651,4.21-4.942,5.487-6.862c2.836-4.114,4.255-8.32,4.255-12.624  c0-4.204-1.301-7.912-3.908-11.112c-2.607-3.204-5.97-4.808-10.09-4.808c-8.871,0-15.823,5.998-20.854,17.98l-4.395-1.647  c5.947-16.829,15.321-25.249,28.131-25.249c6.313,0,11.687,2.149,16.124,6.448c4.439,4.3,6.656,9.604,6.656,15.92  c0,8.052-4.617,15.918-13.858,23.601l-9.604,7.956c-6.131,5.127-11.212,9.929-15.231,14.412c-0.28,0.273-0.826,0.916-1.647,1.921  h25.521c3.932,0,6.907-0.776,8.918-2.335c1.735-1.372,3.434-3.98,5.08-7.821H-657.558z" /></symbol>
+<symbol id="mana-G" viewBox="-113.00 -8.00 116.00 116.00"><g>
+	<path fill="#A3C095" d="M-5,49.998C-5,77.613-27.385,100-55.002,100C-82.615,100-105,77.613-105,49.998   C-105,22.385-82.615,0-55.002,0C-27.385,0-5,22.385-5,49.998z" />
+</g>
+<path fill="#0D0F0F" d="M-11.238,56.225c0,1.668-0.645,3.164-1.936,4.498c-1.289,1.332-2.77,1.998-4.436,1.998  c-2.662,0-4.623-1.25-5.869-3.748l-5.871-0.25c-1.252,0-3.709,0.543-7.371,1.625c-3.914,1.082-6.164,1.957-6.746,2.623  c-0.916,0.998-1.664,3.332-2.248,6.996c-0.502,2.998-0.748,5.205-0.748,6.621c0,2.246,0.352,3.893,1.061,4.934  s2.166,1.916,4.371,2.623c2.205,0.707,3.561,1.104,4.061,1.187c0.332,0,0.873-0.041,1.625-0.125h1.498c1.08,0,2.205,0.17,3.373,0.5  c1.666,0.5,2.375,1.166,2.125,2c-1.168-0.166-3.207,0.084-6.121,0.75l3.496,1.748c0,1-1.416,1.498-4.246,1.498  c-0.752,0-1.771-0.166-3.063-0.498c-1.291-0.336-2.145-0.5-2.559-0.5h-1.625c-0.082,0.832-0.334,2.08-0.75,3.746  c-1.418-0.084-3.08-0.918-4.996-2.498c-1.918-1.58-3.123-2.373-3.621-2.373c-0.502,0-1.211,0.793-2.125,2.373  c-0.918,1.58-1.375,2.664-1.375,3.248c-1.082-0.584-1.996-1.668-2.75-3.248c-0.332-1.084-0.707-2.166-1.121-3.248  c-0.832,0.084-2.375,1.834-4.621,5.248h-0.627c-0.166-0.252-0.795-2-1.873-5.248c-2.582-0.832-4.996-1.248-7.246-1.248  c-1.082,0-2.748,0.25-4.996,0.748l-3.496-0.248c0.498-0.5,1.955-1.457,4.371-2.873c2.83-1.666,4.996-2.5,6.496-2.5  c0.246,0,0.578,0.043,1,0.125c0.414,0.086,0.75,0.125,1,0.125c0.578,0,1.518-0.312,2.809-0.938c1.291-0.623,2.039-1.186,2.246-1.684  c0.211-0.504,0.316-1.793,0.316-3.875c0-4.746-1.25-8.285-3.75-10.617c-2.168-2.082-5.746-3.58-10.744-4.498  c-1.332,4.746-5.08,7.123-11.24,7.123c-2,0-3.998-1.207-5.996-3.623c-1.996-2.416-2.996-4.623-2.996-6.621  c0-3.082,1.287-5.621,3.869-7.623c-2.08-2.162-3.121-4.369-3.121-6.617c0-2.084,0.643-3.914,1.936-5.5  c1.291-1.578,2.977-2.496,5.059-2.748c-0.166-2.662,0.707-4.496,2.623-5.496c-0.916-0.914-1.373-2.537-1.373-4.869  c0-2.748,0.916-5.039,2.748-6.871c1.83-1.832,4.121-2.75,6.869-2.75c3,0,5.457,1.045,7.371,3.125  c2.416-8.244,7.621-12.367,15.613-12.367c4.164,0,7.828,1.666,10.994,4.998c1.166,1.248,1.748,1.916,1.748,1.996  c-1,0-0.498-0.188,1.5-0.561c1.996-0.375,3.453-0.563,4.373-0.563c3.246,0,6.119,1.207,8.619,3.623  c2.164,2.166,3.664,4.912,4.498,8.244c0.58,0.084,1.498,0.332,2.748,0.748c1.83,0.92,2.748,2.498,2.748,4.748  c0,0.418-0.336,1.209-1,2.373c5.328,2.998,7.994,7.162,7.994,12.492c0,1.498-0.582,3.584-1.748,6.247  C-12.318,51.977-11.238,53.811-11.238,56.225z M-62.705,61.721v-1.623c0-1.914-0.936-3.664-2.809-5.246  c-1.875-1.582-3.77-2.373-5.684-2.373c-2.334,0-4.496,0.541-6.496,1.621C-73.281,53.852-68.283,56.393-62.705,61.721z   M-64.951,46.232c-1.25-1.418-2.332-2.875-3.25-4.373c-3.498,0.916-5.246,1.957-5.246,3.121c1-0.08,2.457,0.105,4.371,0.564  C-67.162,46.003-65.785,46.232-64.951,46.232z M-57.33,42.359v-5.496c-2-0.332-3.211-0.5-3.623-0.5v1.873L-57.33,42.359z   M-41.092,38.861c-1-0.416-2.875-1.25-5.621-2.498v10.742C-42.801,44.855-40.928,42.107-41.092,38.861z M-34.225,53.602  l-2.746-3.373c-1.664,1.167-3.352,2.354-5.061,3.561c-1.709,1.207-3.186,2.563-4.432,4.06  C-42.717,55.848-38.635,54.436-34.225,53.602z" /></symbol>
+<clipPath id="frameclip-Medved-Shatun"><path d="M 10 10 H 470 V 670 H 10 Z"/></clipPath>
+<clipPath id="artclip-Medved-Shatun"><path d="M 29 70.1 H 451 V 378.2 H 29 Z"/></clipPath>
+</defs>
+<rect width="480.0" height="680.0" fill="#0a0a0a"/>
+
+<!-- frame background: the real per-color texture, clipped to the template's
+     own inner-border shape (rect1585) -->
+<g clip-path="url(#frameclip-Medved-Shatun)">
+
+        <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/templates/frames/green.png" x="0" y="0" width="480.0" height="680.0" preserveAspectRatio="xMidYMid slice"/>
+        <rect width="480.0" height="680.0" fill="url(#vign-Medved-Shatun)"/>
+        
+</g>
+
+<!-- art: clipped to the template's own art-box shape (rect1823) -->
+<g clip-path="url(#artclip-Medved-Shatun)">
+  <image href="file:///Users/dmitrychernenkov/Public/To%20Save/Tales%20MTG%20Set/art/medved_shatun_roaming_bear.png" x="29.0" y="70.1" width="422.0" height="308.1" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<path d="M 29 70.1 H 451 V 378.2 H 29 Z" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+<!-- name plate: the template's own scalloped path2013 shape -->
+<path d="M 28.5 23.7 c -9.3 7.4 -9.4 31.9 0 39.9 h 423 c 8.4 -5 8.6 -34.2 0 -39.9 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="53.0" font-family="'PT Serif Title', serif" font-size="25" font-weight="700" fill="#141414">Медведь-Шатун</text>
+<use href="#mana-2" x="397.5" y="33.6" width="20" height="20"/><use href="#mana-G" x="420.5" y="33.6" width="20" height="20"/>
+
+<!-- type plate: the template's own path2013-0 shape -->
+<path d="M 28.5 385.8 c -5.4 8.2 -6.2 25 0 34.7 h 423 c 6.7 -5.9 6.5 -29.1 0 -34.7 z" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="35.0" y="412.0" font-family="'Beleren', 'Georgia', serif" font-size="25" fill="#141414">Creature — Bear</text>
+
+<!-- rules-text box: path8112 in the template is an open decorative
+     connector (fill:none), not a closed box; the fill rect below is
+     closed from the same top/right/bottom edge coordinates it draws, and
+     the connector itself is then drawn on top as the real accent line,
+     including its run up the left margin past the type/art boxes -->
+<rect x="26.5" y="428.1" width="423.0" height="200.79999999999995" fill="#f4f0e4" stroke="#2a2a2a" stroke-width="2"/>
+<text x="37.0" y="508.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="font-style:italic;fill:#3a3a3a;">"Where the bear walks, the forest</text><text x="37.0" y="532.0" font-family="'MPlantin', 'Georgia', serif" font-size="20" style="fill:#141414;">bows."</text>
+<path d="M 26.5 428.1 h 423 V 628.9 H 22.4 V 423.6 c -6.9 -15 -7.7 -29.2 0 -42.2 V 65.4 c -7.4 -9.4 -9.4 -31.7 0 -44.5" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+
+        <path d="M 369.7 617.4 h 81.1 c 5.7 8.3 4.8 29.1 0 37.6 h -81.1 c -6.4 -9.5 -6.5 -28.2 0 -37.6 z" fill="#efe9d8" stroke="#2a2a2a" stroke-width="2"/>
+        <text x="410.0" y="642.0" font-family="'Beleren', 'Georgia', serif" font-size="24" font-weight="700" text-anchor="middle" fill="#141414">3/3</text>
+</svg>

@@ -1,0 +1,6 @@
+Name:Blagoslovenie
+ManaCost:W
+Types:Instant
+A:SP$ Pump | ValidTgts$ Creature | NumAtt$ 2 | NumDef$ 2 | SubAbility$ DBIndestruct | SpellDescription$ Target creature gets +2/+2 until end of turn. If it's on a quest, it also gains indestructible until end of turn.
+SVar:DBIndestruct:DB$ Pump | Defined$ Targeted | KW$ Indestructible | ConditionDefined$ Targeted | ConditionPresent$ Creature.EnchantedBy Aura.Quest | ConditionCompare$ GE1
+Oracle:Target creature gets +2/+2 until end of turn. If it's on a quest, it also gains indestructible until end of turn.

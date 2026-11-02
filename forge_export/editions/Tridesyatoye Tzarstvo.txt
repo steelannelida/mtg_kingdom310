@@ -1,0 +1,109 @@
+[metadata]
+Code=TNK
+Date=2026-01-01
+Name=Tridesyatoye Tzarstvo
+Type=Custom
+
+[cards]
+1 C Navka
+2 C Upyr
+3 C Starukha-Vedma
+4 C Mertvets iz Navi
+5 C Chert Melkiy
+6 C Nochnaya Mara
+7 C Kladbishchenskiy Storozh
+8 C Drekavats
+9 C Kladbishchenskiy vor
+10 C Trup Ozhivshiy
+11 C Sglaz
+12 C Pominki
+13 C Ne Oglyadyvaisya
+14 C Holodnaya Zemlya
+15 C Noch Proderzhatsa
+16 C Kikimora
+17 C Ne svisti
+18 C Zakladnaya Chertu
+19 C Topkoye mesto
+20 C Kupets na Pristani
+21 C Rusalka-Iskusitelnitsa
+22 C Chudo-Rybka
+23 C Lebed Belaya
+24 C Gusi-Lebedi
+25 C Utoplennik
+26 C Korabl Kupecheskiy
+27 C Vodyanitsa
+28 C Starik-Rybak
+29 C Morskoy Kon
+30 C Rechnoy Tuman
+31 C Bluddyechko s Yablochkom
+32 C Zov Morya
+33 C Veschiy Son
+34 C Obman Zreniya
+35 C Otplyitye
+36 C V Bochke po Moryu
+37 C Treskuchiy Moroz
+38 C Starinnaya Letopis
+39 C Lapot Samokhodny
+40 C Samobranka
+41 C Volshebnoe Zerkaltse
+42 C Klubochek
+43 C Gorshochek Kashi
+44 C Dubinka Samoboyka
+45 C Medved-Shatun
+46 C Lisitsa-Khitryuga
+47 C Zayats-Beglets
+48 C Dub Vekovoy
+49 C Sery Volk
+50 C Yablonka Dobraya
+51 C Babushkina Koshka
+52 C Starichok-Lesovichok
+53 C Voron-Vestnik
+54 C Turoviy Byk
+55 C Zhivaya Voda
+56 C Lesnaya Tropa
+57 C Priyut Leshego
+58 C Medovy Sbiten
+59 C Sokhatyy
+60 C Rys
+61 C Bogatyrskaya Sila
+62 C Muravyinaya Blagodarnost
+63 C Sekretnyy Posvist
+64 C Udaloy Molodets
+65 C Kuznets
+66 C Gorynychenok
+67 C Okhrabrevshiy Mujik
+68 U Sivka-Burka
+69 C Samokhodnaya Pech
+70 C Razboynik s Bolshoy Dorogi
+71 C Kyyryy Oyuun
+72 C Pugach
+73 C Udal Molodetskaya
+74 C Grom i Molniya
+75 C Po shuchyemu veleniyu
+76 C Klich Bogatyrskiy
+77 C Tantsy vokrug Kostra
+78 C Ne Slezay s Konya
+79 C Ukrast Tsarevnu
+80 C Pechenegi
+81 C Polovtsy
+82 C Stepnoy Pozhar
+83 C Nochnoy Nabeg
+84 C Pakhar
+85 C Kalika Perekhozhiy
+86 C Derevenskiy Starosta
+87 C Vityaz Storozhevoy
+88 C Derevenskaya Devitsa
+89 C Pogranichnaya Zastava
+90 C Pastva
+91 C Konny Druzhinnnik
+92 C Svetly Otrok
+93 C Monastyrsky Kot
+94 C Blagoslovenie
+95 C Krestniy Khod
+96 C Utrenniy Zvon
+97 C Den Prostoyat
+98 C Proshcheniye
+99 C Obraza na Shitah
+100 C Ratnik
+101 C Voyevoda
+102 C Postrig

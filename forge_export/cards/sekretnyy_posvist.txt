@@ -1,0 +1,5 @@
+Name:Sekretnyy Posvist
+ManaCost:1 G
+Types:Instant
+A:SP$ ChangeZone | Cost$ 1 G tapXType<1/Creature/an untapped creature you control> | Origin$ Library | Destination$ Hand | ChangeType$ Creature | ChangeNum$ 1 | Reveal$ True | Shuffle$ True | SpellDescription$ As an additional cost to cast this spell, tap an untapped creature you control. Search your library for a creature card, reveal it and put it into your hand, then shuffle.
+Oracle:As an additional cost to cast this spell, tap an untapped creature you control.\n\nSearch your library for a creature card, reveal it and put it into your hand, then shuffle.

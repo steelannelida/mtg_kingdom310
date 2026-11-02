@@ -16,3 +16,22 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Scratch clone of Card-Forge/forge, used to build/run forge_tests/ locally.
+# Not part of this repo's content -- see forge_integration.md.
+forge-src/
+
+# Symlink to the local Forge install's resources, for reference only --
+# not part of the repo content (points outside the repo; see CLAUDE.md).
+forge-cards
+
+# Full card-image render set (render_cards.py --all) -- regenerate locally
+# rather than committing; card_renders_draft/'s small curated preview is
+# still tracked.
+card_renders/
+
+# Local Claude Code permissions/session config -- machine-specific.
+.claude/settings.local.json
+
+# Forge playtesting save-game scratch state.
+state.txt

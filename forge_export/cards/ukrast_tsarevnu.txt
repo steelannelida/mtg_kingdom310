@@ -1,0 +1,9 @@
+Name:Ukrast Tsarevnu
+ManaCost:1 R
+Types:Enchantment Aura Quest
+K:Enchant:Creature.YouCtrl
+T:Mode$ AttackerUnblocked | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigPrevent | TriggerDescription$ Whenever enchanted creature attacks and isn't blocked, prevent all combat damage it would deal this turn. Gain control of target creature defending player controls until the end of your next turn. Sacrifice CARDNAME.
+SVar:TrigPrevent:DB$ Pump | Defined$ TriggeredAttacker | KW$ Prevent all combat damage that would be dealt by CARDNAME. | SubAbility$ DBControl
+SVar:DBControl:DB$ GainControl | ValidTgts$ Creature.DefenderCtrl | LoseControl$ UntilTheEndOfYourNextTurn | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self
+Oracle:Enchant creature you control (it is on a quest)\nWhenever enchanted creature attacks and isn't blocked, prevent all combat damage it would deal this turn. Gain control of target creature defending player controls until the end of your next turn. Sacrifice CARDNAME.

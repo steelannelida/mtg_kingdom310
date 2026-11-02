@@ -14,6 +14,10 @@
     \ on either side, a single will-o-wisp light ahead, profound sadness"
   name_ru: Навка
   name_en: Navka
+  forge:
+    T: "Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigLose | TriggerDescription$ When CARDNAME dies, each opponent loses 1 life."
+    SVar:
+      TrigLose: "DB$ LoseLife | Defined$ Player.Opponent | LifeAmount$ 1"
 - name: Upyr
   cost: "{1}{B}"
   type_line: Creature — Zombie
@@ -32,6 +36,11 @@
     \ behind it, sickly moonlight, pure visceral horror"
   name_ru: Упырь
   name_en: Upyr
+  forge:
+    S: "Mode$ CantBlock | ValidCard$ Card.Self | Description$ CARDNAME can't block."
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigLoseLife | TriggerDescription$ When CARDNAME enters, you lose 1 life."
+    SVar:
+      TrigLoseLife: "DB$ LoseLife | Defined$ You | LifeAmount$ 1"
 - name: Starukha-Vedma
   cost: "{2}{B}"
   type_line: Creature — Human Warlock
@@ -48,6 +57,8 @@
     \ from the rafters, thick smoke curling upward"
   name_ru: Старуха-Ведьма
   name_en: Old Witch
+  forge:
+    A: "AB$ Pump | Cost$ 1 B T | ValidTgts$ Creature | NumAtt$ -1 | NumDef$ -1 | SpellDescription$ Target creature gets -1/-1 until end of turn."
 - name: Mertvets iz Navi
   cost: "{3}{B}"
   type_line: Creature — Zombie Spirit
@@ -64,6 +75,11 @@
     \ the figure half-dissolved into mist at the edges, liminal between worlds"
   name_ru: Мертвец из Нави
   name_en: Corpse from Nav
+  forge:
+    T: "Mode$ ChangesZone | Origin$ Any | CheckSVar$ Morbid | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ Morbid — When CARDNAME enters, if a creature died this turn, return target creature card with mana value 2 or less from your graveyard to your hand."
+    SVar:
+      TrigChange: "DB$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ValidTgts$ Creature.YouCtrl+cmcLE2 | TgtPrompt$ Select target creature card with mana value 2 or less"
+      Morbid: "Count$Morbid.1.0"
 - name: Chert Melkiy
   cost: "{1}{B}"
   type_line: Creature — Demon
@@ -79,6 +95,10 @@
   art_prompt: "a small impish devil with tiny horns and a ratlike tail, wearing an ill-fitting human coat, holding out a rolled parchment contract with a sly grin, firelight behind him, comically sinister"
   name_ru: Чёрт Мелкий
   name_en: Petty Devil
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters, you may sacrifice another creature. If you do, draw a card."
+    SVar:
+      TrigDraw: "AB$ Draw | Cost$ Sac<1/Creature.Other/another creature> | NumCards$ 1"
 - name: Nochnaya Mara
   cost: "{2}{B}"
   type_line: Creature — Spirit
@@ -95,6 +115,10 @@
     \ faint moonlight through a small window, sleep paralysis terror"
   name_ru: Ночная Мара
   name_en: Night Hag
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigPump | TriggerDescription$ When CARDNAME enters, target creature an opponent controls gets -2/-0 until your next turn."
+    SVar:
+      TrigPump: "DB$ Pump | ValidTgts$ Creature.OppCtrl | NumAtt$ -2 | NumDef$ 0 | Duration$ UntilYourNextTurn"
 - name: Kladbishchenskiy Storozh
   cost: "{3}{B}"
   type_line: Creature — Human Peasant
@@ -111,6 +135,8 @@
     \ silhouette in the background"
   name_ru: Кладбищенский Сторож
   name_en: Graveyard Watchman
+  forge:
+    A: "AB$ ChangeZone | Cost$ T | Origin$ Graveyard | Destination$ Exile | TgtPrompt$ Choose target card in a graveyard | ValidTgts$ Card | SpellDescription$ Exile target card from a graveyard."
 - name: Drekavats
   cost: "{1}{B}"
   type_line: Creature — Spirit
@@ -129,12 +155,16 @@
     \ glow, rooftops below with people cowering, pure dread"
   name_ru: Дрекавац
   name_en: Screaming Spirit
+  forge:
+    K:
+      - Flying
+      - "Soulshift:1"
 - name: Kladbishchenskiy vor
   cost: "{2}{B}"
   type_line: Creature — Human Rogue
   power: 2
   toughness: 2
-  text: "When Grabitel Mogil enters the battlefield, exile target card from a graveyard. If it was a creature card, create a Treasure token."
+  text: "When <this> enters the battlefield, exile target card from a graveyard. If it was a creature card, create a Treasure token."
   flavor_text: "The dead have no use for gold, but the living always do."
   notes: Graveyard interaction + Treasure. Feeds UR Treasure themes.
   rarity: common
@@ -145,6 +175,11 @@
     \ wooden grave markers leaning in the background"
   name_ru: Кладбищенский Вор
   name_en: Grave Robber
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ When CARDNAME enters, exile target card from a graveyard. If it was a creature card, create a Treasure token."
+    SVar:
+      TrigChange: "DB$ ChangeZone | Origin$ Graveyard | Destination$ Exile | ValidTgts$ Card | TgtPrompt$ Choose target card in a graveyard | SubAbility$ DBToken"
+      DBToken: "DB$ Token | TokenScript$ c_a_treasure_sac | TokenOwner$ You | ConditionDefined$ Targeted | ConditionPresent$ Creature | ConditionCompare$ EQ1"
 - name: Trup Ozhivshiy
   cost: "{4}{B}"
   type_line: Creature — Zombie
@@ -161,6 +196,10 @@
     \ scattering, dusk light over the carnage, it alone has moved"
   name_ru: Труп Ожившый
   name_en: Risen Corpse
+  forge:
+    S: "Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 2 | EffectZone$ All | CheckSVar$ X | Description$ Morbid — CARDNAME costs {2} less to cast if a creature died this turn."
+    SVar:
+      X: "Count$Morbid.1.0"
 - name: Sglaz
   cost: "{B}"
   type_line: Instant
@@ -174,6 +213,8 @@
   art_prompt: "a close-up of a single malevolent eye peering through a crack in a wooden fence. dark and intense with ill intent, the feeling of a curse being cast through a glance"
   name_ru: Сглаз
   name_en: Evil Eye
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | NumAtt$ -2 | NumDef$ -2 | SpellDescription$ Target creature gets -2/-2 until end of turn."
 - name: Pominki
   cost: "{1}{B}"
   type_line: Sorcery
@@ -188,6 +229,10 @@
     \ quietly, a single candle burning by the empty seat, heavy grief"
   name_ru: Поминки
   name_en: Funeral Feast
+  forge:
+    A: "SP$ Sacrifice | SacValid$ Creature | Defined$ Player | SubAbility$ DBToken | SpellDescription$ Each player sacrifices a creature. You create a Food token."
+    SVar:
+      DBToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
 - name: Ne Oglyadyvaisya
   cost: "{1}{B}"
   type_line: Enchantment - Nakaz
@@ -205,6 +250,15 @@
   notes: ''
   name_ru: Не Оглядывайся
   name_en: "Don't Look Back"
+  forge:
+    K: "Flash"
+    T:
+      - "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | TriggerDescription$ When CARDNAME enters the battlefield, return target creature card from your graveyard to the battlefield."
+      - "Mode$ ChangesZone | Destination$ Graveyard | ValidCard$ Card.YouOwn | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ Whenever a card is put into your graveyard, sacrifice CARDNAME and a creature."
+    SVar:
+      TrigChange: "DB$ ChangeZone | Origin$ Graveyard | Destination$ Battlefield | ValidTgts$ Creature.YouCtrl | TgtPrompt$ Choose target creature card in your graveyard"
+      TrigSac: "DB$ Sacrifice | Defined$ Self | SubAbility$ DBSacCreature"
+      DBSacCreature: "DB$ Sacrifice | SacValid$ Creature | Defined$ You"
 - name: Holodnaya Zemlya
   cost: "{1}{B}"
   type_line: Enchantment
@@ -219,6 +273,10 @@
     \ itself is hungry, bleak grey sky, deep cold"
   name_ru: Холодная Земля
   name_en: Cold Earth
+  forge:
+    T: "Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Creature.YouCtrl | Execute$ TrigLose | TriggerDescription$ Whenever a creature you control dies, each opponent loses 1 life."
+    SVar:
+      TrigLose: "DB$ LoseLife | Defined$ Player.Opponent | LifeAmount$ 1"
 - name: Noch Proderzhatsa
   cost: "{1}{B}"
   type_line: Enchantment — Aura Quest
@@ -236,6 +294,32 @@
     \ at the circle's edge, the candle flickering. Medieval slavic setting"
   name_ru: Ночь Продержаться
   name_en: Survive the Night
+  forge:
+    K: "Enchant:Creature"
+    S: "Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ -1 | AddToughness$ -1 | Description$ Enchanted creature gets -1/-1."
+    # NOTE (2026-09-26): same root cause as Zakladnaya Chertu's delayed life-loss bug --
+    # "ConditionDefined$ Remembered" reads the HOST CARD's own remembered list, but
+    # nothing here ever populates that (RememberObjects$ on a DelayedTrigger stores into
+    # the delayed trigger's OWN separate remembered list instead), so it was always
+    # empty and the condition never held. Fixed to "DelayTriggerRemembered", which
+    # resolves the delayed trigger's own remembered object back to its CURRENT live
+    # state (empty if it's no longer there) -- exactly the "is it still on the
+    # battlefield" check this card needs. (The LKI-preserving variant,
+    # DelayTriggerRememberedLKI, would be wrong here: it always returns the frozen
+    # snapshot object regardless of whether the real creature survived.)
+    # ALSO NOTE: a Mode$ Blocks trigger's triggering object is keyed AbilityKey.Blocker
+    # (see TriggerBlocks.setTriggeringObjects), not AbilityKey.Card -- "TriggeredCard"
+    # resolves generically to whatever's stored under the "Card" key (AbilityUtils
+    # getDefinedCards's "Triggered*" branch does `AbilityKey.fromString(defined
+    # .substring(9))`, i.e. strips "Triggered" and looks up the rest as a key), which is
+    # never set for this trigger type, so RememberObjects$ silently remembered nothing
+    # at all. Needs "TriggeredBlocker" instead.
+    T: "Mode$ Blocks | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigDelay | TriggerDescription$ When enchanted creature blocks, at the beginning of the next end of combat step, if it's still on the battlefield, draw two cards. Sacrifice CARDNAME."
+    SVar:
+      TrigDelay: "DB$ DelayedTrigger | Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | RememberObjects$ TriggeredBlocker | Execute$ TrigCheck"
+      TrigCheck: "DB$ Draw | Defined$ You | NumCards$ 2 | ConditionDefined$ DelayTriggerRemembered | ConditionPresent$ Card | ConditionCompare$ EQ1 | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self | ConditionDefined$ DelayTriggerRemembered | ConditionPresent$ Card | ConditionCompare$ EQ1 | SubAbility$ DBCleanup"
+      DBCleanup: "DB$ Cleanup | ClearRemembered$ True"
 - name: Kikimora
   cost: "{2}{B}"
   type_line: Creature — Spirit
@@ -250,6 +334,10 @@
   art_prompt: "a shadowy female spirit crouching behind a clay stove in a dark peasant hut, tangling a spindle of thread with long thin fingers, glowing eyes in the darkness, malevolent but small"
   name_ru: Кикимора
   name_en: Kikimora
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDiscard | TriggerDescription$ When CARDNAME enters, target player discards a card."
+    SVar:
+      TrigDiscard: "DB$ Discard | ValidTgts$ Player | NumCards$ 1 | Mode$ TgtChoose"
 - name: Ne svisti
   cost: "{1}{B}"
   type_line: Enchantment - Nakaz
@@ -266,6 +354,15 @@
   notes: ''
   name_ru: Не Cвисти
   name_en: "Don't whistle"
+  forge:
+    K:
+      - "Flash"
+      - "ETBReplacement:Other:ChooseP"
+    T: "Mode$ SpellCast | ValidCard$ Creature | ValidActivatingPlayer$ Player.Chosen | TriggerZones$ Battlefield | Execute$ TrigDiscard | TriggerDescription$ When the chosen player plays a creature card, that player discards two cards. Sacrifice CARDNAME."
+    SVar:
+      ChooseP: "DB$ ChoosePlayer | Defined$ You | Choices$ Player | SpellDescription$ As CARDNAME enters, choose a player."
+      TrigDiscard: "DB$ Discard | Defined$ ChosenPlayer | NumCards$ 2 | Mode$ TgtChoose | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self"
 - name: Zakladnaya Chertu
   cost: "{2}{B}{B}"
   type_line: Sorcery
@@ -279,6 +376,21 @@
   art_prompt: "a Russian peasant signing a contract with a shadowy devil figure by candlelight in a dark cellar, the quill dripping blood, sinister grin on the devil's face, baroque dramatic shadows"
   name_ru: Заклад Чёрту
   name_en: Demonic Mortgage
+  forge:
+    A: "SP$ ChangeZone | Origin$ Graveyard | Destination$ Battlefield | TargetMin$ 0 | TargetMax$ 2 | ValidTgts$ Creature.YouCtrl | TgtPrompt$ Choose target creature card in your graveyard | RememberChanged$ True | SubAbility$ DBDelay | SpellDescription$ Return up to two target creatures from your graveyard to the battlefield."
+    SVar:
+      # NOTE (2026-09-26): X was "RememberedLKI$CardPower", which reads from the HOST
+      # CARD's own remembered list -- but DBCleanup (chained right after DBDelay) clears
+      # that list immediately at cast time, well before the delayed trigger fires at end
+      # of turn, so X always evaluated to 0 and no life was ever lost. The delayed
+      # trigger itself has its OWN separate remembered list (populated by
+      # RememberObjects$ Remembered above), reachable only via "TriggerRemembered$" --
+      # confirmed against the real card Rushed Rebirth, which uses the identical
+      # DelayedTrigger + RememberObjects + "TriggerRemembered$CardX" pattern.
+      DBDelay: "DB$ DelayedTrigger | Mode$ Phase | Phase$ End of Turn | ValidPlayer$ You | RememberObjects$ Remembered | Execute$ TrigLoseLife | SubAbility$ DBCleanup | TriggerDescription$ At the end of this turn, you lose life equal to the sum of powers of those creatures."
+      TrigLoseLife: "DB$ LoseLife | Defined$ You | LifeAmount$ X"
+      X: "TriggerRemembered$CardPower"
+      DBCleanup: "DB$ Cleanup | ClearRemembered$ True"
 - name: Topkoye mesto
   cost: "{1}{B}{B}"
   type_line: Enchantment
@@ -290,3 +402,9 @@
   art_prompt: "a murky Russian bog at dusk, black water between clumps of sedge grass, will-o-wisps hovering over the surface, fog rolling in from the treeline, oppressive and suffocating stillness"
   name_ru: Топкое Место
   name_en: Swampy place
+  forge:
+    A: "AB$ Discard | Cost$ B B | ValidTgts$ Player | NumCards$ 2 | Mode$ TgtChoose | SpellDescription$ Target player discards two cards."
+    # NOTE: the "activate only if that player controls a creature attacking you
+    # or a creature on a quest" restriction is NOT modeled -- couldn't find a
+    # clean Forge idiom for "restrict based on the target you're about to pick"
+    # in the time available. Left as an unconditional discard-2 for now.

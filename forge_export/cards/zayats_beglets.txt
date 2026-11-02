@@ -1,0 +1,8 @@
+Name:Zayats-Beglets
+ManaCost:G
+Types:Creature Rabbit
+PT:1/1
+K:Haste
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigAttach | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may attach target Quest you control to it.
+SVar:TrigAttach:DB$ Attach | ValidTgts$ Aura.YouCtrl+quest | TgtPrompt$ Choose target Quest you control | Defined$ Self
+Oracle:Haste\nWhen CARDNAME enters the battlefield, you may attach target Quest you control to it.

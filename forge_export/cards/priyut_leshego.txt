@@ -1,0 +1,12 @@
+Name:Priyut Leshego
+ManaCost:2 G
+Types:Enchantment Aura Quest
+K:Enchant:Creature.YouCtrl
+T:Mode$ DamageDone | ValidSource$ Creature.EnchantedBy | ValidTarget$ Creature.Attacking | CombatDamage$ True | Execute$ TrigDelay | TriggerZones$ Battlefield | TriggerDescription$ When enchanted creature deals combat damage to an attacking creature, at end of combat, if that creature died, create two Food tokens and a 1/1 green Wolf creature token. Sacrifice CARDNAME.
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ 1 | AddToughness$ 1 | Description$ Enchanted creature gets +1/+1.
+SVar:TrigDelay:DB$ DelayedTrigger | Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | RememberObjects$ TriggeredTarget | Execute$ TrigCheck
+SVar:TrigCheck:DB$ Token | TokenAmount$ 2 | TokenScript$ c_a_food_sac | TokenOwner$ You | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBWolf
+SVar:DBWolf:DB$ Token | TokenScript$ g_1_1_wolf_sound_the_call | TokenOwner$ You | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+Oracle:Enchant creature you control (it is on a quest)\nEnchanted creature gets +1/+1.\nWhen enchanted deals combat damage to an attacking creature and that creature dies, create two Food tokens and a 1/1 green Wolf creature token. Sacrifice CARDNAME.

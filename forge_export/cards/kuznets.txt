@@ -1,0 +1,7 @@
+Name:Kuznets
+ManaCost:1 R
+Types:Creature Human Artificer
+PT:2/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigToken | TriggerDescription$ When CARDNAME enters, create a Treasure token.
+SVar:TrigToken:DB$ Token | TokenScript$ c_a_treasure_sac | TokenOwner$ You
+Oracle:When CARDNAME enters the battlefield, create a Treasure token.

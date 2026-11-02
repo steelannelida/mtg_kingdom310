@@ -1,0 +1,6 @@
+Name:Po shuchyemu veleniyu
+ManaCost:1 R
+Types:Sorcery
+A:SP$ Pump | ValidTgts$ Creature | KW$ Haste | SubAbility$ DBDraw | SpellDescription$ Target creature gains haste until end of turn. Draw a card.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1
+Oracle:Target creature gains haste until end of turn. Draw a card.

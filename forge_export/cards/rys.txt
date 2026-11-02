@@ -1,0 +1,6 @@
+Name:Rys
+ManaCost:2 G G
+Types:Creature Cat
+PT:3/3
+K:Reach
+Oracle:Reach

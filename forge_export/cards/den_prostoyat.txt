@@ -1,0 +1,9 @@
+Name:Den Prostoyat
+ManaCost:1 W
+Types:Enchantment Aura Quest
+K:Enchant:Creature.YouCtrl
+T:Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | TriggerZones$ Battlefield | IsPresent$ Creature.EnchantedBy+blockedThisTurn | Execute$ TrigExile | TriggerDescription$ At the end of combat, if enchanted creature blocked this turn, you may choose and exile a creature that attacked this turn. Sacrifice CARDNAME.
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | AddToughness$ 3 | AddKeyword$ Defender | Description$ Enchanted creature gets +0/+3 and has defender.
+SVar:TrigExile:DB$ ChangeZone | Origin$ Battlefield | Destination$ Exile | ValidTgts$ Creature.attackedThisTurn | TargetMin$ 0 | TargetMax$ 1 | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self
+Oracle:Enchant creature you control (it is on a quest)\nEnchanted creature gets +0/+3 and has defender.\nAt the end of the combat, if enchanted creature blocked this turn, you may choose and exile a creature that attacked this turn. Sacrifice CARDNAME.

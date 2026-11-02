@@ -1,0 +1,9 @@
+Name:Babushkina Koshka
+ManaCost:1 G
+Types:Creature Cat
+PT:1/1
+K:Bestow:3 G
+S:Mode$ Continuous | Affected$ Card.EnchantedBy | AddPower$ 1 | AddToughness$ 1 | AddTrigger$ TrigFood | Description$ Enchanted creature gets +1/+1 and has "Whenever this creature becomes the target of a Quest, create a Food token."
+SVar:TrigFood:Mode$ Attached | ValidSource$ Aura.Quest | ValidTarget$ Card.Self | Execute$ DBToken | TriggerDescription$ Whenever this creature becomes the target of a Quest, create a Food token.
+SVar:DBToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+Oracle:Bestow {3}{G}\nEnchanted creature gets +1/+1 and has "Whenever this creature becomes the target of a Quest, create a Food token."

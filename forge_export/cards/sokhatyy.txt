@@ -1,0 +1,6 @@
+Name:Sokhatyy
+ManaCost:4 G
+Types:Creature Moose
+PT:4/4
+K:Trample
+Oracle:Trample

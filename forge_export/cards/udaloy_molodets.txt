@@ -1,0 +1,6 @@
+Name:Udaloy Molodets
+ManaCost:R
+Types:Creature Human Peasant
+PT:2/1
+K:Haste
+Oracle:Haste

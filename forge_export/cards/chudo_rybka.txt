@@ -1,0 +1,7 @@
+Name:Chudo-Rybka
+ManaCost:U
+Types:Creature Fish
+PT:0/2
+A:AB$ Scry | Cost$ T Sac<1/CARDNAME> | ScryNum$ 1 | SubAbility$ DBDraw | SpellDescription$ Scry 1 and draw a card.
+SVar:DBDraw:DB$ Draw | NumCards$ 1
+Oracle:{T}, sacrifice CARDNAME: Scry 1 and draw a card.

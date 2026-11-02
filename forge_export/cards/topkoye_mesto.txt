@@ -1,0 +1,5 @@
+Name:Topkoye mesto
+ManaCost:1 B B
+Types:Enchantment
+A:AB$ Discard | Cost$ B B | ValidTgts$ Player | NumCards$ 2 | Mode$ TgtChoose | SpellDescription$ Target player discards two cards.
+Oracle:{B}{B}: Target player discards two cards. Play this ability only if that player controls a creature attacking you or a creature on a quest.

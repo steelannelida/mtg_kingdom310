@@ -1,0 +1,6 @@
+Name:Derevenskiy Starosta
+ManaCost:2 W
+Types:Creature Human Peasant
+PT:2/3
+S:Mode$ Continuous | Affected$ Creature.YouCtrl+Other+Peasant | AddToughness$ 1 | Description$ Other Peasant creatures you control get +0/+1.
+Oracle:Other Peasant creatures you control get +0/+1.

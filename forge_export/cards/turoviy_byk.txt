@@ -1,0 +1,6 @@
+Name:Turoviy Byk
+ManaCost:4 G
+Types:Creature Ox
+PT:4/5
+A:AB$ Pump | Cost$ G | Defined$ Self | KW$ Trample | Temporary$ True | SpellDescription$ CARDNAME gains trample until end of turn.
+Oracle:{G}: CARDNAME gets Trample until the end of turn

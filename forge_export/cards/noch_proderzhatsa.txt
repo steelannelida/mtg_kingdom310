@@ -1,0 +1,11 @@
+Name:Noch Proderzhatsa
+ManaCost:1 B
+Types:Enchantment Aura Quest
+K:Enchant:Creature
+T:Mode$ Blocks | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigDelay | TriggerDescription$ When enchanted creature blocks, at the beginning of the next end of combat step, if it's still on the battlefield, draw two cards. Sacrifice CARDNAME.
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ -1 | AddToughness$ -1 | Description$ Enchanted creature gets -1/-1.
+SVar:TrigDelay:DB$ DelayedTrigger | Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | RememberObjects$ TriggeredBlocker | Execute$ TrigCheck
+SVar:TrigCheck:DB$ Draw | Defined$ You | NumCards$ 2 | ConditionDefined$ DelayTriggerRemembered | ConditionPresent$ Card | ConditionCompare$ EQ1 | SubAbility$ DBSac
+SVar:DBSac:DB$ Sacrifice | Defined$ Self | ConditionDefined$ DelayTriggerRemembered | ConditionPresent$ Card | ConditionCompare$ EQ1 | SubAbility$ DBCleanup
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+Oracle:Enchant creature you control (it is on a quest)\nEnchanted creature gets -1/-1.\nWhen enchanted creature blocks and survives combat, draw two cards. Sacrifice CARDNAME.

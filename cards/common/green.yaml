@@ -14,6 +14,7 @@
     \ calm and sovereign, dappled light"
   name_ru: Медведь-Шатун
   name_en: Roaming Bear
+  forge: {}
 - name: Lisitsa-Khitryuga
   cost: "{1}{G}"
   type_line: Creature — Fox
@@ -28,6 +29,8 @@
   art_prompt: "a red fox with an unusually clever expression trotting along a forest path, autumn forest colors"
   name_ru: Лисица-Хитрюга
   name_en: Sly Fox
+  forge:
+    S: "Mode$ MinMaxBlocker | ValidCard$ Card.Self | Max$ 1 | Description$ CARDNAME can't be blocked by more than one creature."
 - name: Zayats-Beglets
   cost: "{G}"
   type_line: Creature — Rabbit
@@ -46,6 +49,11 @@
     \ in its wake"
   name_ru: Заяц-Беглец
   name_en: Runaway Hare
+  forge:
+    K: "Haste"
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigAttach | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may attach target Quest you control to it."
+    SVar:
+      TrigAttach: "DB$ Attach | ValidTgts$ Aura.YouCtrl+quest | TgtPrompt$ Choose target Quest you control | Defined$ Self"
 - name: Dub Vekovoy
   cost: "{3}{G}"
   type_line: Creature — Treefolk
@@ -64,6 +72,9 @@
     \ endurance"
   name_ru: Дуб Вековой
   name_en: Ancient Oak
+  forge:
+    K: "Defender"
+    A: "AB$ Mana | Cost$ T | Produced$ G | SpellDescription$ Add {G}."
 - name: Sery Volk
   cost: "{2}{G}"
   type_line: Creature — Wolf Mount
@@ -82,6 +93,11 @@
     \ catching the wolf's fur, supernatural speed and grace"
   name_ru: Серый Волк
   name_en: Grey Wolf
+  forge:
+    K: "Saddle:1"
+    T: "Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigTrample | TriggerDescription$ Whenever CARDNAME attacks while saddled, it gains trample until end of turn."
+    SVar:
+      TrigTrample: "DB$ Pump | Defined$ Self | KW$ Trample | Temporary$ True"
 - name: Yablonka Dobraya
   cost: "{2}{G}"
   type_line: Creature — Treefolk
@@ -100,6 +116,9 @@
     \ green leaves, warm golden sunlight, fairy-tale generosity"
   name_ru: Яблонька Добрая
   name_en: Kind Apple Tree
+  forge:
+    K: "Defender"
+    A: "AB$ Token | Cost$ T G | TokenScript$ c_a_food_sac | TokenOwner$ You | SpellDescription$ Create a Food token."
 - name: Babushkina Koshka
   cost: "{1}{G}"
   type_line: Creature — Cat
@@ -118,6 +137,12 @@
     \ eyes half-open and content, warm amber firelight"
   name_ru: Бабушкина Кошка
   name_en: "Grandmother's Cat"
+  forge:
+    K: "Bestow:3 G"
+    S: "Mode$ Continuous | Affected$ Card.EnchantedBy | AddPower$ 1 | AddToughness$ 1 | AddTrigger$ TrigFood | Description$ Enchanted creature gets +1/+1 and has \"Whenever this creature becomes the target of a Quest, create a Food token.\""
+    SVar:
+      TrigFood: "Mode$ Attached | ValidSource$ Aura.Quest | ValidTarget$ Card.Self | Execute$ DBToken | TriggerDescription$ Whenever this creature becomes the target of a Quest, create a Food token."
+      DBToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
 - name: Starichok-Lesovichok
   cost: "{3}{G}"
   type_line: Creature — Spirit
@@ -134,6 +159,10 @@
     \ parting to make way, miniature scale against the vast forest"
   name_ru: Старичок-лесовичок
   name_en: Forest Elder
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigSearch | TriggerDescription$ When CARDNAME enters, search your library for a basic land card, reveal it, put it into your hand, then shuffle."
+    SVar:
+      TrigSearch: "DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | Shuffle$ True | Reveal$ True"
 - name: Voron-Vestnik
   cost: "{1}{G}"
   type_line: Creature — Bird
@@ -152,6 +181,11 @@
     \ purpose and urgency in its flight"
   name_ru: Ворон-Вестник
   name_en: Messenger Raven
+  forge:
+    K: "Flying"
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigCounter | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may put a +1/+1 counter on target creature on a quest."
+    SVar:
+      TrigCounter: "DB$ PutCounter | ValidTgts$ Creature.EnchantedBy Aura.Quest | CounterType$ P1P1 | CounterNum$ 1"
 - name: Turoviy Byk
   cost: "{4}{G}"
   type_line: Creature — Ox
@@ -168,6 +202,8 @@
     \ their distance, primordial strength, epic scale"
   name_ru: Туровый Бык
   name_en: Aurochs Bull
+  forge:
+    A: "AB$ Pump | Cost$ G | Defined$ Self | KW$ Trample | Temporary$ True | SpellDescription$ CARDNAME gains trample until end of turn."
 - name: Zhivaya Voda
   cost: "{G}"
   type_line: Instant
@@ -184,6 +220,10 @@
     \ arching his back, eyes wide open. Medieval slavic setting."
   name_ru: Живая Вода
   name_en: Water of Life
+  forge:
+    A: "SP$ Regenerate | ValidTgts$ Creature | SubAbility$ DBToken | SpellDescription$ Regenerate target creature. Create a Food token."
+    SVar:
+      DBToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
 - name: Lesnaya Tropa
   cost: "{1}{G}"
   type_line: Sorcery
@@ -198,6 +238,8 @@
     \ clearing, inviting and mysterious, the path itself seeming to glow faintly"
   name_ru: Лесная Тропа
   name_en: Forest Path
+  forge:
+    A: "SP$ ChangeZone | Origin$ Library | Destination$ Battlefield | ChangeType$ Land.Basic | Tapped$ True | Shuffle$ True | SpellDescription$ Search your library for a basic land card, put it onto the battlefield tapped, then shuffle."
 - name: Priyut Leshego
   cost: "{2}{G}"
   type_line: Enchantment — Aura Quest
@@ -215,6 +257,16 @@
     \ entrance keeping watch, deep forest safety, warm green tones in cold surroundings"
   name_ru: Приют Лешего
   name_en: "Leshy's Shelter"
+  forge:
+    K: "Enchant:Creature.YouCtrl"
+    S: "Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ 1 | AddToughness$ 1 | Description$ Enchanted creature gets +1/+1."
+    T: "Mode$ DamageDone | ValidSource$ Creature.EnchantedBy | ValidTarget$ Creature.Attacking | CombatDamage$ True | Execute$ TrigDelay | TriggerZones$ Battlefield | TriggerDescription$ When enchanted creature deals combat damage to an attacking creature, at end of combat, if that creature died, create two Food tokens and a 1/1 green Wolf creature token. Sacrifice CARDNAME."
+    SVar:
+      TrigDelay: "DB$ DelayedTrigger | Mode$ Phase | Phase$ EndCombat | ValidPlayer$ You | RememberObjects$ TriggeredTarget | Execute$ TrigCheck"
+      TrigCheck: "DB$ Token | TokenAmount$ 2 | TokenScript$ c_a_food_sac | TokenOwner$ You | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBWolf"
+      DBWolf: "DB$ Token | TokenScript$ g_1_1_wolf_sound_the_call | TokenOwner$ You | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self | ConditionDefined$ Remembered | ConditionPresent$ Card | ConditionCompare$ EQ0 | SubAbility$ DBCleanup"
+      DBCleanup: "DB$ Cleanup | ClearRemembered$ True"
 - name: Medovy Sbiten
   cost: "{1}{G}"
   type_line: Sorcery
@@ -229,6 +281,8 @@
     \ amber, simple abundance and fellowship"
   name_ru: Медовый Сбитень
   name_en: Honey Mead
+  forge:
+    A: "SP$ Token | TokenAmount$ 2 | TokenOwner$ You | TokenScript$ c_a_food_sac | SpellDescription$ Create two Food tokens."
 - name: Sokhatyy
   cost: "{4}{G}"
   type_line: Creature - Moose
@@ -244,6 +298,8 @@
   art_prompt: A large angry black moose with large antlers dashing through the thick of the woods.
   name_ru: Сохатый
   name_en: Horned Moose
+  forge:
+    K: "Trample"
 - name: Rys
   cost: "{2}{G}{G}"
   type_line: Creature - Cat
@@ -259,6 +315,8 @@
   art_style: 9
   name_ru: Рысь
   name_en: Lynx
+  forge:
+    K: "Reach"
 - name: Bogatyrskaya Sila
   cost: "{2}{G}"
   type_line: Sorcery
@@ -272,6 +330,14 @@
   art_prompt: "A young peasant standing in a forest opening, holding a thick large log with both arms above his head, the log is three times his size. Medival slavic setting."
   name_ru: Богатырская Сила
   name_en: "Bogatyr's Might"
+  forge:
+    # NOTE (2026-09-12): Condition*$ params on the *root* A: line aren't respected by
+    # Forge (only on chained SubAbility$ SVars) -- restructured as "always 2, plus 1
+    # more (=3 total) if on a quest" instead of the original "2 OR 3" branching, which
+    # would have silently double-applied both branches.
+    A: "SP$ PutCounter | ValidTgts$ Creature | CounterType$ P1P1 | CounterNum$ 2 | SubAbility$ DBQuestBonus | SpellDescription$ Put two +1/+1 counters on target creature. If that creature is on a quest, put three +1/+1 counters on it instead."
+    SVar:
+      DBQuestBonus: "DB$ PutCounter | Defined$ Targeted | CounterType$ P1P1 | CounterNum$ 1 | ConditionDefined$ Targeted | ConditionPresent$ Creature.EnchantedBy Aura.Quest | ConditionCompare$ GE1"
 - name: Muravyinaya Blagodarnost
   cost: "{X}{G}{G}"
   type_line: Sorcery
@@ -285,6 +351,11 @@
   art_style: 14
   name_ru: Муравьиная Благодарность
   name_en: "Ant's Gratitude"
+  forge:
+    A: "SP$ Token | TokenAmount$ X | TokenScript$ g_1_1_insect | TokenOwner$ You | SubAbility$ DBFood | SpellDescription$ Create X 1/1 Insect creature tokens. If you control a creature on a quest, in addition create X food tokens."
+    SVar:
+      DBFood: "DB$ Token | TokenAmount$ X | TokenScript$ c_a_food_sac | TokenOwner$ You | ConditionPresent$ Creature.YouCtrl+EnchantedBy Aura.Quest | ConditionCompare$ GE1"
+      X: "Count$xPaid"
 - name: Sekretnyy Posvist
   cost: "{1}{G}"
   type_line: Instant
@@ -301,3 +372,5 @@
   art_prompt: "Thick woods. A young peasant whistling into two fingers. A wolf is running towards him, answering his call. Medieval Slavic setting."
   name_ru: Секретный Посвист
   name_en: Magic Whistling
+  forge:
+    A: "SP$ ChangeZone | Cost$ 1 G tapXType<1/Creature/an untapped creature you control> | Origin$ Library | Destination$ Hand | ChangeType$ Creature | ChangeNum$ 1 | Reveal$ True | Shuffle$ True | SpellDescription$ As an additional cost to cast this spell, tap an untapped creature you control. Search your library for a creature card, reveal it and put it into your hand, then shuffle."

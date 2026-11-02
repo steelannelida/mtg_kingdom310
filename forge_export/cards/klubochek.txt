@@ -1,0 +1,5 @@
+Name:Klubochek
+ManaCost:1
+Types:Artifact
+A:AB$ ChangeZone | Cost$ T Sac<1/CARDNAME> | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | Shuffle$ True | SpellDescription$ Search your library for a basic land card, put it into your hand, then shuffle.
+Oracle:{T}, sacrifice CARDNAME: Search your library for a basic land card, put it into your hand, then shuffle. If you control a creature on a quest, put it onto the battlefield tapped instead.

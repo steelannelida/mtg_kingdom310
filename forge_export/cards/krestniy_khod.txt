@@ -1,0 +1,6 @@
+Name:Krestniy Khod
+ManaCost:2 W
+Types:Sorcery
+A:SP$ Token | TokenAmount$ 2 | TokenOwner$ You | TokenScript$ w_1_1_human_peasant | SubAbility$ DBDraw | SpellDescription$ Create two 1/1 white Human Peasant creature tokens. Draw a card.
+SVar:DBDraw:DB$ Draw | Defined$ You | NumCards$ 1
+Oracle:Create two 1/1 white Human Peasant creature tokens. Draw a card.

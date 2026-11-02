@@ -1,0 +1,7 @@
+Name:Lapot Samokhodny
+ManaCost:1
+Types:Artifact Equipment
+K:Equip:1
+S:Mode$ Continuous | Affected$ Creature.EquippedBy | AddPower$ 1 | AddStaticAbility$ TrigBlock | Description$ Equipped creature gets +1/+0 and has "CARDNAME can't be blocked by more than one creature."
+SVar:TrigBlock:Mode$ MinMaxBlocker | ValidCard$ Card.Self | Max$ 1 | Description$ CARDNAME can't be blocked by more than one creature.
+Oracle:Equipped creature gets +1/+0 and has "This creature can't be blocked by more than one creature."\nEquip {1}

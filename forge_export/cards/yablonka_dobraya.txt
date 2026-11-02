@@ -1,0 +1,7 @@
+Name:Yablonka Dobraya
+ManaCost:2 G
+Types:Creature Treefolk
+PT:0/4
+K:Defender
+A:AB$ Token | Cost$ T G | TokenScript$ c_a_food_sac | TokenOwner$ You | SpellDescription$ Create a Food token.
+Oracle:Defender\n{T}, {G}: Create a Food token.

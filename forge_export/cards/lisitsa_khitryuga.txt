@@ -1,0 +1,6 @@
+Name:Lisitsa-Khitryuga
+ManaCost:1 G
+Types:Creature Fox
+PT:2/1
+S:Mode$ MinMaxBlocker | ValidCard$ Card.Self | Max$ 1 | Description$ CARDNAME can't be blocked by more than one creature.
+Oracle:CARDNAME can't be blocked by more than one creature.

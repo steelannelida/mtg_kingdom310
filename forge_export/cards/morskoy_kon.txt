@@ -1,0 +1,8 @@
+Name:Morskoy Kon
+ManaCost:3 U
+Types:Creature Fish Mount
+PT:3/3
+K:Saddle:2
+T:Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigScry | TriggerDescription$ Whenever CARDNAME attacks while saddled, scry 1.
+SVar:TrigScry:DB$ Scry | ScryNum$ 1
+Oracle:Saddle 2\nWhenever CARDNAME attacks while saddled, scry 1.

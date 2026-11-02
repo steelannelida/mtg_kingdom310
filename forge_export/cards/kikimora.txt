@@ -1,0 +1,7 @@
+Name:Kikimora
+ManaCost:2 B
+Types:Creature Spirit
+PT:2/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDiscard | TriggerDescription$ When CARDNAME enters, target player discards a card.
+SVar:TrigDiscard:DB$ Discard | ValidTgts$ Player | NumCards$ 1 | Mode$ TgtChoose
+Oracle:When CARDNAME enters the battlefield, target player discards a card.

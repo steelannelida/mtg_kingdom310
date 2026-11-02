@@ -1,0 +1,8 @@
+Name:Gusi-Lebedi
+ManaCost:4 U
+Types:Creature Bird
+PT:3/4
+K:Flying
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigBounce | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may return target creature to its owner's hand.
+SVar:TrigBounce:DB$ ChangeZone | Origin$ Battlefield | Destination$ Hand | ValidTgts$ Creature
+Oracle:Flying\nWhen CARDNAME enters battlefield, you may return target creature to its owner's hand.

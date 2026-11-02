@@ -1,0 +1,7 @@
+Name:Trup Ozhivshiy
+ManaCost:4 B
+Types:Creature Zombie
+PT:4/3
+S:Mode$ ReduceCost | ValidCard$ Card.Self | Type$ Spell | Amount$ 2 | EffectZone$ All | CheckSVar$ X | Description$ Morbid — CARDNAME costs {2} less to cast if a creature died this turn.
+SVar:X:Count$Morbid.1.0
+Oracle:Morbid — CARDNAME costs {2} less to cast if a creature died this turn.

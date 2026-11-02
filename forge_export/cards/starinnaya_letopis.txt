@@ -1,0 +1,5 @@
+Name:Starinnaya Letopis
+ManaCost:1 U
+Types:Instant
+A:SP$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ValidTgts$ Instant.YouOwn,Sorcery.YouOwn | TgtPrompt$ Choose target instant or sorcery card in your graveyard | SpellDescription$ Return target instant or sorcery card from your graveyard to your hand.
+Oracle:Return target instant or sorcery hard from your graveyard to your hand.

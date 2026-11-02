@@ -1,0 +1,6 @@
+Name:Kladbishchenskiy Storozh
+ManaCost:3 B
+Types:Creature Human Peasant
+PT:2/4
+A:AB$ ChangeZone | Cost$ T | Origin$ Graveyard | Destination$ Exile | TgtPrompt$ Choose target card in a graveyard | ValidTgts$ Card | SpellDescription$ Exile target card from a graveyard.
+Oracle:{T}: Exile target card from a graveyard.

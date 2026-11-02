@@ -1,0 +1,7 @@
+Name:Chert Melkiy
+ManaCost:1 B
+Types:Creature Demon
+PT:2/1
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDraw | TriggerDescription$ When CARDNAME enters, you may sacrifice another creature. If you do, draw a card.
+SVar:TrigDraw:AB$ Draw | Cost$ Sac<1/Creature.Other/another creature> | NumCards$ 1
+Oracle:When CARDNAME enters the battlefield, you may sacrifice another creature. If you do, draw a card.

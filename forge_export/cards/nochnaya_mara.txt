@@ -1,0 +1,7 @@
+Name:Nochnaya Mara
+ManaCost:2 B
+Types:Creature Spirit
+PT:2/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigPump | TriggerDescription$ When CARDNAME enters, target creature an opponent controls gets -2/-0 until your next turn.
+SVar:TrigPump:DB$ Pump | ValidTgts$ Creature.OppCtrl | NumAtt$ -2 | NumDef$ 0 | Duration$ UntilYourNextTurn
+Oracle:When CARDNAME enters the battlefield, target creature an opponent controls gets -2/-0 until your next turn.

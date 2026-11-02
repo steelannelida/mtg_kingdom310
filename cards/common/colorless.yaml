@@ -11,6 +11,11 @@
   art_style: 13
   art_file: lapot_samokhodny_self_walking_shoe.png
   art_prompt: "a single woven bark shoe walking by itself down a dusty road, no foot inside it, leaving small footprints in the dust, the road stretching ahead into the distance"
+  forge:
+    K: "Equip:1"
+    S: "Mode$ Continuous | Affected$ Creature.EquippedBy | AddPower$ 1 | AddStaticAbility$ TrigBlock | Description$ Equipped creature gets +1/+0 and has \"CARDNAME can't be blocked by more than one creature.\""
+    SVar:
+      TrigBlock: "Mode$ MinMaxBlocker | ValidCard$ Card.Self | Max$ 1 | Description$ CARDNAME can't be blocked by more than one creature."
   name_ru: Лапоть Самоходный
   name_en: Self-Walking Shoe
 - name: Samobranka
@@ -25,6 +30,8 @@
   art_file: samobranka_self_spreading_tablecloth.png
   art_prompt: "a white embroidered tablecloth spread on grass in a forest clearing, covered with food that has appeared from nowhere — pies, roasted fowl, bread, fruit — steam rising from hot dishes, the\
     \ cloth's embroidered edges glowing faintly with enchantment"
+  forge:
+    A: "AB$ Token | Cost$ 2 T | TokenScript$ c_a_food_sac | TokenOwner$ You | SpellDescription$ Create a Food token."
   name_ru: Самобранка
   name_en: Self-Spreading Tablecloth
 - name: Volshebnoe Zerkaltse
@@ -39,6 +46,8 @@
   art_file: volshebnoe_zerkaltse_magic_mirror.png
   art_prompt: "an ornate silver hand mirror lying on a dark velvet cloth, its surface showing not a reflection but a vision of a distant castle and a woman's face, the mirror frame decorated with tiny carved\
     \ serpents, candlelight glinting off the silver"
+  forge:
+    A: "AB$ Scry | Cost$ 1 T | ScryNum$ 1 | SpellDescription$ Scry 1."
   name_ru: Волшебное Зеркальце
   name_en: Magic Mirror
 - name: Klubochek
@@ -52,6 +61,17 @@
   art_style: 2
   art_file: klubochek_guiding_ball_of_thread.png
   art_prompt: "a small ball of golden thread rolling by itself along a forest path, unwinding as it goes leaving a glowing trail behind, the path dark and forking ahead, enchanted guidance"
+  forge:
+    # NOTE (2026-09-12): the "if you control a creature on a quest, put it onto the
+    # battlefield tapped instead" upgrade is NOT implemented. ConditionPresent$/
+    # ConditionCompare$ on the *root* A: ability line isn't respected by Forge (verified
+    # empirically -- it's only honored on chained SubAbility$ SVars, not the top-level
+    # activated ability itself), so the original two-mutually-exclusive-destinations
+    # design silently did nothing at all. Fixing this properly needs restructuring
+    # around an unconditional no-op root ability with both real attempts living as
+    # conditioned SubAbility$ steps; deferred for time. This is the always-correct base
+    # case only.
+    A: "AB$ ChangeZone | Cost$ T Sac<1/CARDNAME> | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | Shuffle$ True | SpellDescription$ Search your library for a basic land card, put it into your hand, then shuffle."
   name_ru: Клубочек
   name_en: Guiding Ball of Thread
 - name: Gorshochek Kashi
@@ -67,6 +87,15 @@
   art_style: 1
   art_file: gorshochek_kashi_porridge_pot.png
   art_prompt: "a small clay pot on a table overflowing with thick porridge, the porridge spilling over the rim and flowing across the table onto the floor, more porridge still bubbling up endlessly"
+  forge:
+    T:
+      - "Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ At the beginning of your upkeep, create a Food token."
+      - "Mode$ Always | IsPresent$ Food.YouCtrl | PresentCompare$ GE5 | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ When you control five or more Food, sacrifice CARDNAME and each Food you control. Each player gains 7 life."
+    SVar:
+      TrigToken: "DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You"
+      TrigSac: "DB$ Sacrifice | Defined$ Self | SubAbility$ DBSacFood"
+      DBSacFood: "DB$ SacrificeAll | ValidCards$ Food.YouCtrl | SubAbility$ DBGain"
+      DBGain: "DB$ GainLife | Defined$ Player | LifeAmount$ 7"
   name_ru: Горшочек Каши
   name_en: Porridge Pot
 - name: Dubinka Samoboyka
@@ -84,5 +113,11 @@
   art_file: dubina_samoboyka_self_striking_club.png
   art_prompt: "a thick wooden stick flying through the air by itself, over a crowd if townsfolk in a street. The stick mid-swing with motion lines, chasing a man that's running away from it in fear. Medieval\
     \ slavic townscape setting."
+  forge:
+    K: "Equip:2"
+    S: "Mode$ Continuous | Affected$ Creature.EquippedBy | AddPower$ 2 | Description$ Equipped creature gets +2/+0."
+    T: "Mode$ Attacks | ValidCard$ Creature.EquippedBy | TriggerZones$ Battlefield | Execute$ TrigDamage | TriggerDescription$ Whenever equipped creature attacks, CARDNAME deals 1 damage to defending player."
+    SVar:
+      TrigDamage: "DB$ DealDamage | Defined$ TriggeredDefendingPlayer | NumDmg$ 1"
   name_ru: Дубинка-Самобойка
   name_en: Self-Striking Club

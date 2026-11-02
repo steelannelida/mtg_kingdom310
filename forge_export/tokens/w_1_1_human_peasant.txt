@@ -1,0 +1,7 @@
+Name:Human Peasant
+ManaCost:no cost
+Colors:white
+Types:Creature Human Peasant
+PT:1/1
+Token:True
+Oracle:

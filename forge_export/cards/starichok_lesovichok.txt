@@ -1,0 +1,7 @@
+Name:Starichok-Lesovichok
+ManaCost:3 G
+Types:Creature Spirit
+PT:2/3
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigSearch | TriggerDescription$ When CARDNAME enters, search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+SVar:TrigSearch:DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | Shuffle$ True | Reveal$ True
+Oracle:When CARDNAME enters the battlefield, search your library for a basic land card, reveal it, put it into your hand, then shuffle.

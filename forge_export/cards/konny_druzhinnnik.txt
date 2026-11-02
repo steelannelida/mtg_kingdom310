@@ -1,0 +1,6 @@
+Name:Konny Druzhinnnik
+ManaCost:2 W
+Types:Creature Human Soldier
+PT:2/2
+S:Mode$ Continuous | Affected$ Card.Self+EnchantedBy Aura.Quest | AddKeyword$ First Strike | Description$ CARDNAME has first strike as long as it's on a quest.
+Oracle:First strike as long as CARDNAME is on a quest.

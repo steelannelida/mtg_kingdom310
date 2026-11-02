@@ -1,0 +1,7 @@
+Name:Drekavats
+ManaCost:1 B
+Types:Creature Spirit
+PT:1/1
+K:Flying
+K:Soulshift:1
+Oracle:Flying\nSoulshift 1 (When this creature dies, you may return target Spirit card with mana value 1 or less from your graveyard to your hand.)

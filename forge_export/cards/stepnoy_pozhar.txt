@@ -1,0 +1,5 @@
+Name:Stepnoy Pozhar
+ManaCost:1 R
+Types:Instant
+A:SP$ DamageAll | ValidTgts$ Player | NumDmg$ 1 | ValidCards$ Creature | SpellDescription$ CARDNAME deals 1 damage to each creature target player controls.
+Oracle:CARDNAME deals 1 damage to each creature target player controls.

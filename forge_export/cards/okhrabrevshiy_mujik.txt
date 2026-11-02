@@ -1,0 +1,6 @@
+Name:Okhrabrevshiy Mujik
+ManaCost:1 R
+Types:Creature Human Peasant
+PT:2/2
+S:Mode$ Continuous | Affected$ Card.Self+EnchantedBy Aura.Quest | AddPower$ 1 | Description$ CARDNAME gets +1/+0 as long as it's on a quest.
+Oracle:CARDNAME gets +1/+0 as long as it's on a quest.

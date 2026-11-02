@@ -12,6 +12,10 @@
   art_file: kupets_na_pristani_merchant_at_the_dock.png
   art_prompt: "a portly merchant in a fur-trimmed kaftan standing on a wooden dock, one hand shading his eyes as he watches an approaching ship, crates and rolled carpets beside him, a busy river port behind,\
     \ overcast northern light"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigScry | TriggerDescription$ When CARDNAME enters, scry 1."
+    SVar:
+      TrigScry: "DB$ Scry | ScryNum$ 1"
   name_ru: Купец на Пристани
   name_en: Merchant at the Dock
 - name: Rusalka-Iskusitelnitsa
@@ -28,6 +32,11 @@
   art_file: rusalka_iskusitelnitsa_temptress_rusalka.png
   art_prompt: "a translucent pale woman half-submerged in dark river water, long green hair floating around her like waterweed, one arm extended beckoning, moonlight catching the water droplets on her skin,\
     \ dark willows leaning over the riverbank, eerie beauty"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigTap | TriggerDescription$ When CARDNAME enters, tap target creature an opponent controls. It doesn't untap during its controller's next untap step."
+    SVar:
+      TrigTap: "DB$ Tap | ValidTgts$ Creature.OppCtrl | SubAbility$ DBPump"
+      DBPump: "DB$ Pump | Defined$ Targeted | KW$ HIDDEN This card doesn't untap during your next untap step. | Duration$ Permanent"
   name_ru: Русалка-Искусительница
   name_en: Temptress Rusalka
 - name: Chudo-Rybka
@@ -43,6 +52,10 @@
   art_style: 13
   art_file: chudo_rybka_wonder_fish.png
   art_prompt: "a small golden fish with shimmering iridescent scales being pulled with a fishnet out of a lake. The fish glowing with faint inner light, ripples spreading below."
+  forge:
+    A: "AB$ Scry | Cost$ T Sac<1/CARDNAME> | ScryNum$ 1 | SubAbility$ DBDraw | SpellDescription$ Scry 1 and draw a card."
+    SVar:
+      DBDraw: "DB$ Draw | NumCards$ 1"
   name_ru: Чудо-Рыбка
   name_en: Wonder Fish
 - name: Lebed Belaya
@@ -61,6 +74,11 @@
   art_file: lebed_belaya_white_swan.png
   art_prompt: "a pure white swan descending onto a calm lake at twilight, wings spread wide catching the last silver light, perfect reflection in the still water below, reeds at the shore, distant blue\
     \ forest, a sense of transformation about to happen"
+  forge:
+    K: "Flying"
+    T: "Mode$ Scry | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigPump | TriggerDescription$ Whenever you scry, CARDNAME gets +1/+0 until end of turn."
+    SVar:
+      TrigPump: "DB$ Pump | Defined$ Self | NumAtt$ 1 | NumDef$ 0"
   name_ru: Лебедь Белая
   name_en: White Swan
 - name: Gusi-Lebedi
@@ -78,6 +96,11 @@
   art_style: 1
   art_prompt: 'A flock of white geese and swans flying through clear sky. '
   art_file: gusi_lebedi_geese_and_swans.png
+  forge:
+    K: "Flying"
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigBounce | OptionalDecider$ You | TriggerDescription$ When CARDNAME enters, you may return target creature to its owner's hand."
+    SVar:
+      TrigBounce: "DB$ ChangeZone | Origin$ Battlefield | Destination$ Hand | ValidTgts$ Creature"
   name_ru: Гуси-Лебеди
   name_en: Geese and Swans
 - name: Utoplennik
@@ -94,6 +117,10 @@
   art_file: utoplennik_the_drowned_one.png
   art_prompt: "a bloated grey hand reaching up from murky black water, grasping at the air, the suggestion of a face beneath the surface, bubbles rising, dark reeds and lily pads surrounding, sickly green-grey\
     \ light, horror and pity"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigBottom | TriggerDescription$ When CARDNAME enters, put target creature on the bottom of its owner's library."
+    SVar:
+      TrigBottom: "DB$ ChangeZone | Origin$ Battlefield | Destination$ Library | ValidTgts$ Creature | LibraryPosition$ -1"
   name_ru: Утопленник
   name_en: The Drowned One
 - name: Korabl Kupecheskiy
@@ -112,6 +139,9 @@
   art_file: korabl_kupecheskiy_merchant_vessel.png
   art_prompt: "a heavy-laden medieval Russian merchant ship with a single square sail, high carved prow shaped like a dragon, moored at a wooden quay, bales and barrels visible on deck, the ship sitting\
     \ low in the water from its cargo, calm grey sea, seagulls circling"
+  forge:
+    K: "Defender"
+    A: "AB$ Draw | Cost$ 2 T | NumCards$ 1 | SorcerySpeed$ True | SpellDescription$ Draw a card. Activate only as a sorcery."
   name_ru: Корабль Купеческий
   name_en: Merchant Vessel
 - name: Vodyanitsa
@@ -128,6 +158,10 @@
   art_file: vodyanitsa_water_maiden.png
   art_prompt: "a young woman's face barely breaking the surface of dark still water at dusk, only her eyes and forehead visible, water streaming from her hair, three small glowing orbs floating around her\
     \ just above the surface, mysterious and secretive"
+  forge:
+    T: "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigDig | TriggerDescription$ When CARDNAME enters, look at the top three cards of your library. Put one into your hand and the rest on the bottom in any order."
+    SVar:
+      TrigDig: "DB$ Dig | DigNum$ 3 | ChangeNum$ 1 | NoReveal$ True"
   name_ru: Водяница
   name_en: Water Maiden
 - name: Starik-Rybak
@@ -144,6 +178,8 @@
   art_file: starik_rybolov_old_fisherman.png
   art_prompt: "an old fisherman sitting in a weathered wooden boat on a grey sea, mending a net with gnarled hands, a battered fishing rod beside him, his face deeply lined and patient, a broken-down hut\
     \ visible on the distant shore, overcast sky, quiet solitude"
+  forge:
+    A: "AB$ Scry | Cost$ T | ScryNum$ 1 | SpellDescription$ Scry 1."
   name_ru: Старик-Рыбак
   name_en: Old Fisherman
 - name: Morskoy Kon
@@ -161,6 +197,11 @@
   art_style: 1
   art_file: morskoy_kon_seahorse.png
   art_prompt: "A human-sized seahorse fish, swimming under the sea, ridden by a young medieval slavic merchant. Merchant is fully dressed and the clothes aren't soaked."
+  forge:
+    K: "Saddle:2"
+    T: "Mode$ Attacks | ValidCard$ Card.Self+IsSaddled | TriggerZones$ Battlefield | Execute$ TrigScry | TriggerDescription$ Whenever CARDNAME attacks while saddled, scry 1."
+    SVar:
+      TrigScry: "DB$ Scry | ScryNum$ 1"
   name_ru: Морской Конь
   name_en: Seahorse
 - name: Rechnoy Tuman
@@ -177,6 +218,10 @@
   art_file: bludny_tuman_deceiving_mist.png
   art_prompt: "thick white river mist rolling across a battlefield, a warrior swinging his sword at nothing, his confused expression half-visible through the fog, ghostly shapes dissolving around him, the\
     \ ground invisible beneath the mist, disorienting atmosphere"
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | NumAtt$ -4 | NumDef$ 0 | SubAbility$ DBScry | SpellDescription$ Target creature gets -4/-0 until end of turn. Scry 1."
+    SVar:
+      DBScry: "DB$ Scry | ScryNum$ 1"
   name_ru: Речной Туман
   name_en: River Mist
 - name: Bluddyechko s Yablochkom
@@ -190,6 +235,8 @@
   art_style: 1
   art_file: bluddyechko_s_yablochkom_saucer_and_apple.png
   art_prompt: "a silver saucer on a dark wooden table with a small red apple rolling around its rim, the saucer's surface showing a vision of distant lands — tiny castles and forests reflected in the metal"
+  forge:
+    A: "AB$ Scry | Cost$ 1 T | ScryNum$ 2 | SpellDescription$ Scry 2."
   name_ru: Блюдечко с Яблочком
   name_en: Saucer and Apple
 - name: Zov Morya
@@ -206,6 +253,11 @@
   art_file: morskoy_prikaz_command_of_the_sea.png
   art_prompt: "an enormous wave curling over a rocky shore, a small human figure tumbling in the surf being pushed back to land, a single pearl gleaming in the foam, the sea dark and powerful, the shore\
     \ pale and safe, dramatic contrast between water and land"
+  forge:
+    A: "SP$ ChangeZone | Origin$ Battlefield | Destination$ Hand | ValidTgts$ Creature | RememberChanged$ True | SubAbility$ DBDraw | SpellDescription$ Return target creature to its owner's hand. If that creature was on a quest, its controller draws a card."
+    SVar:
+      DBDraw: "DB$ Draw | DefinedPlayer$ TargetedController | NumCards$ 1 | ConditionDefined$ Remembered | ConditionPresent$ Card.EnchantedBy Aura.Quest | ConditionCompare$ GE1 | SubAbility$ DBCleanup"
+      DBCleanup: "DB$ Cleanup | ClearRemembered$ True"
   name_ru: Зов Моря
   name_en: Command of the Sea
 - name: Veschiy Son
@@ -220,6 +272,8 @@
   art_file: predveshchiy_son_prophetic_dream.png
   art_prompt: "a sleeping figure on a simple bed under covers in a medieval hut, above them a dreamlike vision of three glowing roads branching into darkness, each road ending in a different scene — a crown,\
     \ a grave, a forest, the vision translucent and shimmering, deep blue night light"
+  forge:
+    A: "SP$ RearrangeTopOfLibrary | Defined$ You | NumCards$ 3 | SpellDescription$ Look at the top 3 cards of your library and put them back in any order."
   name_ru: Вещий Сон
   name_en: Prophetic Dream
 - name: Obman Zreniya
@@ -234,6 +288,10 @@
   art_file: obman_zreniya_eye_trick.png
   art_prompt: "a fox standing upright wearing a badly-fitting crane costume made of white feathers, one eye visible through the disguise looking sly, other birds nearby not noticing, a riverside setting,\
     \ humorous but with a hint of menace"
+  forge:
+    A: "SP$ Pump | ValidTgts$ Creature | SubAbility$ DBClone | StackDescription$ None | SpellDescription$ Target creature becomes a copy of another target creature you control until end of turn."
+    SVar:
+      DBClone: "DB$ Clone | Defined$ ParentTarget | ValidTgts$ Creature.YouCtrl | CloneTarget$ ThisTargetedCard | Duration$ UntilEndOfTurn"
   name_ru: Обман Зрения
   name_en: Eye Trick
 - name: Otplyitye
@@ -248,6 +306,10 @@
   art_file: otplyitye_setting_sail.png
   art_prompt: "a merchant ship pulling away from a wooden dock, its single sail catching the wind, a bearded merchant on the stern looking back at the shrinking shore where two young women wave, the open\
     \ sea ahead grey and vast, a moment of departure"
+  forge:
+    A: "SP$ Draw | NumCards$ 2 | SubAbility$ DBDiscard | SpellDescription$ Draw two cards, then discard a card."
+    SVar:
+      DBDiscard: "DB$ Discard | Defined$ You | NumCards$ 1 | Mode$ TgtChoose"
   name_ru: Отплытие
   name_en: Setting Sail
 - name: V Bochke po Moryu
@@ -264,6 +326,16 @@
   art_style: 5
   art_file: v_bochke_po_moryu_locked_in_a_barrel.png
   art_prompt: "a large wooden barrel floating alone on an open storming sea, waves rocking it, a distant island on the horizon, isolation and hope"
+  forge:
+    K: "Enchant:Creature"
+    T:
+      - "Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigTap | TriggerDescription$ When CARDNAME enters, tap enchanted creature. It doesn't untap during its controller's next untap step."
+      - "Mode$ Untaps | ValidCard$ Creature.EnchantedBy | TriggerZones$ Battlefield | Execute$ TrigSearch | TriggerDescription$ When enchanted creature untaps, search your library for up to two Instant or Sorcery cards and put them into your hand, then shuffle. Sacrifice CARDNAME."
+    SVar:
+      TrigTap: "DB$ Tap | Defined$ Enchanted | SubAbility$ DBPump"
+      DBPump: "DB$ Pump | Defined$ Enchanted | KW$ HIDDEN This card doesn't untap during your next untap step. | Duration$ Permanent"
+      TrigSearch: "DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Instant.YouOwn,Sorcery.YouOwn | ChangeNum$ 2 | Hidden$ True | Reveal$ True | Shuffle$ True | SubAbility$ DBSac"
+      DBSac: "DB$ Sacrifice | Defined$ Self"
   name_ru: В Бочке по Морю
   name_en: Locked in a Barrel
 - name: Treskuchiy Moroz
@@ -277,6 +349,8 @@
   art_prompt: "Daylight. A forest in deep white sparkling snow and shackled by frost. Land completely covered by snow and no-one around. Clear blue sky, long sharp shadows."
   art_file: treskuchiy_moroz_crackling_frost.png
   notes: ''
+  forge:
+    A: "SP$ TapAll | ValidTgts$ Player | ValidCards$ Creature | SpellDescription$ Tap all creatures target player controls."
   name_ru: Трескучий Мороз
   name_en: Crackling Frost
 - name: Starinnaya Letopis
@@ -290,5 +364,7 @@
   art_prompt: "An old birch scroll with script in glagolitsa, on a wooden table, held unrolled by 2 old wrinkled hands"
   art_file: starinnaya_letopis_old_chronicle.png
   notes: ''
+  forge:
+    A: "SP$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ValidTgts$ Instant.YouOwn,Sorcery.YouOwn | TgtPrompt$ Choose target instant or sorcery card in your graveyard | SpellDescription$ Return target instant or sorcery card from your graveyard to your hand."
   name_ru: Старинная Летопись
   name_en: Old Chronicle

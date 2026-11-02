@@ -1,0 +1,10 @@
+Name:Gorshochek Kashi
+ManaCost:2
+Types:Artifact
+T:Mode$ Phase | Phase$ Upkeep | ValidPlayer$ You | TriggerZones$ Battlefield | Execute$ TrigToken | TriggerDescription$ At the beginning of your upkeep, create a Food token.
+T:Mode$ Always | IsPresent$ Food.YouCtrl | PresentCompare$ GE5 | TriggerZones$ Battlefield | Execute$ TrigSac | TriggerDescription$ When you control five or more Food, sacrifice CARDNAME and each Food you control. Each player gains 7 life.
+SVar:TrigToken:DB$ Token | TokenScript$ c_a_food_sac | TokenOwner$ You
+SVar:TrigSac:DB$ Sacrifice | Defined$ Self | SubAbility$ DBSacFood
+SVar:DBSacFood:DB$ SacrificeAll | ValidCards$ Food.YouCtrl | SubAbility$ DBGain
+SVar:DBGain:DB$ GainLife | Defined$ Player | LifeAmount$ 7
+Oracle:At the beginning of your upkeep, create a Food token.\nWhen you control five or more Food tokens, sacrifice CARDNAME and each Food you control. Each player gains 7 life.

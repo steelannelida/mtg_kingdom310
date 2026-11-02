@@ -1,0 +1,5 @@
+Name:Pakhar
+ManaCost:W
+Types:Creature Human Peasant
+PT:1/2
+Oracle:

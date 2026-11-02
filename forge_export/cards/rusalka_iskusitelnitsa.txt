@@ -1,0 +1,8 @@
+Name:Rusalka-Iskusitelnitsa
+ManaCost:2 U
+Types:Creature Spirit
+PT:2/2
+T:Mode$ ChangesZone | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigTap | TriggerDescription$ When CARDNAME enters, tap target creature an opponent controls. It doesn't untap during its controller's next untap step.
+SVar:TrigTap:DB$ Tap | ValidTgts$ Creature.OppCtrl | SubAbility$ DBPump
+SVar:DBPump:DB$ Pump | Defined$ Targeted | KW$ HIDDEN This card doesn't untap during your next untap step. | Duration$ Permanent
+Oracle:When CARDNAME enters the battlefield, tap target creature an opponent controls. It doesn't untap during its controller's next untap step.

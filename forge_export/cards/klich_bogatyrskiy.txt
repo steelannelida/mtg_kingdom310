@@ -1,0 +1,5 @@
+Name:Klich Bogatyrskiy
+ManaCost:2 R
+Types:Sorcery
+A:SP$ PumpAll | ValidCards$ Creature.YouCtrl | NumAtt$ 1 | NumDef$ 0 | KW$ Haste | SpellDescription$ Creatures you control get +1/+0 and gain haste until end of turn.
+Oracle:Creatures you control get +1/+0 and gain haste until end of turn.

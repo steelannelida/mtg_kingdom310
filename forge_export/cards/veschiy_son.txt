@@ -1,0 +1,5 @@
+Name:Veschiy Son
+ManaCost:U
+Types:Sorcery
+A:SP$ RearrangeTopOfLibrary | Defined$ You | NumCards$ 3 | SpellDescription$ Look at the top 3 cards of your library and put them back in any order.
+Oracle:Look at the top 3 cards of your library and put them back in any order.

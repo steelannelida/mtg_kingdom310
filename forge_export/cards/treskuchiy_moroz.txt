@@ -1,0 +1,5 @@
+Name:Treskuchiy Moroz
+ManaCost:1 U U
+Types:Sorcery
+A:SP$ TapAll | ValidTgts$ Player | ValidCards$ Creature | SpellDescription$ Tap all creatures target player controls.
+Oracle:Tap all creatures target player controls.
